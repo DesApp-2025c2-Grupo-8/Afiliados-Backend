@@ -2,9 +2,10 @@ import { IsDate, IsNotEmpty, IsNumber, IsOptional, IsString } from 'class-valida
 import { Type } from 'class-transformer';
 
 export class CreateRecetaDto {
-    @IsNumber()
-    @IsNotEmpty()
-    orden: number;
+    // @IsNumber()
+    // @IsNotEmpty()
+    // @IsOptional()
+    // orden?: number;
 
     @IsDate()
     @IsNotEmpty()
