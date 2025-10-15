@@ -14,12 +14,47 @@ export class RecetasService {
         return this.recetaModel.find().exec();
     }
 
-    async deleteAll() : Promise<void> {
+    async deleteAll(): Promise<void> {
         await this.recetaModel.deleteMany({});
     }
 
     async create(recetaACrear: CreateRecetaDto): Promise<Receta> {
-        const recetaCreada = new this.recetaModel(recetaACrear);
+        
+        // Calcular el nuevo número
+        // numeroAfiliado+numeroIntegrante+tipoDeSolicitud+secuencia = 1234567-01-23-0001 = 123456701230001
+        // turnos - autorizaciones - recetas - reintegros
+
+
+        // numeroAfiliado = 7 numeros
+        // numeroIntegrante = 2 numeros
+        // recetas = 2 numeros en este caso: 20 
+        // secuencia = 4 numeros
+
+
+        // filtrar por afiliados
+        // filtrar por integrante (si es necesario)
+        // filtrar por tipo de solicitud (recetas = 20)
+        // obtener la ultima secuencia y sumarle 1
+        // si no hay, empezar en 0001
+
+        const afiliado = recetaACrear.numeroAfiliado; //1234567-01
+        const prefijoReceta = 20;
+        const ultimaReceta = await this.recetaModel
+            .findOne({ numeroAfiliado: afiliado})
+            .sort({ numeroOrden: -1 })
+            .exec();
+
+        // Obtener la última receta filtrada
+        // const ultimaRecetaFiltrada = recetasFiltradas.length > 0 ? recetasFiltradas[recetasFiltradas.length - 1] : null;
+        const nuevoNumeroOrden = ultimaReceta ? ultimaReceta.numeroOrden + 1 : recetaACrear.numeroAfiliado * 1000000 + prefijoReceta * 10000 + 1; 
+        // 1234567000000 + 200000 + 1
+
+        // Crear la nueva receta con ese número
+        const recetaCreada = new this.recetaModel({
+            ...recetaACrear,
+            numeroOrden: nuevoNumeroOrden,
+        });
+
         return recetaCreada.save();
     }
 

@@ -9,6 +9,11 @@ export class Receta {
     numeroOrden: number;
 
     @Prop({
+         required: true,
+    })
+    numeroAfiliado: number;
+
+    @Prop({
         required: true
     })
     fechaDeCarga: Date;
