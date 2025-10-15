@@ -24,6 +24,10 @@ export class CreateRecetaDto {
     @IsNotEmpty()
     cantidad: number;
 
+    @IsNumber()
+    @IsNotEmpty()
+    numeroAfiliado: number;
+
     @IsString()
     @IsNotEmpty()
     presentacion: string;
