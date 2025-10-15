@@ -3,10 +3,10 @@ import { faker } from '@faker-js/faker';
 
 export async function seedRecetas(recetasService: RecetasService){
 
-    //await recetasService.deleteAll();
+    await recetasService.deleteAll();
 
     const recetas = Array.from({length: 20}).map((_, index) =>({
-        orden: index + 1,
+        numeroOrden: index + 1,
         fechaDeCarga: faker.date.recent( { days: 365}),
         integrante: faker.person.fullName(),
         medicamento: faker.commerce.productName(),
@@ -20,7 +20,7 @@ export async function seedRecetas(recetasService: RecetasService){
     }))
 
 
-    //await recetasService.insertMany(recetas);
+    await recetasService.insertMany(recetas);
 
-    console.log('recetas creadas correctamente')
+    console.log('recetas creadas')
 }
