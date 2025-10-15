@@ -10,8 +10,15 @@ export class RecetasService {
 
     }
 
+    //Buscar TODAS las recetas
     async findAll(): Promise<Receta[]> {
         return this.recetaModel.find().exec();
+    }
+
+    //Buscar recetas por NUMERO de AFILIADO
+    async findByNumeroAfiliado(nroABuscar: string): Promise<Receta[]> {
+        const todasLasRecetas = this.recetaModel.find().exec();
+        return (await todasLasRecetas).filter(r => r.numeroAfiliado.toString().includes(nroABuscar) )
     }
 
     async deleteAll(): Promise<void> {
