@@ -6,30 +6,16 @@ import { CreateRecetaDto } from './dto/create-receta.dto';
 
 @Injectable()
 export class RecetasService {
-  constructor(
-    @InjectModel(Receta.name) private recetaModel: Model<Receta>,
-  ) {}
+    constructor(@InjectModel(Receta.name) private recetaModel: Model<Receta>){
 
-  async findAll(): Promise<Receta[]> {
-    return this.recetaModel.find().exec();
-  }
+    }
 
-  async create(recetaACrear: CreateRecetaDto): Promise<Receta> {
-    // Buscar la última receta creada, ordenada por numeroOrden descendente
-    const ultimaReceta = await this.recetaModel
-      .findOne()
-      .sort({ numeroOrden: -1 })
-      .exec();
+    async findAll(): Promise<Receta[]>{
+        return this.recetaModel.find().exec();
+    }
 
-    // Calcular el nuevo número
-    const nuevoNumeroOrden = ultimaReceta ? ultimaReceta.numeroOrden + 1 : 1;
-
-    // Crear la nueva receta con ese número
-    const recetaCreada = new this.recetaModel({
-      ...recetaACrear,
-      numeroOrden: nuevoNumeroOrden,
-    });
-
-    return recetaCreada.save();
-  }
+    async create(recetaACrear: CreateRecetaDto): Promise<Receta>{
+        const recetaCreada = new this.recetaModel(recetaACrear);
+        return recetaCreada.save();
+    }
 }
