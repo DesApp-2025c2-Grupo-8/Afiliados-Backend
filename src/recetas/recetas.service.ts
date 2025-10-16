@@ -10,8 +10,27 @@ export class RecetasService {
 
     }
 
+    //Buscar TODAS las recetas
     async findAll(): Promise<Receta[]> {
         return this.recetaModel.find().exec();
+    }
+
+    //Buscar recetas por NUMERO de AFILIADO
+    //EJ 663459901, 663459902, 663459903
+    //Es afiliado titular si los dos ultimos digitos son '01' slice(7,9) === 01
+    async findByNumeroAfiliado(nroABuscar: string): Promise<Receta[]> {
+        const todasLasRecetas = this.recetaModel.find().exec();
+        const numeroComun = nroABuscar.slice(0,7);
+        const esTitular = nroABuscar.slice(7,9) === '01';
+
+        let resultado: Receta[];
+
+        if (esTitular) {
+            resultado = (await todasLasRecetas).filter(r => r.numeroAfiliado.toString().includes(numeroComun));
+        } else {
+            resultado = (await todasLasRecetas).filter(r => r.numeroAfiliado.toString() === (nroABuscar));
+        }
+        return resultado;
     }
 
     async deleteAll(): Promise<void> {
