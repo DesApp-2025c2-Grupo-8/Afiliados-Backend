@@ -19,18 +19,18 @@ export class RecetasService {
     //EJ 663459901, 663459902, 663459903
     //Es afiliado titular si los dos ultimos digitos son '01' slice(7,9) === 01
     async findByNumeroAfiliado(nroABuscar: string): Promise<Receta[]> {
-        const todasLasRecetas = this.recetaModel.find().exec();
-        const numeroComun = nroABuscar.slice(0,7);
+        const afiliadoComun = nroABuscar.slice(0,7);
         const esTitular = nroABuscar.slice(7,9) === '01';
 
-        let resultado: Receta[];
-
         if (esTitular) {
-            resultado = (await todasLasRecetas).filter(r => r.numeroAfiliado.toString().includes(numeroComun));
+            const numeroAfiliadoComun = parseInt(afiliadoComun);
+            const rangoInferior = numeroAfiliadoComun * 100;        // numeroAfiliado + 00
+            const rangoSuperior = numeroAfiliadoComun * 100 + 99;   // numeroAfiliado + 99
+
+            return this.recetaModel.find({numeroAfiliado: { $gte: rangoInferior, $lte: rangoSuperior } }).exec();
         } else {
-            resultado = (await todasLasRecetas).filter(r => r.numeroAfiliado.toString() === (nroABuscar));
+            return this.recetaModel.find({numeroAfiliado: parseInt(nroABuscar)}).exec();
         }
-        return resultado;
     }
 
     async deleteAll(): Promise<void> {
