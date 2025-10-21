@@ -1,0 +1,32 @@
+//datos que vienen desde el cliente
+import { IsDate, IsNotEmpty, IsNumber, IsOptional, IsString } from 'class-validator';
+import { Type } from 'class-transformer';
+
+export class CreateAutorizacionDto {
+
+    @IsNotEmpty()
+    @IsString()
+    integrante: string;
+
+    @IsNotEmpty()
+    @IsString()
+    especialidad: string;
+
+    @IsNotEmpty()
+    @IsString()
+    ubicacion: string;
+
+    @IsOptional()
+    @IsString()
+    observaciones?: string;
+
+    @IsDate()
+    @IsNotEmpty()
+    @Type(() => Date)
+    fechaPrevista?: Date;
+
+    @IsNumber()
+    @IsNotEmpty()
+    numeroAfiliado: number;
+
+}
