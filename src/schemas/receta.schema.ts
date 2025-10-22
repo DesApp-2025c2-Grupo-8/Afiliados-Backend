@@ -2,14 +2,19 @@ import { Schema, Prop, SchemaFactory } from "@nestjs/mongoose";
 
 @Schema()
 export class Receta {
-     @Prop({
-         required: true,
-         unique: true
+    @Prop({
+        default: 'Pendiente'
+    })
+    estado: string;
+
+    @Prop({
+        required: true,
+        unique: true
     })
     numeroOrden: number;
 
     @Prop({
-         required: true,
+        required: true,
     })
     numeroAfiliado: number;
 
