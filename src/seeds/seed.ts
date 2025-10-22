@@ -12,7 +12,7 @@ async function bootstrap(){
     const reintegrosService = appContext.get(ReintegrosService);
 
     await seedRecetas(recetasService);
-    await seedReintegros(ReintegrosService);
+    await seedReintegros(reintegrosService);
 
     await appContext.close();
     console.log('Seed Completada');
