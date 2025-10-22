@@ -12,6 +12,21 @@ export class ReintegrosService {
         return this.reintegroModel.find().exec();
     }
 
+    async findByNumeroAfiliado(nroABuscar: string): Promise<Reintegro[]> {
+        const afiliadoComun = nroABuscar.slice(0,7);
+        const esTitular = nroABuscar.slice(7,9) === '01';
+
+        if (esTitular) {
+            const numeroAfiliadoComun = parseInt(afiliadoComun);
+            const rangoInferior = numeroAfiliadoComun * 100;        // numeroAfiliado + 00
+            const rangoSuperior = numeroAfiliadoComun * 100 + 99;   // numeroAfiliado + 99
+
+            return this.reintegroModel.find({numeroAfiliado: { $gte: rangoInferior, $lte: rangoSuperior } }).exec();
+        } else {
+            return this.reintegroModel.find({numeroAfiliado: parseInt(nroABuscar)}).exec();
+        }
+    }
+
     async create(reintegroACrear: CreateReintegroDto): Promise<Reintegro> {
         const afiliado = reintegroACrear.numeroAfiliado;
         const prefijoReintegro = 40;
