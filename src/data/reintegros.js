@@ -1,6 +1,7 @@
-export default reintegros = [
+const reintegros = [
   {
     "numeroAfiliado": 126535701,
+    "numeroOrden": "126535701400001",
     "estado": "Pago",
     "fechaDeCarga": "2024-10-18T10:00:00.000Z",
     "fechaDePrestacion": "2024-10-15T00:00:00.000Z",
@@ -20,6 +21,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535702,
+    "numeroOrden": "126535702400002",
     "estado": "Pendiente",
     "fechaDeCarga": "2024-09-01T15:30:00.000Z",
     "fechaDePrestacion": "2024-08-28T00:00:00.000Z",
@@ -39,6 +41,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535703,
+    "numeroOrden": "126535703400003",
     "estado": "Rechazado",
     "fechaDeCarga": "2024-08-20T11:45:00.000Z",
     "fechaDePrestacion": "2024-08-15T00:00:00.000Z",
@@ -58,6 +61,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535701,
+    "numeroOrden": "126535701400004",
     "estado": "Pago",
     "fechaDeCarga": "2024-07-05T09:10:00.000Z",
     "fechaDePrestacion": "2024-06-30T00:00:00.000Z",
@@ -77,6 +81,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535702,
+    "numeroOrden": "126535702400005",
     "estado": "Pago",
     "fechaDeCarga": "2024-05-12T14:20:00.000Z",
     "fechaDePrestacion": "2024-05-08T00:00:00.000Z",
@@ -96,6 +101,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535704,
+    "numeroOrden": "126535704400006",
     "estado": "Pendiente",
     "fechaDeCarga": "2024-04-01T10:00:00.000Z",
     "fechaDePrestacion": "2024-03-27T00:00:00.000Z",
@@ -115,6 +121,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535701,
+    "numeroOrden": "126535701400007",
     "estado": "Rechazado",
     "fechaDeCarga": "2024-02-19T17:00:00.000Z",
     "fechaDePrestacion": "2024-02-14T00:00:00.000Z",
@@ -134,6 +141,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535703,
+    "numeroOrden": "126535703400008",
     "estado": "Pago",
     "fechaDeCarga": "2024-01-10T08:30:00.000Z",
     "fechaDePrestacion": "2024-01-05T00:00:00.000Z",
@@ -153,6 +161,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535701,
+    "numeroOrden": "126535701400009",
     "estado": "Pago",
     "fechaDeCarga": "2023-12-05T12:00:00.000Z",
     "fechaDePrestacion": "2023-11-30T00:00:00.000Z",
@@ -172,6 +181,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535704,
+    "numeroOrden": "126535704400010",
     "estado": "Pendiente",
     "fechaDeCarga": "2023-11-28T10:00:00.000Z",
     "fechaDePrestacion": "2023-11-25T00:00:00.000Z",
@@ -191,6 +201,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535702,
+    "numeroOrden": "126535702400011",
     "estado": "Pago",
     "fechaDeCarga": "2023-10-14T11:00:00.000Z",
     "fechaDePrestacion": "2023-10-10T00:00:00.000Z",
@@ -210,6 +221,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535701,
+    "numeroOrden": "126535701400012",
     "estado": "Pendiente",
     "fechaDeCarga": "2023-08-25T16:00:00.000Z",
     "fechaDePrestacion": "2023-08-20T00:00:00.000Z",
@@ -229,6 +241,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535703,
+    "numeroOrden": "126535703400013",
     "estado": "Rechazado",
     "fechaDeCarga": "2023-07-03T09:00:00.000Z",
     "fechaDePrestacion": "2023-06-29T00:00:00.000Z",
@@ -248,6 +261,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535702,
+    "numeroOrden": "126535702400014",
     "estado": "Pago",
     "fechaDeCarga": "2023-05-19T13:40:00.000Z",
     "fechaDePrestacion": "2023-05-15T00:00:00.000Z",
@@ -267,6 +281,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535704,
+    "numeroOrden": "126535704400015",
     "estado": "Pago",
     "fechaDeCarga": "2023-04-12T10:00:00.000Z",
     "fechaDePrestacion": "2023-04-08T00:00:00.000Z",
@@ -286,6 +301,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535701,
+    "numeroOrden": "126535701400016",
     "estado": "Pendiente",
     "fechaDeCarga": "2023-02-01T14:00:00.000Z",
     "fechaDePrestacion": "2023-01-27T00:00:00.000Z",
@@ -305,6 +321,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535702,
+    "numeroOrden": "126535702400017",
     "estado": "Rechazado",
     "fechaDeCarga": "2022-11-20T11:00:00.000Z",
     "fechaDePrestacion": "2022-11-15T00:00:00.000Z",
@@ -324,6 +341,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535703,
+    "numeroOrden": "126535703400018",
     "estado": "Pago",
     "fechaDeCarga": "2022-09-10T15:00:00.000Z",
     "fechaDePrestacion": "2022-09-05T00:00:00.000Z",
@@ -343,6 +361,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535704,
+    "numeroOrden": "126535704400019",
     "estado": "Pendiente",
     "fechaDeCarga": "2022-06-05T09:30:00.000Z",
     "fechaDePrestacion": "2022-06-01T00:00:00.000Z",
@@ -362,6 +381,7 @@ export default reintegros = [
   },
   {
     "numeroAfiliado": 126535701,
+    "numeroOrden": "126535701400020",
     "estado": "Pago",
     "fechaDeCarga": "2015-03-14T00:00:00.000Z",
     "fechaDePrestacion": "2015-03-14T00:00:00.000Z",
@@ -380,3 +400,5 @@ export default reintegros = [
     }
   }
 ]
+
+export default reintegros;
