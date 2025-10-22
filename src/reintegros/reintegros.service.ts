@@ -46,5 +46,12 @@ export class ReintegrosService {
         return reintegroCreado.save();
     }
 
+    async insertMany(reintegros: CreateReintegroDto[]): Promise<Reintegro[]> {
+        return this.reintegroModel.insertMany(reintegros).then((docs) => docs.map((d) => d.toObject()));
+    }
+
+    async deleteAll(): Promise<void> {
+        await this.reintegroModel.deleteMany({});
+    }
 
 }
