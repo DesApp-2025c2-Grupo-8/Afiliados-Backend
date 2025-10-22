@@ -11,7 +11,6 @@ import {
 import { RecetasService } from './recetas.service';
 import { CreateRecetaDto } from './dto/create-receta.dto';
 import { Receta } from 'src/schemas/receta.schema';
-import path from 'path';
 
 @Controller('recetas')
 export class RecetasController {
