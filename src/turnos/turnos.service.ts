@@ -32,7 +32,7 @@ export class TurnosService {
 
     private async getDataPrestadores(filtros: FilterTurnoDto): Promise <PrestadorData[]>{
         const filtroDb: any = {
-            especialidad: filtros.especialidad,
+            ...(filtros.especialidad && { especialidad: filtros.especialidad }),
             ...(filtros.medico && { medico: filtros.medico }),
         }
 
@@ -42,7 +42,7 @@ export class TurnosService {
         }
 
         const docsPrestadores = await this.turnoModel
-            .find({ medico: { $in: medicosUnicos}})
+            .find({ medico: { $in: medicosUnicos}, ...(filtros.especialidad && { especialidad: filtros.especialidad }),})
             .select('medico lugarDeAtencion especialidad')
             .limit(medicosUnicos.length)
             .lean()
@@ -54,14 +54,16 @@ export class TurnosService {
             const profesionalId = data.medico;
 
             if(profesionalId && !mapUnico.has(profesionalId)){
-                const dataPrestadores = PRESTADORES[profesionalId] || { telefonos: 'N/D', tipoPrestador: 'N/D'}
+                const dataPrestadores = PRESTADORES[profesionalId]?.tipoPrestador || 'N/D'
+                const dataTelefonos = Array.isArray(PRESTADORES[profesionalId]?.telefonos ) ? PRESTADORES[profesionalId].telefonos : []
+                const dataTelefonosPrestadores = { telefonos: dataTelefonos, tipoPrestador: dataPrestadores}
 
                 mapUnico.set(profesionalId, {
                     profesional: profesionalId,
                     direccion: data.lugarDeAtencion || '',
-                    especialidad: data.especialidad || '',
-                    telefonos: dataPrestadores.telefonos,
-                    tipoPrestador: dataPrestadores.tipoPrestador
+                    especialidad: filtros.especialidad || data.especialidad || '',
+                    telefonos: dataTelefonosPrestadores.telefonos,
+                    tipoPrestador: dataTelefonosPrestadores.tipoPrestador
                 })
             }
 
