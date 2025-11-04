@@ -13,9 +13,9 @@ export class AutorizacionesController {
     }
 
 
-    @Get(':id')
-    findOne() {
-        return "una autorizacion";
+    @Get('/:numeroAfiliado')
+    async findByNumeroAfiliado(@Body('numeroAfiliado') numeroAfiliado: string): Promise<Autorizacion[]> {
+        return this.AutorizacionesService.findByNumeroAfiliado(numeroAfiliado);
     }
 
     @Post()

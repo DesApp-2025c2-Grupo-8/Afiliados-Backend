@@ -14,7 +14,7 @@ export class CreateAutorizacionDto {
 
     @IsNotEmpty()
     @IsString()
-    ubicacion: string;
+    ubicacion: object;
 
     @IsOptional()
     @IsString()
@@ -28,5 +28,9 @@ export class CreateAutorizacionDto {
     @IsNumber()
     @IsNotEmpty()
     numeroAfiliado: number;
+
+    @IsNotEmpty()
+    @IsString()
+    medico: string;
 
 }

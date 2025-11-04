@@ -1,4 +1,4 @@
-import { Schema, Prop, SchemaFactory} from '@nestjs/mongoose';
+import { Schema, Prop, SchemaFactory } from '@nestjs/mongoose';
 
 @Schema()
 export class Autorizacion {
@@ -10,27 +10,34 @@ export class Autorizacion {
 
     @Prop({
         required: true,
-        unique: true
     })
     numeroAfiliado: number;
 
     @Prop({
         required: true,
-        unique: true
+        trim: true
     })
     integrante: string;
 
-    @Prop({ required: true })
+    @Prop({
+        required: true,
+        trim: true
+    })
+    medico: string;
+
+    @Prop({ required: true, trim: true })
     especialidad: string;
 
-    @Prop({ required: true })
+    @Prop({ required: false })
     fechaPrevista: Date;
 
     @Prop({ required: true })
-    ubicacion: string;
+    ubicacion: object;
+
+    @Prop({ required: true })
+    partido: string;
 
     @Prop({
-        required: true,
         trim: true,
         default: ''
     })
