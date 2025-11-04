@@ -7,6 +7,10 @@ export class CreateRecetaDto {
     // @IsOptional()
     // orden?: number;
 
+    @IsString()
+    @IsOptional()
+    estado?: string;
+
     @IsDate()
     @IsNotEmpty()
     @Type(() => Date)
