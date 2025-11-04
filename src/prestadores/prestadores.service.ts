@@ -17,11 +17,13 @@ export class PrestadoresService {
     }
 
     async findByPartido(partidoBuscado: string): Promise<Prestador[]> {
-        return this.prestadorModel.find({ partido: partidoBuscado }).exec();
+        return this.prestadorModel.find({ 'ubicacion.partido': partidoBuscado }).exec();
     }
 
-    async findByUbicacion(ubicacionBuscada: string): Promise<Prestador[]> {
-        return this.prestadorModel.find({ ubicacion: ubicacionBuscada }).exec();
+    async findByDireccion(direccionBuscada: string): Promise<Prestador[]> {
+        //las direcciones tienen espacios lastimosamente, asi que hay q usar %20 en lugar de espacios en la URL :)
+        //ejemplo: http://localhost:3000/prestadores/direccion/Av.%20Gaona%209900
+        return this.prestadorModel.find({ 'ubicacion.direccion': { $regex: direccionBuscada, $options: 'i' } }).exec();
     }  
 
     async findById(id: string): Promise<Prestador | null> {

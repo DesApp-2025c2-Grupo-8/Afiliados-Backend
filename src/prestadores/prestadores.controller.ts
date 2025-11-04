@@ -43,15 +43,15 @@ export class PrestadoresController {
     async findByEspecialidad(@Param('especialidad') especialidad: string): Promise<Prestador[]> {
         return this.prestadoresService.findByEspecialidad(especialidad);
     }
-
+    //partido esta dentro de un objeto literal dentro del array ubicacion
     @Get('partido/:partido')
     async findByPartido(@Param('partido') partido: string): Promise<Prestador[]> {
         return this.prestadoresService.findByPartido(partido);
     }
 
-    @Get('ubicacion/:ubicacion')
-    async findByUbicacion(@Param('ubicacion') ubicacion: string): Promise<Prestador[]> {
-        return this.prestadoresService.findByUbicacion(ubicacion);
+    @Get('direccion/:direccion')
+    async findByDireccion(@Param('direccion') direccion: string): Promise<Prestador[]> {
+        return this.prestadoresService.findByDireccion(direccion);
     }
 
     @Post()
