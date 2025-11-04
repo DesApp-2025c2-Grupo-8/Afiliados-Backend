@@ -18,7 +18,7 @@ export class CreateAutorizacionDto {
 
     @IsOptional()
     @IsString()
-    observaciones?: string;
+    observacion?: string;
 
     @IsDate()
     @IsNotEmpty()

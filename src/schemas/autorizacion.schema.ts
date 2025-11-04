@@ -1,5 +1,18 @@
 import { Schema, Prop, SchemaFactory } from '@nestjs/mongoose';
 
+export type AutorizacionDocument = Autorizacion & Document;
+
+@Schema({ _id: false })
+export class Ubicacion {
+    @Prop({ required: true })
+    partido: string;
+
+    @Prop({ required: true })
+    direccion: string;
+}
+
+const UbicacionSchema = SchemaFactory.createForClass(Ubicacion);
+
 @Schema()
 export class Autorizacion {
     @Prop({
@@ -31,11 +44,14 @@ export class Autorizacion {
     @Prop({ required: false })
     fechaPrevista: Date;
 
-    @Prop({ required: true })
-    ubicacion: object;
+    @Prop({ 
+        required: true,
+        type: [UbicacionSchema] 
+    })
+    ubicacion: Ubicacion[];
 
-    @Prop({ required: true })
-    partido: string;
+    @Prop()
+    partido?: string;
 
     @Prop({
         trim: true,

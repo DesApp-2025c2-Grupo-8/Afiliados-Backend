@@ -7,7 +7,7 @@ const autorizaciones = [
     medico: 'Dra. Ana López',
     especialidad: 'Clínica Médica',
     ubicacion: { partido: 'Ituzaingó', direccion: 'Ituzaingó 456' },
-    observaciones: 'Control general',
+    observacion: 'Control general',
     estado: 'aceptada',
   },
   {
@@ -18,7 +18,7 @@ const autorizaciones = [
     medico: 'Dr. Juan Perez',
     especialidad: 'Cardiología',
     ubicacion: { partido: 'Morón', direccion: 'Morón 123' },
-    observaciones: 'Chequeo inicial',
+    observacion: 'Chequeo inicial',
     estado: 'pendiente',
   },
   {
@@ -29,7 +29,7 @@ const autorizaciones = [
     medico: 'Dr. Carlos Gómez',
     especialidad: 'Pediatría',
     ubicacion: { partido: 'Castelar', direccion: 'Castelar 789' },
-    observaciones: 'Control de crecimiento',
+    observacion: 'Control de crecimiento',
     estado: 'aceptada',
   },
   {
@@ -40,7 +40,7 @@ const autorizaciones = [
     medico: 'Dra. Mariana Díaz',
     especialidad: 'Dermatología',
     ubicacion: { partido: 'Haedo', direccion: 'Haedo 234' },
-    observaciones: 'Consulta por alergia',
+    observacion: 'Consulta por alergia',
     estado: 'observacion',
   },
   {
@@ -51,7 +51,7 @@ const autorizaciones = [
     medico: 'Dr. Juan Perez',
     especialidad: 'Cardiología',
     ubicacion: { partido: 'Morón', direccion: 'Morón 123' },
-    observaciones: 'Chequeo anual',
+    observacion: 'Chequeo anual',
     estado: 'aceptada',
   },
   {
@@ -62,7 +62,7 @@ const autorizaciones = [
     medico: 'Dra. Laura Fernández',
     especialidad: 'Ginecología',
     ubicacion: { partido: 'Ramos Mejía', direccion: 'Ramos 456' },
-    observaciones: 'Control ginecológico',
+    observacion: 'Control ginecológico',
     estado: 'pendiente',
   },
   {
@@ -73,7 +73,7 @@ const autorizaciones = [
     medico: 'Dr. Ricardo Sosa',
     especialidad: 'Oftalmología',
     ubicacion: { partido: 'Castelar', direccion: 'Castelar 555' },
-    observaciones: 'Consulta por visión',
+    observacion: 'Consulta por visión',
     estado: 'aceptada',
   },
   {
@@ -84,7 +84,7 @@ const autorizaciones = [
     medico: 'Dr. Carlos Gómez',
     especialidad: 'Pediatría',
     ubicacion: { partido: 'Haedo', direccion: 'Haedo 789' },
-    observaciones: 'Vacunación anual',
+    observacion: 'Vacunación anual',
     estado: 'observacion',
   },
   {
@@ -95,7 +95,7 @@ const autorizaciones = [
     medico: 'Dra. Mariana Díaz',
     especialidad: 'Dermatología',
     ubicacion: { partido: 'Morón', direccion: 'Morón 456' },
-    observaciones: 'Revisión de piel',
+    observacion: 'Revisión de piel',
     estado: 'rechazada',
   },
   {
@@ -106,7 +106,7 @@ const autorizaciones = [
     medico: 'Dr. Juan Perez',
     especialidad: 'Cardiología',
     ubicacion: { partido: 'Haedo', direccion: 'Haedo 321' },
-    observaciones: 'Control post-operatorio',
+    observacion: 'Control post-operatorio',
     estado: 'aceptada',
   },
   {
@@ -117,7 +117,7 @@ const autorizaciones = [
     medico: 'Dra. Laura Fernández',
     especialidad: 'Ginecología',
     ubicacion: { partido: 'Morón', direccion: 'Morón 987' },
-    observaciones: 'Estudio de laboratorio',
+    observacion: 'Estudio de laboratorio',
     estado: 'observacion',
   },
   {
@@ -128,7 +128,7 @@ const autorizaciones = [
     medico: 'Dra. Ana López',
     especialidad: 'Clínica Médica',
     ubicacion: { partido: 'Ituzaingó', direccion: 'Ituzaingó 456' },
-    observaciones: 'Chequeo general',
+    observacion: 'Chequeo general',
     estado: 'aceptada',
   },
   {
@@ -139,7 +139,7 @@ const autorizaciones = [
     medico: 'Dr. Ricardo Sosa',
     especialidad: 'Oftalmología',
     ubicacion: { partido: 'Castelar', direccion: 'Castelar 555' },
-    observaciones: 'Control de vista',
+    observacion: 'Control de vista',
     estado: 'pendiente',
   },
   {
@@ -150,7 +150,7 @@ const autorizaciones = [
     medico: 'Dr. Carlos Gómez',
     especialidad: 'Pediatría',
     ubicacion: { partido: 'Haedo', direccion: 'Haedo 789' },
-    observaciones: 'Chequeo escolar',
+    observacion: 'Chequeo escolar',
     estado: 'aceptada',
   },
   {
@@ -161,7 +161,7 @@ const autorizaciones = [
     medico: 'Dra. Mariana Díaz',
     especialidad: 'Dermatología',
     ubicacion: { partido: 'Ramos Mejía', direccion: 'Ramos 456' },
-    observaciones: 'Tratamiento cutáneo',
+    observacion: 'Tratamiento cutáneo',
     estado: 'observacion',
   },
   {
@@ -172,7 +172,7 @@ const autorizaciones = [
     medico: 'Dr. Juan Perez',
     especialidad: 'Cardiología',
     ubicacion: { partido: 'Morón', direccion: 'Morón 123' },
-    observaciones: 'Chequeo anual',
+    observacion: 'Chequeo anual',
     estado: 'aceptada',
   },
   {
@@ -183,7 +183,7 @@ const autorizaciones = [
     medico: 'Dra. Laura Fernández',
     especialidad: 'Ginecología',
     ubicacion: { partido: 'Castelar', direccion: 'Castelar 555' },
-    observaciones: 'Control rutinario',
+    observacion: 'Control rutinario',
     estado: 'rechazada',
   },
   {
@@ -194,7 +194,7 @@ const autorizaciones = [
     medico: 'Dra. Ana López',
     especialidad: 'Clínica Médica',
     ubicacion: { partido: 'Ituzaingó', direccion: 'Ituzaingó 456' },
-    observaciones: 'Control de presión',
+    observacion: 'Control de presión',
     estado: 'aceptada',
   },
   {
@@ -205,7 +205,7 @@ const autorizaciones = [
     medico: 'Dr. Juan Perez',
     especialidad: 'Cardiología',
     ubicacion: { partido: 'Haedo', direccion: 'Haedo 321' },
-    observaciones: 'Chequeo final del año',
+    observacion: 'Chequeo final del año',
     estado: 'pendiente',
   },
   {
@@ -216,7 +216,7 @@ const autorizaciones = [
     medico: 'Dra. Laura Fernández',
     especialidad: 'Ginecología',
     ubicacion: { partido: 'Morón', direccion: 'Morón 987' },
-    observaciones: 'Estudio complementario',
+    observacion: 'Estudio complementario',
     estado: 'aceptada',
   },
 ];
