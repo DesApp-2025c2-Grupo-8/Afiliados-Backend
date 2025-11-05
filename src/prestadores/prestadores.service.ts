@@ -44,7 +44,6 @@ export class PrestadoresService {
     }
 
     async insertMany(prestadoresACrear: CreatePrestadorDto[]): Promise<Prestador[]> {
-        console.log('Insertando prestadores en la base de datos...');
         return this.prestadorModel.insertMany(prestadoresACrear).then((docs) => docs.map((d) => d.toObject()));
     }
 
