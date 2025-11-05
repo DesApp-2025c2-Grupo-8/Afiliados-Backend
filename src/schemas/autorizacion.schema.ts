@@ -43,7 +43,7 @@ export class Autorizacion {
         trim: true,
         default: ''
     })
-    observacion: string
+    observaciones: string
 
     @Prop({
         trim: true,
