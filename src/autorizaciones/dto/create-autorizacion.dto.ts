@@ -21,7 +21,7 @@ export class CreateAutorizacionDto {
     observacion?: string;
 
     @IsDate()
-    @IsNotEmpty()
+    @IsOptional()
     @Type(() => Date)
     fechaPrevista?: Date;
 

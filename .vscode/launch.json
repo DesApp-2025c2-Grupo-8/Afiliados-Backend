@@ -1,0 +1,41 @@
+// .vscode/launch.json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Program (node)",
+            "type": "pwa-node",
+            "request": "launch",
+            // point this to your entry file (common names: src/index.js, app.js, server.js)
+            "program": "${workspaceFolder}/src/index.js",
+            "cwd": "${workspaceFolder}",
+            "runtimeExecutable": "node",
+            "envFile": "${workspaceFolder}/.env",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "port": 9229
+        },
+        {
+            "name": "Run npm script (dev)",
+            "type": "pwa-node",
+            "request": "launch",
+            // runs `npm run dev` - change to `start` if your script is different
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run", "start:dev"],
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Attach to Process",
+            "type": "pwa-node",
+            "request": "attach",
+            // attach to a Node process started with --inspect or --inspect-brk
+            "port": 9229,
+            "restart": true,
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "${workspaceFolder}",
+            "skipFiles": ["<node_internals>/**"]
+        }
+    ]
+}
