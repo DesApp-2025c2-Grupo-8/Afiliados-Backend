@@ -1,0 +1,57 @@
+import { Injectable } from '@nestjs/common';
+import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
+import { Reintegro } from 'src/schemas/reintegro.schema';
+import { CreateReintegroDto } from './dto/create-reintegro.dto';
+
+@Injectable()
+export class ReintegrosService {
+    constructor(@InjectModel(Reintegro.name) private reintegroModel: Model<Reintegro>) {}
+
+    async findAll(): Promise<Reintegro[]> {
+        return this.reintegroModel.find().exec();
+    }
+
+    async findByNumeroAfiliado(nroABuscar: string): Promise<Reintegro[]> {
+        const afiliadoComun = nroABuscar.slice(0,7);
+        const esTitular = nroABuscar.slice(7,9) === '01';
+
+        if (esTitular) {
+            const numeroAfiliadoComun = parseInt(afiliadoComun);
+            const rangoInferior = numeroAfiliadoComun * 100;        // numeroAfiliado + 00
+            const rangoSuperior = numeroAfiliadoComun * 100 + 99;   // numeroAfiliado + 99
+
+            return this.reintegroModel.find({numeroAfiliado: { $gte: rangoInferior, $lte: rangoSuperior } }).exec();
+        } else {
+            return this.reintegroModel.find({numeroAfiliado: parseInt(nroABuscar)}).exec();
+        }
+    }
+
+    async create(reintegroACrear: CreateReintegroDto): Promise<Reintegro> {
+        const afiliado = reintegroACrear.numeroAfiliado;
+        const prefijoReintegro = 40;
+        const ultimoReintegro = await this.reintegroModel
+            .findOne({ numeroAfiliado: afiliado})
+            .sort({ numeroOrden: -1 })
+            .exec();
+
+        const nuevoNumeroOrden = ultimoReintegro 
+            ? ultimoReintegro.numeroOrden + 1 
+            : reintegroACrear.numeroAfiliado * 1000000 + prefijoReintegro * 10000 + 1; 
+        
+        const reintegroCreado = new this.reintegroModel({
+            ...reintegroACrear,
+            numeroOrden: nuevoNumeroOrden,
+        });
+        return reintegroCreado.save();
+    }
+
+    async insertMany(reintegros: CreateReintegroDto[]): Promise<Reintegro[]> {
+        return this.reintegroModel.insertMany(reintegros).then((docs) => docs.map((d) => d.toObject()));
+    }
+
+    async deleteAll(): Promise<void> {
+        await this.reintegroModel.deleteMany({});
+    }
+
+}
