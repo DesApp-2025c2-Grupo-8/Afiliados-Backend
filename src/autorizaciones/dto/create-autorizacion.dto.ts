@@ -14,7 +14,11 @@ export class CreateAutorizacionDto {
 
     @IsNotEmpty()
     @IsString()
-    ubicacion: object;
+    partido: string;
+
+    @IsNotEmpty()
+    @IsString()
+    direccion: string
 
     @IsOptional()
     @IsString()
