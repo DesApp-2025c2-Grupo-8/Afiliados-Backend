@@ -22,7 +22,7 @@ export class CreateAutorizacionDto {
 
     @IsOptional()
     @IsString()
-    observacion?: string;
+    observaciones?: string;
 
     @IsDate()
     @IsOptional()
