@@ -1,4 +1,4 @@
-import { Controller, Post, Get, Body, Param, Patch, HttpCode, HttpStatus, BadRequestException, NotFoundException  } from "@nestjs/common";
+import { Controller, Post, Get, Body, Param, Patch, Delete  } from "@nestjs/common";
 import { TurnosService } from "./turnos.service"
 import { CreateTurnoDto } from "./dto/create-turno.dto"
 import { FilterTurnoDto } from "./dto/filter-turno.dto"
@@ -11,41 +11,36 @@ export class TurnosController {
 
     @Get('opciones')
     async getOpciones(){
-        return this.turnosService.getOpciones()
+        return this.turnosService.obtenerOpciones()
     }
 
     @Post('buscar')
-    @HttpCode(HttpStatus.OK)
-    async buscarTurnos(@Body() filtros: FilterTurnoDto) {
-        return this.turnosService.findDisponible(filtros)
+    async buscarTurnos(@Body() body) {
+        return this.turnosService.buscarTurnos(body)
     }
 
     @Post('confirmar')
-    async confirmarTurno(@Body() createTurnoDto: CreateTurnoDto){
-        return this.turnosService.confirmarYFormatear(createTurnoDto)
+    async confirmarTurno(@Body() turnoDto){
+        return this.turnosService.confirmarTurno(turnoDto)
     }
 
-    @Get('consulta/:afiliadoId')
-    async findByAfiliadoId(@Param('afiliadoId') afiliadoId: number): Promise<Turno[]>{
-        const filtro: any = { numeroAfiliado: afiliadoId}
-
-        const turnos = await this.turnosService.findAll(filtro);
-
-        if(!turnos || turnos.length===0){
-            throw new NotFoundException('No se encontraron turnos para el afiliado.')
-        }
-
-        return turnos;
+    @Get('consulta/:numeroAfiliado')
+    async findByAfiliadoId(@Param('numeroAfiliado') numeroAfiliado: number){
+        return this.turnosService.consultarTurnosPorAfiliado(numeroAfiliado)
     }
 
     @Patch('cancelar/:id')
-    @HttpCode(HttpStatus.OK)
     async cancelarTurno(@Param('id') id: string){
-        const turnoEliminado = await this.turnosService.delete(id)
+        return this.turnosService.cancelarTurno(id);
+    }
 
-        return {
-            _id: (turnoEliminado as any)._id,
-            message: "Turno cancelado correctamente"
-        }
+    @Delete()
+    async deleteAll(){
+        return this.turnosService.deleteAll()
+    }
+
+    @Post('insertMany')
+    async insertMany(@Body() turnos: any[]){
+        return this.turnosService.insertMany(turnos)
     }
 }

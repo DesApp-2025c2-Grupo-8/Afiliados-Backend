@@ -2,11 +2,22 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
 @Schema()
+export class Ubicacion{
+    @Prop({ required: true })
+    partido: string
+
+    @Prop( { required: true })
+    direccion: string
+}
+
+const UbicacionSchema = SchemaFactory.createForClass(Ubicacion)
+
+@Schema({ timestamps: true})
 export class Turno extends Document {
     @Prop({ required: true })
     numeroAfiliado: number;
 
-    @Prop({ required: true, unique: true, index: true })
+    @Prop()
     numeroOrden: number
 
     @Prop({ required: true })
@@ -18,8 +29,8 @@ export class Turno extends Document {
     @Prop()
     medico?: string;
 
-    @Prop()
-    lugarDeAtencion?: string;
+    @Prop({ type: [UbicacionSchema] })
+    lugarDeAtencion?: Ubicacion[];
 
     @Prop({ required: true })
     fecha: string;
@@ -29,3 +40,4 @@ export class Turno extends Document {
 }
 
 export const TurnoSchema = SchemaFactory.createForClass(Turno)
+export type TurnoDocument = Turno & Document

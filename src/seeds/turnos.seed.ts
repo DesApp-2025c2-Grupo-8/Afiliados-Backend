@@ -15,14 +15,13 @@ export async function seedTurnos(turnosService: TurnosService): Promise<void>{
         
         return {
             ...turno,
-            numeroOrden: numeroOrden
+            numeroOrden,
         }
     })
     
     await turnosService.deleteAll()
 
     await turnosService.insertMany(turnosConOrden)
-    
 
     console.log('turnos creados: ', turnosConOrden.length)
 }
