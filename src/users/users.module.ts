@@ -14,5 +14,6 @@ import { AfiliadosModule } from 'src/afiliados/afiliados.module';
     ],
   controllers: [UsersController],
   providers: [UsersService],
+  exports: [UsersService],
 })
 export class UsersModule {}
