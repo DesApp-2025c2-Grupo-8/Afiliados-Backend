@@ -1,7 +1,6 @@
 import { Controller, Post, Get, Body, Param, Patch, Delete  } from "@nestjs/common";
 import { TurnosService } from "./turnos.service"
 import { CreateTurnoDto } from "./dto/create-turno.dto"
-import { FilterTurnoDto } from "./dto/filter-turno.dto"
 import { Turno } from "../schemas/turno.schema"
 
 

@@ -6,7 +6,12 @@ const turnos = [
         hora: "08:30",
         especialidad: "Dermatólogo",
         medico: "Dra. Lena",
-        lugarDeAtencion: "Sanatorio"
+        lugarDeAtencion: [
+            {
+                partido: "Lomas de Zamora",
+                direccion: "Av. Hipólito Yrigoyen 8500"
+            }
+        ]
     },
     {
         numeroAfiliado: 663459903,
@@ -15,7 +20,12 @@ const turnos = [
         hora: "15:30",
         especialidad: "Traumatólogo",
         medico: "Dr. Zene",
-        lugarDeAtencion: "Consultorio"
+        lugarDeAtencion: [
+            {
+                partido: "Lomas de Zamora",
+                direccion: "Av. Hipólito Yrigoyen 1234"
+            }
+        ]
     },
     {
         numeroAfiliado: 663459902,
@@ -24,7 +34,12 @@ const turnos = [
         hora: "10:30",
         especialidad: "Traumatólogo",
         medico: "Dr. Zene",
-        lugarDeAtencion: "Consultorio"
+        lugarDeAtencion: [
+            {
+                partido: "Morón",
+                direccion: "Morón 123"
+            }
+        ]
     },
     {
         numeroAfiliado: 663459904,
@@ -33,7 +48,12 @@ const turnos = [
         hora: "08:30",
         especialidad: "Clínico",
         medico: "Dra. Lena",
-        lugarDeAtencion: "Centro Médico"
+        lugarDeAtencion: [
+            {
+                partido: "Morón",
+                direccion: "Morón 123"
+            }
+        ]
     },
 
 ]
