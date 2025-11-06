@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, UnauthorizedException } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { Model } from 'mongoose';
@@ -33,7 +33,9 @@ export class UsersService {
     return this.userModel.findOne({ numeroDocumento: numeroDocumento }).exec();
   }
 
-
+  async findByTipoYNumeroDocumento(tipoDocumento: string, numeroDocumento: number): Promise<User | null> {
+    return this.userModel.findOne({ tipoDocumento, numeroDocumento }).exec();
+  }
 
   async findByTipoYNumeroDocumentoYpassword(
     tipoDocumento: string,
@@ -66,11 +68,11 @@ export class UsersService {
     const afiliadoExistente = await this.afiliadosService.findByTipoYNumeroDocumento(userACrear.tipoDocumento, userACrear.numeroDocumento);
 
     if (!afiliadoExistente) {
-      throw new Error('No existe un afiliado con el tipo y número de documento proporcionados.');
+      throw new UnauthorizedException('No existe un afiliado con el tipo y número de documento proporcionados.');
     }
 
     if (new Date(afiliadoExistente.fechaNacimiento).getTime() !== new Date(userACrear.fechaNacimiento).getTime()) {
-      throw new Error('La fecha de nacimiento no coincide con la del afiliado existente.');
+      throw new UnauthorizedException('La fecha de nacimiento no coincide con la del afiliado existente.');
     }
 
     const hashPassword = await bcrypt.hash(userACrear.password, 10);
