@@ -14,7 +14,7 @@ const turnos = [
         ]
     },
     {
-        numeroAfiliado: 663459903,
+        numeroAfiliado: 663459904,
         integrante: "Santiago Varela",
         fecha: "2025-10-29",
         hora: "15:30",
@@ -28,7 +28,7 @@ const turnos = [
         ]
     },
     {
-        numeroAfiliado: 663459902,
+        numeroAfiliado: 663459903,
         integrante: "Tomás Varela",
         fecha: "2025-11-05",
         hora: "10:30",
@@ -57,3 +57,5 @@ const turnos = [
     },
 
 ]
+
+module.exports = turnos;
