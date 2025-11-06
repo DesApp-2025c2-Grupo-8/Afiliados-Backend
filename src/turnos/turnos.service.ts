@@ -103,8 +103,9 @@ export class TurnosService {
                 disponibilidad: disponibilidadFinal 
             }
         }).filter(p => p.disponibilidad.length > 0); 
+        
         if (mapResultado.length === 0) {
-             throw new NotFoundException('No se encontraron turnos disponibles con los criterios de búsqueda.');
+             return [];
         }
 
         return mapResultado
