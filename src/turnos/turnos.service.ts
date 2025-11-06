@@ -6,7 +6,26 @@ import { CreateTurnoDto } from "./dto/create-turno.dto";
 import { Ubicacion } from "../schemas/turno.schema";
 import { PrestadoresService } from "src/prestadores/prestadores.service";
 
-const PREFIJO_TURNO = 50; 
+const PREFIJO_TURNO = 50;
+
+const generarDisponibilidadPrueba = () => {
+    const hoy = new Date();
+    const mañana = new Date(hoy);
+    mañana.setDate(hoy.getDate() + 1);
+    
+    const formatDate = (date: Date) => date.toISOString().split('T')[0];
+
+    return [
+        {
+            fecha: formatDate(hoy),
+            hora: ["08:00", "09:30", "11:00", "14:00", "15:30"]
+        },
+        {
+            fecha: formatDate(mañana),
+            hora: ["08:00", "09:30", "11:00", "14:00", "15:30"]
+        },
+    ];
+};
 
 @Injectable()
 export class TurnosService {
@@ -43,21 +62,65 @@ export class TurnosService {
             return especialidadPrestador && medicoPrestador && lugarPrestador;
         })
 
-        const hoy = new Date()
+        const condicionBusqueda: any = { especialidad: especialidad };
+        if (medico) {
+            condicionBusqueda.medico = medico;
+        }
+        
+        const turnosOcupados = await this.turnoModel.find(condicionBusqueda, 'medico fecha hora').lean().exec();
+        
+        const obtenerDisponibilidadReal = (nombreMedico: string) => {
+            const disponibilidadBase = generarDisponibilidadPrueba()
+            
+            const ocupadosMedico = turnosOcupados.filter(t => t.medico === nombreMedico)
 
-        const mapResultado = filtrados.map((p) => ({
-            profesional: p.nombre,
-            especialidad: p.especialidad,
-            direccion: p.ubicacion,
-            tipoPrestador: p.tipo,
-            telefonos: p.telefono,
-            primerTurnoLibre: hoy
-        }))
+            return disponibilidadBase.map(diaBase => {
+                const fechaBase = diaBase.fecha;
+                const horasOcupadasEnDia = ocupadosMedico
+                    .filter(t => t.fecha === fechaBase)
+                    .map(t => t.hora)
+
+                const horasDisponibles = diaBase.hora.filter(
+                    hora => !horasOcupadasEnDia.includes(hora)
+                )
+                
+                return {
+                    fecha: fechaBase,
+                    hora: horasDisponibles
+                };
+            }).filter(dia => dia.hora.length > 0)
+        }
+
+        const mapResultado = filtrados.map((p) => {
+            const disponibilidadFinal = obtenerDisponibilidadReal(p.nombre)
+
+            return {
+                profesional: p.nombre,
+                especialidad: p.especialidad,
+                direccion: p.ubicacion,
+                tipoPrestador: p.tipo,
+                telefonos: p.telefono,
+                disponibilidad: disponibilidadFinal 
+            }
+        }).filter(p => p.disponibilidad.length > 0); 
+        if (mapResultado.length === 0) {
+             throw new NotFoundException('No se encontraron turnos disponibles con los criterios de búsqueda.');
+        }
 
         return mapResultado
     }
 
     async confirmarTurno(turnoDto: CreateTurnoDto){
+        const turnoExistente = await this.turnoModel.findOne({
+            medico: turnoDto.medico,
+            fecha: turnoDto.fecha,
+            hora: turnoDto.hora
+        }).exec();
+
+        if (turnoExistente) {
+             throw new InternalServerErrorException('El turno seleccionado ya fue solicitado.');
+        }
+        
         const afiliado = turnoDto.numeroAfiliado;
 
         const ultimoTurno = await this.turnoModel
