@@ -31,4 +31,28 @@ export class AuthService {
       user,
     };
   }
+
+  async registro(email:string ,tipoDocumento: string, numeroDocumento: number, password: string, fechaNacimiento: Date, telefono?: number, direccion?: string) {
+    const existingUser = await this.usersService.findByTipoYNumeroDocumentoYpassword(
+      tipoDocumento,
+      numeroDocumento,
+      password,
+    );
+    if (existingUser) throw new UnauthorizedException('El usuario ya existe');
+
+    const newUser = await this.usersService.create({
+      email,
+      tipoDocumento,
+      numeroDocumento,
+      password,
+      fechaNacimiento,
+      telefono,
+      direccion,
+    });
+
+    return {
+      access_token: this.jwtService.sign({ sub: newUser.numeroAfiliado }),
+      user: newUser,
+    };
+  }
 }

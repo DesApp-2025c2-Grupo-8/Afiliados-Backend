@@ -35,24 +35,28 @@ export class UsersService {
 
 
 
-  async findByTipoYNumeroDocumentoYpassword(tipoDocumento: string, numeroDocumento: number, password: string): Promise<User | null> {
-    if (!tipoDocumento || numeroDocumento === null || numeroDocumento === undefined || !password) {
+  async findByTipoYNumeroDocumentoYpassword(
+    tipoDocumento: string,
+    numeroDocumento: number,
+    password: string,
+  ): Promise<User | null> {
+    if (!tipoDocumento || numeroDocumento == null || !password) {
       return null;
     }
 
     const user = await this.userModel.findOne({ tipoDocumento, numeroDocumento }).exec();
     if (!user) return null;
-
     const match = await bcrypt.compare(password, user.password || '');
     if (!match) return null;
 
-    const safeUser: any = { ...user.toObject() };
-    delete safeUser.password;
-    delete safeUser.__v;
-    delete safeUser._id;
+    const safeUser = user.toObject();
+    delete (safeUser as any).password;
+    delete (safeUser as any).__v;
+    delete (safeUser as any)._id;
 
-    return match ? safeUser : null;
+    return safeUser;
   }
+
 
 
 

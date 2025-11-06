@@ -1,7 +1,7 @@
 const autorizaciones = [
   {
     numeroAutorizacion: 126535701600001,
-    numeroAfiliado: 126535701,
+    numeroAfiliado: 663459901,
     fechaDeCarga: '2015-03-03',
     integrante: 'Valentín Varela',
     medico: 'Dra. Ana López',
