@@ -50,6 +50,8 @@ export class AuthService {
       direccion,
     });
 
+    if( !newUser) throw new UnauthorizedException('No se pudo crear el usuario');
+
     return {
       access_token: this.jwtService.sign({ sub: newUser.numeroAfiliado }),
       user: newUser,
