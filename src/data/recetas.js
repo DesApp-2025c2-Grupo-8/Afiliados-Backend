@@ -1,5 +1,6 @@
 const recetas = [
   {
+    estado: 'Aceptada',
     numeroOrden: 126535701200001,
     numeroAfiliado: 126535701,
     fechaDeCarga: '2015-05-03',
@@ -10,6 +11,7 @@ const recetas = [
     observaciones: 'Usar solo en crisis'
   },
   {
+    estado: 'Pendiente',
     numeroOrden: 663459902200001,
     numeroAfiliado: 663459902,
     fechaDeCarga: '2015-03-14',
@@ -20,6 +22,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Rechazada',
     numeroOrden: 938557201200001,
     numeroAfiliado: 938557201,
     fechaDeCarga: '2016-06-22',
@@ -30,6 +33,7 @@ const recetas = [
     observaciones: 'Agitar antes de usar'
   },
   {
+    estado: 'Aceptada',
     numeroOrden: 663459901200001,
     numeroAfiliado: 663459901,
     fechaDeCarga: '2017-01-09',
@@ -40,6 +44,7 @@ const recetas = [
     observaciones: 'Tomar con comida'
   },
   {
+    estado: 'Pendiente',
     numeroOrden: 776592801200001,
     numeroAfiliado: 776592801,
     fechaDeCarga: '2017-11-30',
@@ -50,6 +55,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Aceptada',
     numeroOrden: 663459903200001,
     numeroAfiliado: 663459903,
     fechaDeCarga: '2018-04-18',
@@ -60,6 +66,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Rechazada',
     numeroOrden: 228510301200001,
     numeroAfiliado: 228510301,
     fechaDeCarga: '2018-09-25',
@@ -70,6 +77,7 @@ const recetas = [
     observaciones: 'Evitar exposición solar'
   },
   {
+    estado: 'Pendiente',
     numeroOrden: 663459904200001,
     numeroAfiliado: 663459904,
     fechaDeCarga: '2019-02-03',
@@ -80,6 +88,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Aceptada',
     numeroOrden: 663459902200002,
     numeroAfiliado: 663459902,
     fechaDeCarga: '2019-07-19',
@@ -90,6 +99,7 @@ const recetas = [
     observaciones: 'Usar solo en crisis'
   },
   {
+    estado: 'Rechazada',
     numeroOrden: 938557201200002,
     numeroAfiliado: 938557201,
     fechaDeCarga: '2020-01-11',
@@ -100,6 +110,7 @@ const recetas = [
     observaciones: 'Evitar exposición solar'
   },
   {
+    estado: 'Aceptada',
     numeroOrden: 663459901200002,
     numeroAfiliado: 663459901,
     fechaDeCarga: '2020-06-28',
@@ -110,6 +121,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Pendiente',
     numeroOrden: 776592801200002,
     numeroAfiliado: 776592801,
     fechaDeCarga: '2020-12-15',
@@ -120,6 +132,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Aceptada',
     numeroOrden: 663459903200002,
     numeroAfiliado: 663459903,
     fechaDeCarga: '2021-03-03',
@@ -130,6 +143,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Rechazada',
     numeroOrden: 228510301200002,
     numeroAfiliado: 228510301,
     fechaDeCarga: '2021-08-21',
@@ -140,6 +154,7 @@ const recetas = [
     observaciones: 'No tomar con alcohol'
   },
   {
+    estado: 'Pendiente',
     numeroOrden: 663459904200002,
     numeroAfiliado: 663459904,
     fechaDeCarga: '2022-01-05',
@@ -150,6 +165,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Aceptada',
     numeroOrden: 663459902200003,
     numeroAfiliado: 663459902,
     fechaDeCarga: '2022-06-17',
@@ -160,6 +176,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Rechazada',
     numeroOrden: 938557201200003,
     numeroAfiliado: 938557201,
     fechaDeCarga: '2022-11-30',
@@ -170,6 +187,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Aceptada',
     numeroOrden: 663459901200003,
     numeroAfiliado: 663459901,
     fechaDeCarga: '2023-03-12',
@@ -180,6 +198,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Pendiente',
     numeroOrden: 776592801200003,
     numeroAfiliado: 776592801,
     fechaDeCarga: '2023-07-08',
@@ -190,6 +209,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Aceptada',
     numeroOrden: 663459903200003,
     numeroAfiliado: 663459903,
     fechaDeCarga: '2023-11-01',
@@ -200,6 +220,7 @@ const recetas = [
     observaciones: 'Usar solo en crisis'
   },
   {
+    estado: 'Rechazada',
     numeroOrden: 228510301200003,
     numeroAfiliado: 228510301,
     fechaDeCarga: '2024-01-15',
@@ -210,6 +231,7 @@ const recetas = [
     observaciones: 'Tomar con comida'
   },
   {
+    estado: 'Pendiente',
     numeroOrden: 663459904200003,
     numeroAfiliado: 663459904,
     fechaDeCarga: '2024-03-22',
@@ -220,6 +242,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Aceptada',
     numeroOrden: 663459902200004,
     numeroAfiliado: 663459902,
     fechaDeCarga: '2024-05-10',
@@ -230,6 +253,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Rechazada',
     numeroOrden: 938557201200004,
     numeroAfiliado: 938557201,
     fechaDeCarga: '2024-07-01',
@@ -240,6 +264,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Pendiente',
     numeroOrden: 663459901200004,
     numeroAfiliado: 663459901,
     fechaDeCarga: '2024-08-18',
@@ -250,6 +275,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Aceptada',
     numeroOrden: 776592801200004,
     numeroAfiliado: 776592801,
     fechaDeCarga: '2024-10-03',
@@ -260,6 +286,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Rechazada',
     numeroOrden: 663459903200004,
     numeroAfiliado: 663459903,
     fechaDeCarga: '2024-11-11',
@@ -270,6 +297,7 @@ const recetas = [
     observaciones: 'Agitar antes de usar'
   },
   {
+    estado: 'Pendiente',
     numeroOrden: 228510301200004,
     numeroAfiliado: 228510301,
     fechaDeCarga: '2025-01-02',
@@ -280,6 +308,7 @@ const recetas = [
     observaciones: 'Usar solo en crisis'
   },
   {
+    estado: 'Aceptada',
     numeroOrden: 663459904200004,
     numeroAfiliado: 663459904,
     fechaDeCarga: '2025-01-20',
@@ -290,6 +319,7 @@ const recetas = [
     observaciones: 'Tomar con comida'
   },
   {
+    estado: 'Rechazada',
     numeroOrden: 663459902200005,
     numeroAfiliado: 663459902,
     fechaDeCarga: '2025-02-05',
@@ -300,6 +330,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Pendiente',
     numeroOrden: 938557201200005,
     numeroAfiliado: 938557201,
     fechaDeCarga: '2025-02-18',
@@ -310,6 +341,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Aceptada',
     numeroOrden: 663459901200005,
     numeroAfiliado: 663459901,
     fechaDeCarga: '2025-03-01',
@@ -320,6 +352,7 @@ const recetas = [
     observaciones: 'Evitar exposición solar'
   },
   {
+    estado: 'Rechazada',
     numeroOrden: 776592801200005,
     numeroAfiliado: 776592801,
     fechaDeCarga: '2025-03-15',
@@ -330,6 +363,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Pendiente',
     numeroOrden: 663459903200005,
     numeroAfiliado: 663459903,
     fechaDeCarga: '2025-03-28',
@@ -340,6 +374,7 @@ const recetas = [
     observaciones: 'Evitar exposición solar'
   },
   {
+    estado: 'Aceptada',
     numeroOrden: 228510301200005,
     numeroAfiliado: 228510301,
     fechaDeCarga: '2025-04-10',
@@ -350,6 +385,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Rechazada',
     numeroOrden: 663459904200005,
     numeroAfiliado: 663459904,
     fechaDeCarga: '2025-04-22',
@@ -360,6 +396,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Pendiente',
     numeroOrden: 663459902200006,
     numeroAfiliado: 663459902,
     fechaDeCarga: '2025-05-05',
@@ -370,6 +407,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Aceptada',
     numeroOrden: 938557201200006,
     numeroAfiliado: 938557201,
     fechaDeCarga: '2025-05-18',
@@ -380,6 +418,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Rechazada',
     numeroOrden: 663459901200006,
     numeroAfiliado: 663459901,
     fechaDeCarga: '2025-06-01',
@@ -390,6 +429,7 @@ const recetas = [
     observaciones: 'Usar solo en crisis'
   },
   {
+    estado: 'Pendiente',
     numeroOrden: 776592801200006,
     numeroAfiliado: 776592801,
     fechaDeCarga: '2025-06-15',
@@ -400,6 +440,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Aceptada',
     numeroOrden: 663459903200006,
     numeroAfiliado: 663459903,
     fechaDeCarga: '2025-06-28',
@@ -410,6 +451,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Rechazada',
     numeroOrden: 228510301200006,
     numeroAfiliado: 228510301,
     fechaDeCarga: '2025-07-10',
@@ -420,6 +462,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Pendiente',
     numeroOrden: 663459904200006,
     numeroAfiliado: 663459904,
     fechaDeCarga: '2025-07-22',
@@ -430,6 +473,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Aceptada',
     numeroOrden: 663459902200007,
     numeroAfiliado: 663459902,
     fechaDeCarga: '2025-08-05',
@@ -440,6 +484,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Rechazada',
     numeroOrden: 938557201200007,
     numeroAfiliado: 938557201,
     fechaDeCarga: '2025-08-18',
@@ -450,6 +495,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Pendiente',
     numeroOrden: 663459901200007,
     numeroAfiliado: 663459901,
     fechaDeCarga: '2025-09-01',
@@ -460,6 +506,7 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Aceptada',
     numeroOrden: 776592801200007,
     numeroAfiliado: 776592801,
     fechaDeCarga: '2025-09-15',
