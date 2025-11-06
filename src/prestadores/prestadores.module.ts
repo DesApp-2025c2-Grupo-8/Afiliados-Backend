@@ -10,6 +10,7 @@ import { Prestador, PrestadorSchema } from 'src/schemas/prestador.schema';
         schema: PrestadorSchema
     }])],
     controllers: [PrestadoresController],
-    providers: [PrestadoresService]
+    providers: [PrestadoresService],
+    exports: [PrestadoresService]
 })
 export class PrestadoresModule {}
