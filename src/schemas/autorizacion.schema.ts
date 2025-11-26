@@ -50,6 +50,10 @@ export class Autorizacion {
         default: 'pendiente'
     })
     estado: string
+
+    @Prop({ required: false})
+    cantDias: number
+
 }
 
 export const AutorizacionSchema = SchemaFactory.createForClass(Autorizacion)
