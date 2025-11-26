@@ -9,7 +9,8 @@ const autorizaciones = [
     "partido": "Morón",
     "direccion": "Morón 123",
     "observaciones": "Control post-operatorio",
-    "estado": "Pendiente"
+    "estado": "Pendiente",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 663459902600001,
@@ -21,7 +22,8 @@ const autorizaciones = [
     "partido": "Haedo",
     "direccion": "Haedo 234",
     "observaciones": "Evaluación médica",
-    "estado": "Observación"
+    "estado": "Observación",
+    "cantDias": 5
   },
   {
     "numeroAutorizacion": 938557201600001,
@@ -33,7 +35,8 @@ const autorizaciones = [
     "partido": "Morón",
     "direccion": "Morón 123",
     "observaciones": "Consulta médica",
-    "estado": "Rechazada"
+    "estado": "Rechazada",
+    "cantDias": 1
   },
   {
     "numeroAutorizacion": 663459901600002,
@@ -45,7 +48,8 @@ const autorizaciones = [
     "partido": "Morón",
     "direccion": "Morón 123",
     "observaciones": "Evaluación médica",
-    "estado": "Aceptada"
+    "estado": "Aceptada",
+    "cantDias": 6
   },
   {
     "numeroAutorizacion": 938557201600002,
@@ -57,7 +61,8 @@ const autorizaciones = [
     "partido": "Morón",
     "direccion": "Morón 123",
     "observaciones": "Chequeo cardíaco",
-    "estado": "Pendiente"
+    "estado": "Pendiente",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 776592801600001,
@@ -69,7 +74,8 @@ const autorizaciones = [
     "partido": "Castelar",
     "direccion": "Castelar 789",
     "observaciones": "Consulta médica",
-    "estado": "Observación"
+    "estado": "Observación",
+    "cantDias": 6
   },
   {
     "numeroAutorizacion": 228510301600001,
@@ -81,7 +87,8 @@ const autorizaciones = [
     "partido": "Ramos Mejía",
     "direccion": "Ramos 456",
     "observaciones": "Seguimiento clínico",
-    "estado": "Rechazada"
+    "estado": "Rechazada",
+    "cantDias": 8
   },
   {
     "numeroAutorizacion": 663459902600002,
@@ -93,7 +100,8 @@ const autorizaciones = [
     "partido": "Haedo",
     "direccion": "Haedo 234",
     "observaciones": "Tratamiento preventivo",
-    "estado": "Aceptada"
+    "estado": "Aceptada",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 663459903600001,
@@ -105,7 +113,8 @@ const autorizaciones = [
     "partido": "Castelar",
     "direccion": "Castelar 789",
     "observaciones": "Evaluación médica",
-    "estado": "Pendiente"
+    "estado": "Pendiente",
+    "cantDias": 9
   },
   {
     "numeroAutorizacion": 663459901600003,
@@ -117,7 +126,8 @@ const autorizaciones = [
     "partido": "Morón",
     "direccion": "Morón 123",
     "observaciones": "Chequeo anual",
-    "estado": "Observación"
+    "estado": "Observación",
+    "cantDias": 1
   },
   {
     "numeroAutorizacion": 228510301600002,
@@ -129,7 +139,8 @@ const autorizaciones = [
     "partido": "Ramos Mejía",
     "direccion": "Ramos 456",
     "observaciones": "Control anual",
-    "estado": "Rechazada"
+    "estado": "Rechazada",
+    "cantDias": 2
   },
   {
     "numeroAutorizacion": 663459904600001,
@@ -141,7 +152,8 @@ const autorizaciones = [
     "partido": "Ituzaingó",
     "direccion": "Ituzaingó 567",
     "observaciones": "Lesión deportiva",
-    "estado": "Aceptada"
+    "estado": "Aceptada",
+    "cantDias": 7
   },
   {
     "numeroAutorizacion": 663459904600002,
@@ -153,7 +165,8 @@ const autorizaciones = [
     "partido": "Ituzaingó",
     "direccion": "Ituzaingó 567",
     "observaciones": "Rehabilitación",
-    "estado": "Pendiente"
+    "estado": "Pendiente",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 126535701600001,
@@ -165,7 +178,8 @@ const autorizaciones = [
     "partido": "San Justo",
     "direccion": "San Justo 890",
     "observaciones": "Revisión visual",
-    "estado": "Observación"
+    "estado": "Observación",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 126535701600002,
@@ -177,7 +191,8 @@ const autorizaciones = [
     "partido": "San Justo",
     "direccion": "San Justo 890",
     "observaciones": "Control de graduación",
-    "estado": "Rechazada"
+    "estado": "Rechazada",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 776592801600002,
@@ -189,7 +204,8 @@ const autorizaciones = [
     "partido": "Villa Luzuriaga",
     "direccion": "Luzuriaga 321",
     "observaciones": "Consulta inicial",
-    "estado": "Aceptada"
+    "estado": "Aceptada",
+    "cantDias": 5
   },
   {
     "numeroAutorizacion": 776592801600003,
@@ -201,7 +217,8 @@ const autorizaciones = [
     "partido": "Villa Luzuriaga",
     "direccion": "Luzuriaga 321",
     "observaciones": "Seguimiento neurológico",
-    "estado": "Pendiente"
+    "estado": "Pendiente",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 663459903600002,
@@ -213,7 +230,8 @@ const autorizaciones = [
     "partido": "Castelar",
     "direccion": "Castelar 445",
     "observaciones": "Estudios digestivos",
-    "estado": "Observación"
+    "estado": "Observación",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 663459903600003,
@@ -225,7 +243,8 @@ const autorizaciones = [
     "partido": "Castelar",
     "direccion": "Castelar 445",
     "observaciones": "Endoscopía programada",
-    "estado": "Rechazada"
+    "estado": "Rechazada",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 663459902600003,
@@ -237,7 +256,8 @@ const autorizaciones = [
     "partido": "Morón",
     "direccion": "Morón 678",
     "observaciones": "Control hormonal",
-    "estado": "Aceptada"
+    "estado": "Aceptada",
+    "cantDias": 1
   },
   {
     "numeroAutorizacion": 663459902600004,
@@ -249,7 +269,8 @@ const autorizaciones = [
     "partido": "Morón",
     "direccion": "Morón 678",
     "observaciones": "Análisis de tiroides",
-    "estado": "Pendiente"
+    "estado": "Pendiente",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 938557201600003,
@@ -261,7 +282,8 @@ const autorizaciones = [
     "partido": "Haedo",
     "direccion": "Haedo 789",
     "observaciones": "Chequeo preventivo",
-    "estado": "Observación"
+    "estado": "Observación",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 938557201600004,
@@ -273,7 +295,8 @@ const autorizaciones = [
     "partido": "Haedo",
     "direccion": "Haedo 789",
     "observaciones": "Seguimiento semestral",
-    "estado": "Rechazada"
+    "estado": "Rechazada",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 663459904600003,
@@ -285,7 +308,8 @@ const autorizaciones = [
     "partido": "Ramos Mejía",
     "direccion": "Ramos 234",
     "observaciones": "Primera consulta",
-    "estado": "Aceptada"
+    "estado": "Aceptada",
+    "cantDias": 4
   },
   {
     "numeroAutorizacion": 663459904600004,
@@ -297,7 +321,8 @@ const autorizaciones = [
     "partido": "Ramos Mejía",
     "direccion": "Ramos 234",
     "observaciones": "Tratamiento continuado",
-    "estado": "Pendiente"
+    "estado": "Pendiente",
+    "cantDias": 1
   },
   {
     "numeroAutorizacion": 663459901600004,
@@ -309,7 +334,8 @@ const autorizaciones = [
     "partido": "San Justo",
     "direccion": "San Justo 112",
     "observaciones": "Problemas auditivos",
-    "estado": "Observación"
+    "estado": "Observación",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 663459901600005,
@@ -321,7 +347,8 @@ const autorizaciones = [
     "partido": "San Justo",
     "direccion": "San Justo 112",
     "observaciones": "Audiometría",
-    "estado": "Rechazada"
+    "estado": "Rechazada",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 228510301600003,
@@ -333,7 +360,8 @@ const autorizaciones = [
     "partido": "Ituzaingó",
     "direccion": "Ituzaingó 998",
     "observaciones": "Dolor articular",
-    "estado": "Aceptada"
+    "estado": "Aceptada",
+    "cantDias": 15
   },
   {
     "numeroAutorizacion": 228510301600004,
@@ -345,7 +373,8 @@ const autorizaciones = [
     "partido": "Ituzaingó",
     "direccion": "Ituzaingó 998",
     "observaciones": "Tratamiento con medicación",
-    "estado": "Pendiente"
+    "estado": "Pendiente",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 776592801600004,
@@ -357,7 +386,8 @@ const autorizaciones = [
     "partido": "Villa Luzuriaga",
     "direccion": "Luzuriaga 556",
     "observaciones": "Análisis sanguíneos",
-    "estado": "Observación"
+    "estado": "Observación",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 776592801600005,
@@ -369,7 +399,8 @@ const autorizaciones = [
     "partido": "Villa Luzuriaga",
     "direccion": "Luzuriaga 556",
     "observaciones": "Control trimestral",
-    "estado": "Rechazada"
+    "estado": "Rechazada",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 126535701600003,
@@ -381,7 +412,8 @@ const autorizaciones = [
     "partido": "Castelar",
     "direccion": "Castelar 223",
     "observaciones": "Problemas respiratorios",
-    "estado": "Aceptada"
+    "estado": "Aceptada",
+    "cantDias": 10
   },
   {
     "numeroAutorizacion": 126535701600004,
@@ -393,7 +425,8 @@ const autorizaciones = [
     "partido": "Castelar",
     "direccion": "Castelar 223",
     "observaciones": "Espirometría",
-    "estado": "Pendiente"
+    "estado": "Pendiente",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 663459903600004,
@@ -405,7 +438,8 @@ const autorizaciones = [
     "partido": "Morón",
     "direccion": "Morón 445",
     "observaciones": "Consulta oncológica",
-    "estado": "Observación"
+    "estado": "Observación",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 663459903600005,
@@ -417,7 +451,8 @@ const autorizaciones = [
     "partido": "Morón",
     "direccion": "Morón 445",
     "observaciones": "Tratamiento preventivo",
-    "estado": "Rechazada"
+    "estado": "Rechazada",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 663459902600005,
@@ -429,7 +464,8 @@ const autorizaciones = [
     "partido": "Haedo",
     "direccion": "Haedo 667",
     "observaciones": "Infección recurrente",
-    "estado": "Aceptada"
+    "estado": "Aceptada",
+    "cantDias": 9
   },
   {
     "numeroAutorizacion": 663459902600006,
@@ -441,7 +477,8 @@ const autorizaciones = [
     "partido": "Haedo",
     "direccion": "Haedo 667",
     "observaciones": "Cultivos y análisis",
-    "estado": "Pendiente"
+    "estado": "Pendiente",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 938557201600005,
@@ -453,7 +490,8 @@ const autorizaciones = [
     "partido": "San Justo",
     "direccion": "San Justo 778",
     "observaciones": "Control renal",
-    "estado": "Observación"
+    "estado": "Observación",
+    "cantDias": 3
   },
   {
     "numeroAutorizacion": 938557201600006,
@@ -465,7 +503,8 @@ const autorizaciones = [
     "partido": "San Justo",
     "direccion": "San Justo 778",
     "observaciones": "Ecografía renal",
-    "estado": "Rechazada"
+    "estado": "Rechazada",
+    "cantDias": 3
   }
 ];
 

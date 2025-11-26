@@ -41,4 +41,8 @@ export class CreateAutorizacionDto {
     @IsOptional()
     estado?: string
 
+    @IsNumber()
+    @IsOptional()
+    cantDias: number
+
 }
