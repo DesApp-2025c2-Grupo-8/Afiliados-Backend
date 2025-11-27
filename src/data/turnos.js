@@ -574,6 +574,179 @@ const turnos = [
                 direccion: "San Martín 1560"
             }
         ]
+    },
+    {
+        numeroAfiliado: 663459901,
+        integrante: "Valentín Varela",
+        fecha: "2025-05-18",
+        hora: "08:40",
+        especialidad: "Dermatólogo",
+        medico: "Dr. Ledesma",
+        lugarDeAtencion: [{ partido: "Lomas de Zamora", direccion: "Colombres 701" }]
+    },
+    {
+        numeroAfiliado: 663459904,
+        integrante: "Julieta Varela",
+        fecha: "2025-06-02",
+        hora: "11:15",
+        especialidad: "Cardiología",
+        medico: "Dra. Molina",
+        lugarDeAtencion: [{ partido: "Banfield", direccion: "Alsina 340" }]
+    },
+    {
+        numeroAfiliado: 663459905,
+        integrante: "Santiago Varela",
+        fecha: "2025-05-29",
+        hora: "14:10",
+        especialidad: "Traumatólogo",
+        medico: "Dr. Figueroa",
+        lugarDeAtencion: [{ partido: "Lanús", direccion: "Av. 25 de Mayo 221" }]
+    },
+    {
+        numeroAfiliado: 663459903,
+        integrante: "Tomás Varela",
+        fecha: "2025-06-07",
+        hora: "09:00",
+        especialidad: "Traumatólogo",
+        medico: "Dr. Murúa",
+        lugarDeAtencion: [{ partido: "Adrogué", direccion: "Espora 980" }]
+    },
+    {
+        numeroAfiliado: 228510301,
+        integrante: "Julieta Molina",
+        fecha: "2025-05-21",
+        hora: "10:50",
+        especialidad: "Clínico",
+        medico: "Dra. Ferreira",
+        lugarDeAtencion: [{ partido: "Haedo", direccion: "Rivadavia 17980" }]
+    },
+    {
+        numeroAfiliado: 776592801,
+        integrante: "Ignacio Palmier",
+        fecha: "2025-06-12",
+        hora: "15:35",
+        especialidad: "Cirujano",
+        medico: "Dr. Colombi",
+        lugarDeAtencion: [{ partido: "Ramos Mejía", direccion: "Pellegrini 1500" }]
+    },
+    {
+        numeroAfiliado: 938557201,
+        integrante: "Santiago Solari",
+        fecha: "2025-05-17",
+        hora: "08:20",
+        especialidad: "Cirujano",
+        medico: "Dra. Lichtenstein",
+        lugarDeAtencion: [{ partido: "Morón", direccion: "Belgrano 450" }]
+    },
+
+    {
+        numeroAfiliado: 663459901,
+        integrante: "Valentín Varela",
+        fecha: "2025-12-03",
+        hora: "10:45",
+        especialidad: "Dermatólogo",
+        medico: "Dra. Montenegro",
+        lugarDeAtencion: [{ partido: "Lanús", direccion: "Av. Hipólito Yrigoyen 2400" }]
+    },
+    {
+        numeroAfiliado: 663459904,
+        integrante: "Julieta Varela",
+        fecha: "2025-12-06",
+        hora: "09:20",
+        especialidad: "Cardiología",
+        medico: "Dr. Franco",
+        lugarDeAtencion: [{ partido: "Lomas de Zamora", direccion: "Portela 220" }]
+    },
+    {
+        numeroAfiliado: 663459905,
+        integrante: "Santiago Varela",
+        fecha: "2025-12-09",
+        hora: "16:05",
+        especialidad: "Traumatólogo",
+        medico: "Dr. Vignolo",
+        lugarDeAtencion: [{ partido: "Banfield", direccion: "Belgrano 341" }]
+    },
+    {
+        numeroAfiliado: 663459903,
+        integrante: "Tomás Varela",
+        fecha: "2025-12-10",
+        hora: "13:30",
+        especialidad: "Traumatólogo",
+        medico: "Dr. Paredes",
+        lugarDeAtencion: [{ partido: "Morón", direccion: "Morón 123" }]
+    },
+    {
+        numeroAfiliado: 228510301,
+        integrante: "Julieta Molina",
+        fecha: "2025-12-11",
+        hora: "08:55",
+        especialidad: "Clínico",
+        medico: "Dra. Herrera",
+        lugarDeAtencion: [{ partido: "Ituzaingó", direccion: "Rivadavia 9000" }]
+    },
+    {
+        numeroAfiliado: 776592801,
+        integrante: "Ignacio Palmier",
+        fecha: "2025-12-12",
+        hora: "18:10",
+        especialidad: "Cirujano",
+        medico: "Dr. Santiki",
+        lugarDeAtencion: [{ partido: "Ramos Mejía", direccion: "San Martín 1560" }]
+    },
+    {
+        numeroAfiliado: 938557201,
+        integrante: "Santiago Solari",
+        fecha: "2025-12-08",
+        hora: "14:45",
+        especialidad: "Cirujano",
+        medico: "Dra. Kovacic",
+        lugarDeAtencion: [{ partido: "Haedo", direccion: "Av. Rivadavia 17800" }]
+    },
+
+    {
+        numeroAfiliado: 663459901,
+        integrante: "Valentín Varela",
+        fecha: "2025-05-26",
+        hora: "11:10",
+        especialidad: "Dermatólogo",
+        medico: "Dr. Garritano",
+        lugarDeAtencion: [{ partido: "Lomas de Zamora", direccion: "Colombres 421" }]
+    },
+    {
+        numeroAfiliado: 663459904,
+        integrante: "Julieta Varela",
+        fecha: "2025-06-14",
+        hora: "15:00",
+        especialidad: "Cardiología",
+        medico: "Dr. Barrenechea",
+        lugarDeAtencion: [{ partido: "Lanús", direccion: "Av. 9 de Julio 755" }]
+    },
+    {
+        numeroAfiliado: 663459905,
+        integrante: "Santiago Varela",
+        fecha: "2025-05-30",
+        hora: "17:40",
+        especialidad: "Traumatólogo",
+        medico: "Dr. Giordano",
+        lugarDeAtencion: [{ partido: "Banfield", direccion: "Alsina 332" }]
+    },
+    {
+        numeroAfiliado: 938557201,
+        integrante: "Santiago Solari",
+        fecha: "2025-12-05",
+        hora: "09:35",
+        especialidad: "Cirujano",
+        medico: "Dr. Franchino",
+        lugarDeAtencion: [{ partido: "Morón", direccion: "Belgrano 450" }]
+    },
+    {
+        numeroAfiliado: 228510301,
+        integrante: "Julieta Molina",
+        fecha: "2025-12-04",
+        hora: "16:50",
+        especialidad: "Clínico",
+        medico: "Dr. Varela",
+        lugarDeAtencion: [{ partido: "Haedo", direccion: "Güemes 600" }]
     }
 
 ]
