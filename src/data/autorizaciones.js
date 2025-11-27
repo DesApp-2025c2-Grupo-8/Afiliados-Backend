@@ -351,19 +351,6 @@ const autorizaciones = [
     "cantDias": 3
   },
   {
-    "numeroAutorizacion": 663459901600025,
-    "numeroAfiliado": 663459901,
-    "fechaDeCarga": "2025-11-13T00:00:00Z",
-    "integrante": "Valentin Varela",
-    "medico": "Dr. Adrián Blanco",
-    "especialidad": "Otorrinolaringología",
-    "partido": "San Justo",
-    "direccion": "San Justo 112",
-    "observaciones": "Audiometría",
-    "estado": "Rechazada",
-    "cantDias": 3
-  },
-  {
     "numeroAutorizacion": 228510301600003,
     "numeroAfiliado": 228510301,
     "fechaDeCarga": "2025-07-16T00:00:00Z",
@@ -455,32 +442,6 @@ const autorizaciones = [
     "cantDias": 3
   },
   {
-    "numeroAutorizacion": 6634599056000026,
-    "numeroAfiliado": 663459905,
-    "fechaDeCarga": "2025-11-14T00:00:00Z",
-    "integrante": "Santiago Varela",
-    "medico": "Dra. Silvia Rojas",
-    "especialidad": "Oncología",
-    "partido": "Morón",
-    "direccion": "Morón 445",
-    "observaciones": "Consulta oncológica",
-    "estado": "Observación",
-    "cantDias": 3
-  },
-  {
-    "numeroAutorizacion": 6634599056000027,
-    "numeroAfiliado": 663459905,
-    "fechaDeCarga": "2025-11-15T00:00:00Z",
-    "integrante": "Santiago Varela",
-    "medico": "Dra. Silvia Rojas",
-    "especialidad": "Clínica Médica",
-    "partido": "Morón",
-    "direccion": "Morón 445",
-    "observaciones": "Consulta oncológica",
-    "estado": "Observación",
-    "cantDias": 3
-  },
-  {
     "numeroAutorizacion": 663459905600005,
     "numeroAfiliado": 663459905,
     "fechaDeCarga": "2025-09-03T00:00:00Z",
@@ -494,35 +455,9 @@ const autorizaciones = [
     "cantDias": 3
   },
   {
-    "numeroAutorizacion": 6634599056000029,
-    "numeroAfiliado": 663459905,
-    "fechaDeCarga": "2025-11-22T00:00:00Z",
-    "integrante": "Santiago Varela",
-    "medico": "Dra. Silvia Rojas",
-    "especialidad": "Oncología",
-    "partido": "Morón",
-    "direccion": "Morón 445",
-    "observaciones": "Tratamiento preventivo",
-    "estado": "Rechazada",
-    "cantDias": 3
-  },
-  {
     "numeroAutorizacion": 663459903600005,
     "numeroAfiliado": 663459903,
     "fechaDeCarga": "2025-09-10T00:00:00Z",
-    "integrante": "Tomas Varela",
-    "medico": "Dr. Matías Espinoza",
-    "especialidad": "Infectología",
-    "partido": "Haedo",
-    "direccion": "Haedo 667",
-    "observaciones": "Infección recurrente",
-    "estado": "Aceptada",
-    "cantDias": 9
-  },
-  {
-    "numeroAutorizacion": 6634599036000027,
-    "numeroAfiliado": 663459903,
-    "fechaDeCarga": "2025-11-20T00:00:00Z",
     "integrante": "Tomas Varela",
     "medico": "Dr. Matías Espinoza",
     "especialidad": "Infectología",

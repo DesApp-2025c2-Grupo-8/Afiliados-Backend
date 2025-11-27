@@ -473,17 +473,6 @@ const recetas = [
     observaciones: ''
   },
   {
-    estado: 'Rechazada',
-    numeroOrden: 6634599042000025,
-    numeroAfiliado: 663459904,
-    fechaDeCarga: '2025-11-22T00:00:00.000Z',
-    integrante: 'Julieta Varela',
-    medicamento: 'Loratadina',
-    cantidad: 5,
-    presentacion: 'Comprimido',
-    observaciones: ''
-  },
-  {
     estado: 'Aceptada',
     numeroOrden: 663459903200007,
     numeroAfiliado: 663459903,
@@ -491,28 +480,6 @@ const recetas = [
     integrante: 'Tomas Varela',
     medicamento: 'Omeprazol',
     cantidad: 14,
-    presentacion: 'Cápsulas',
-    observaciones: ''
-  },
-  {
-    estado: 'Aceptada',
-    numeroOrden: 663459903200026,
-    numeroAfiliado: 663459903,
-    fechaDeCarga: '2025-11-13T00:00:00.000Z',
-    integrante: 'Tomas Varela',
-    medicamento: 'Omeprazol',
-    cantidad: 1,
-    presentacion: 'Cápsulas',
-    observaciones: ''
-  },
-  {
-    estado: 'Aceptada',
-    numeroOrden: 663459903200027,
-    numeroAfiliado: 663459903,
-    fechaDeCarga: '2025-11-14T00:00:00.000Z',
-    integrante: 'Tomas Varela',
-    medicamento: 'Ibuprofeno',
-    cantidad: 10,
     presentacion: 'Cápsulas',
     observaciones: ''
   },
@@ -535,28 +502,6 @@ const recetas = [
     integrante: 'Valentin Varela',
     medicamento: 'Ibuprofeno',
     cantidad: 10,
-    presentacion: 'Cápsulas',
-    observaciones: ''
-  },
-  {
-    estado: 'Rechazada',
-    numeroOrden: 663459901200028,
-    numeroAfiliado: 663459901,
-    fechaDeCarga: '2025-11-20T00:00:00.000Z',
-    integrante: 'Valentin Varela',
-    medicamento: 'Tafirol',
-    cantidad: 5,
-    presentacion: 'Cápsulas',
-    observaciones: ''
-  },
-  {
-    estado: 'Aceptada',
-    numeroOrden: 663459901200029,
-    numeroAfiliado: 663459901,
-    fechaDeCarga: '2025-11-20T00:00:00.000Z',
-    integrante: 'Valentin Varela',
-    medicamento: 'Aspirina',
-    cantidad: 5,
     presentacion: 'Cápsulas',
     observaciones: ''
   },

@@ -450,65 +450,9 @@ const turnos = [
         ]
     },
     {
-        numeroAfiliado: 663459905,
-        integrante: "Santiago Varela",
-        fecha: "2025-11-11",
-        hora: "15:45",
-        especialidad: "Traumatólogo",
-        medico: "Dr. Giordano",
-        lugarDeAtencion: [
-            {
-                partido: "Morón",
-                direccion: "Belgrano 210"
-            }
-        ]
-    },
-    {
-        numeroAfiliado: 663459905,
-        integrante: "Santiago Varela",
-        fecha: "2025-11-19",
-        hora: "09:30",
-        especialidad: "Cardiología",
-        medico: "Dr. Giordano",
-        lugarDeAtencion: [
-            {
-                partido: "Morón",
-                direccion: "Moron 210"
-            }
-        ]
-    },
-    {
-        numeroAfiliado: 663459905,
-        integrante: "Santiago Varela",
-        fecha: "2025-11-25",
-        hora: "09:30",
-        especialidad: "Traumatológo",
-        medico: "Dr. Giordano",
-        lugarDeAtencion: [
-            {
-                partido: "Morón",
-                direccion: "Moron 520"
-            }
-        ]
-    },
-    {
         numeroAfiliado: 663459903,
         integrante: "Tomás Varela",
         fecha: "2025-12-03",
-        hora: "08:50",
-        especialidad: "Traumatólogo",
-        medico: "Dr. Paredes",
-        lugarDeAtencion: [
-            {
-                partido: "Banfield",
-                direccion: "Alsina 332"
-            }
-        ]
-    },
-    {
-        numeroAfiliado: 663459903,
-        integrante: "Tomás Varela",
-        fecha: "2025-11-25",
         hora: "08:50",
         especialidad: "Traumatólogo",
         medico: "Dr. Paredes",
@@ -564,34 +508,6 @@ const turnos = [
     {
         numeroAfiliado: 663459901,
         integrante: "Valentín Varela",
-        fecha: "2025-11-20",
-        hora: "09:50",
-        especialidad: "Dermatólogo",
-        medico: "Dr. Funes",
-        lugarDeAtencion: [
-            {
-                partido: "Adrogué",
-                direccion: "Av. Espora 1020"
-            }
-        ]
-    },
-    {
-        numeroAfiliado: 663459901,
-        integrante: "Valentín Varela",
-        fecha: "2025-11-19",
-        hora: "15:30",
-        especialidad: "Cardiología",
-        medico: "Dr. Funes",
-        lugarDeAtencion: [
-            {
-                partido: "Moron",
-                direccion: "Moron 123"
-            }
-        ]
-    },
-    {
-        numeroAfiliado: 663459901,
-        integrante: "Valentín Varela",
         fecha: "2025-12-07",
         hora: "09:50",
         especialidad: "Dermatólogo",
@@ -618,34 +534,6 @@ const turnos = [
         ]
     },
     {
-        numeroAfiliado: 663459904,
-        integrante: "Julieta Varela",
-        fecha: "2025-11-13",
-        hora: "17:00",
-        especialidad: "Cardiología",
-        medico: "Dra. Barrenechea",
-        lugarDeAtencion: [
-            {
-                partido: "Lanús",
-                direccion: "Av. Hipólito Yrigoyen 2400"
-            }
-        ]
-    },
-    {
-        numeroAfiliado: 663459904,
-        integrante: "Julieta Varela",
-        fecha: "2025-11-12",
-        hora: "11:00",
-        especialidad: "Clínico",
-        medico: "Dra. Barrenechea",
-        lugarDeAtencion: [
-            {
-                partido: "Moron",
-                direccion: "Moron 123"
-            }
-        ]
-    },
-    {
         numeroAfiliado: 228510301,
         integrante: "Julieta Molina",
         fecha: "2025-12-06",
@@ -665,20 +553,6 @@ const turnos = [
         fecha: "2025-12-12",
         hora: "09:25",
         especialidad: "Traumatólogo",
-        medico: "Dr. Goya",
-        lugarDeAtencion: [
-            {
-                partido: "Banfield",
-                direccion: "Alsina 332"
-            }
-        ]
-    },
-    {
-        numeroAfiliado: 663459903,
-        integrante: "Tomás Varela",
-        fecha: "2025-12-10",
-        hora: "09:25",
-        especialidad: "Cardiología",
         medico: "Dr. Goya",
         lugarDeAtencion: [
             {
