@@ -13,8 +13,8 @@ const autorizaciones = [
     "cantDias": 3
   },
   {
-    "numeroAutorizacion": 663459902600001,
-    "numeroAfiliado": 663459902,
+    "numeroAutorizacion": 663459903600001,
+    "numeroAfiliado": 663459903,
     "fechaDeCarga": "2025-01-08T00:00:00Z",
     "integrante": "Tomas Varela",
     "medico": "Dra. Mariana Díaz",
@@ -91,8 +91,8 @@ const autorizaciones = [
     "cantDias": 8
   },
   {
-    "numeroAutorizacion": 663459902600002,
-    "numeroAfiliado": 663459902,
+    "numeroAutorizacion": 663459903600002,
+    "numeroAfiliado": 663459903,
     "fechaDeCarga": "2025-02-26T00:00:00Z",
     "integrante": "Tomas Varela",
     "medico": "Dra. Mariana Díaz",
@@ -104,8 +104,8 @@ const autorizaciones = [
     "cantDias": 3
   },
   {
-    "numeroAutorizacion": 663459903600001,
-    "numeroAfiliado": 663459903,
+    "numeroAutorizacion": 663459905600001,
+    "numeroAfiliado": 663459905,
     "fechaDeCarga": "2025-03-05T00:00:00Z",
     "integrante": "Santiago Varela",
     "medico": "Dr. Carlos Gómez",
@@ -221,8 +221,8 @@ const autorizaciones = [
     "cantDias": 3
   },
   {
-    "numeroAutorizacion": 663459903600002,
-    "numeroAfiliado": 663459903,
+    "numeroAutorizacion": 663459905600002,
+    "numeroAfiliado": 663459905,
     "fechaDeCarga": "2025-05-07T00:00:00Z",
     "integrante": "Santiago Varela",
     "medico": "Dr. Fernando Castro",
@@ -234,8 +234,8 @@ const autorizaciones = [
     "cantDias": 3
   },
   {
-    "numeroAutorizacion": 663459903600003,
-    "numeroAfiliado": 663459903,
+    "numeroAutorizacion": 663459905600003,
+    "numeroAfiliado": 663459905,
     "fechaDeCarga": "2025-05-14T00:00:00Z",
     "integrante": "Santiago Varela",
     "medico": "Dr. Fernando Castro",
@@ -247,8 +247,8 @@ const autorizaciones = [
     "cantDias": 3
   },
   {
-    "numeroAutorizacion": 663459902600003,
-    "numeroAfiliado": 663459902,
+    "numeroAutorizacion": 663459903600003,
+    "numeroAfiliado": 663459903,
     "fechaDeCarga": "2025-05-21T00:00:00Z",
     "integrante": "Tomas Varela",
     "medico": "Dra. Mónica Herrera",
@@ -260,8 +260,8 @@ const autorizaciones = [
     "cantDias": 1
   },
   {
-    "numeroAutorizacion": 663459902600004,
-    "numeroAfiliado": 663459902,
+    "numeroAutorizacion": 663459903600004,
+    "numeroAfiliado": 663459903,
     "fechaDeCarga": "2025-05-28T00:00:00Z",
     "integrante": "Tomas Varela",
     "medico": "Dra. Mónica Herrera",
@@ -429,8 +429,8 @@ const autorizaciones = [
     "cantDias": 3
   },
   {
-    "numeroAutorizacion": 663459903600004,
-    "numeroAfiliado": 663459903,
+    "numeroAutorizacion": 663459905600004,
+    "numeroAfiliado": 663459905,
     "fechaDeCarga": "2025-08-27T00:00:00Z",
     "integrante": "Santiago Varela",
     "medico": "Dra. Silvia Rojas",
@@ -442,8 +442,8 @@ const autorizaciones = [
     "cantDias": 3
   },
   {
-    "numeroAutorizacion": 663459903600005,
-    "numeroAfiliado": 663459903,
+    "numeroAutorizacion": 663459905600005,
+    "numeroAfiliado": 663459905,
     "fechaDeCarga": "2025-09-03T00:00:00Z",
     "integrante": "Santiago Varela",
     "medico": "Dra. Silvia Rojas",
@@ -455,8 +455,8 @@ const autorizaciones = [
     "cantDias": 3
   },
   {
-    "numeroAutorizacion": 663459902600005,
-    "numeroAfiliado": 663459902,
+    "numeroAutorizacion": 663459903600005,
+    "numeroAfiliado": 663459903,
     "fechaDeCarga": "2025-09-10T00:00:00Z",
     "integrante": "Tomas Varela",
     "medico": "Dr. Matías Espinoza",
@@ -468,8 +468,8 @@ const autorizaciones = [
     "cantDias": 9
   },
   {
-    "numeroAutorizacion": 663459902600006,
-    "numeroAfiliado": 663459902,
+    "numeroAutorizacion": 663459903600006,
+    "numeroAfiliado": 663459903,
     "fechaDeCarga": "2025-09-17T00:00:00Z",
     "integrante": "Tomas Varela",
     "medico": "Dr. Matías Espinoza",
