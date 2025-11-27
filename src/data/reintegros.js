@@ -398,6 +398,498 @@ const reintegros = [
       "medioDePago": "Transferencia",
       "cbu": "0000003100001234567891"
     }
+  },
+  {
+    numeroAfiliado: 663459901,
+    numeroOrden: "66345990120251104",
+    estado: "Pago",
+    fechaDeCarga: "2025-11-14T10:20:00.000Z",
+    fechaDePrestacion: "2025-11-12T00:00:00.000Z",
+    integrante: "Valentin Varela",
+    medico: "Dra. Nunes",
+    especialidad: "Clínica médica",
+    lugarDeAtencion: "Centro Médico Norte",
+    observaciones: "Control post-gripe.",
+    datosFactura: {
+      cuit: 271234567814,
+      fechaDeFactura: "2025-11-13T00:00:00.000Z",
+      monto: 5200,
+      personaFacturada: "Tariq Khan",
+      medioDePago: "Transferencia",
+      cbu: "0000003100009876543210"
+    }
+  },
+  {
+    numeroAfiliado: 663459901,
+    numeroOrden: "66345990120251105",
+    estado: "Pendiente",
+    fechaDeCarga: "2025-11-13T09:15:00.000Z",
+    fechaDePrestacion: "2025-11-11T00:00:00.000Z",
+    integrante: "Valentin Varela",
+    medico: "Dr. Campos",
+    especialidad: "Clínica médica",
+    lugarDeAtencion: "Centro Médico Sur",
+    observaciones: "Dolor abdominal leve.",
+    datosFactura: {
+      cuit: 30111222339,
+      fechaDeFactura: "2025-11-12T00:00:00.000Z",
+      monto: 6100,
+      personaFacturada: "Lucas Ferraro",
+      medioDePago: "Transferencia",
+      cbu: "0000003100001122334455"
+    }
+  },
+  {
+    numeroAfiliado: 663459901,
+    numeroOrden: "66345990120251106",
+    estado: "Rechazado",
+    fechaDeCarga: "2025-11-12T14:40:00.000Z",
+    fechaDePrestacion: "2025-11-10T00:00:00.000Z",
+    integrante: "Valentin Varela",
+    medico: "Dra. Molina",
+    especialidad: "Nutricionista",
+    lugarDeAtencion: "Consultorio Central",
+    observaciones: "Falta comprobante.",
+    datosFactura: {
+      cuit: 349988776654,
+      fechaDeFactura: "2025-11-11T00:00:00.000Z",
+      monto: 3200,
+      personaFacturada: "Jade Aldemir",
+      medioDePago: "Transferencia",
+      cbu: "0000003100004444444444"
+    }
+  },
+
+  // --- SANTIAGO VARELA (663459905) ---
+  {
+    numeroAfiliado: 663459905,
+    numeroOrden: "66345990520251104",
+    estado: "Pendiente",
+    fechaDeCarga: "2025-11-14T08:50:00.000Z",
+    fechaDePrestacion: "2025-11-12T00:00:00.000Z",
+    integrante: "Santiago Varela",
+    medico: "Dra. Lena",
+    especialidad: "Pediatría",
+    lugarDeAtencion: "Consultorio Pediátrico",
+    observaciones: "Control mensual.",
+    datosFactura: {
+      cuit: 349988776654,
+      fechaDeFactura: "2025-11-13T00:00:00.000Z",
+      monto: 2800,
+      personaFacturada: "Jade Aldemir",
+      medioDePago: "Transferencia",
+      cbu: "0000003100004444444444"
+    }
+  },
+  {
+    numeroAfiliado: 663459905,
+    numeroOrden: "66345990520251105",
+    estado: "Pago",
+    fechaDeCarga: "2025-11-13T11:30:00.000Z",
+    fechaDePrestacion: "2025-11-11T00:00:00.000Z",
+    integrante: "Santiago Varela",
+    medico: "Dr. Camden",
+    especialidad: "Traumatología",
+    lugarDeAtencion: "Hospital Central",
+    observaciones: "Lesión leve en tobillo.",
+    datosFactura: {
+      cuit: 305566778895,
+      fechaDeFactura: "2025-11-12T00:00:00.000Z",
+      monto: 8700,
+      personaFacturada: "Rahim Aldemir",
+      medioDePago: "Efectivo",
+      cbu: null
+    }
+  },
+  {
+    numeroAfiliado: 663459905,
+    numeroOrden: "66345990520251106",
+    estado: "Rechazado",
+    fechaDeCarga: "2025-11-12T15:10:00.000Z",
+    fechaDePrestacion: "2025-11-10T00:00:00.000Z",
+    integrante: "Santiago Varela",
+    medico: "Dra. Morales",
+    especialidad: "Dermatología",
+    lugarDeAtencion: "Clínica de Piel Centro",
+    observaciones: "Documentación incompleta.",
+    datosFactura: {
+      cuit: 27988777661,
+      fechaDeFactura: "2025-11-11T00:00:00.000Z",
+      monto: 3100,
+      personaFacturada: "Martina Ruiz",
+      medioDePago: "Transferencia",
+      cbu: "0000003100005566778899"
+    }
+  },
+
+  // --- JULIETA VARELA (663459904) ---
+  {
+    numeroAfiliado: 663459904,
+    numeroOrden: "66345990420251103",
+    estado: "Pago",
+    fechaDeCarga: "2025-11-14T09:40:00.000Z",
+    fechaDePrestacion: "2025-11-12T00:00:00.000Z",
+    integrante: "Julieta Varela",
+    medico: "Dra. Morgan",
+    especialidad: "Clínica médica",
+    lugarDeAtencion: "Hospital Central",
+    observaciones: "Revisión por dolor lumbar.",
+    datosFactura: {
+      cuit: 271234567814,
+      fechaDeFactura: "2025-11-13T00:00:00.000Z",
+      monto: 5100,
+      personaFacturada: "Tariq Khan",
+      medioDePago: "Transferencia",
+      cbu: "0000003100009876543210"
+    }
+  },
+  {
+    numeroAfiliado: 663459904,
+    numeroOrden: "66345990420251104",
+    estado: "Pendiente",
+    fechaDeCarga: "2025-11-13T08:30:00.000Z",
+    fechaDePrestacion: "2025-11-11T00:00:00.000Z",
+    integrante: "Julieta Varela",
+    medico: "Dra. Molina",
+    especialidad: "Pediatría",
+    lugarDeAtencion: "Consultorio Pediátrico",
+    observaciones: "Control gripal.",
+    datosFactura: {
+      cuit: 349988776654,
+      fechaDeFactura: "2025-11-12T00:00:00.000Z",
+      monto: 2600,
+      personaFacturada: "Jade Aldemir",
+      medioDePago: "Transferencia",
+      cbu: "0000003100004444444444"
+    }
+  },
+  {
+    numeroAfiliado: 663459904,
+    numeroOrden: "66345990420251105",
+    estado: "Rechazado",
+    fechaDeCarga: "2025-11-12T14:15:00.000Z",
+    fechaDePrestacion: "2025-11-10T00:00:00.000Z",
+    integrante: "Julieta Varela",
+    medico: "Dr. Campos",
+    especialidad: "Clínica médica",
+    lugarDeAtencion: "Centro Médico Sector A",
+    observaciones: "Documentación ilegible.",
+    datosFactura: {
+      cuit: 30111222339,
+      fechaDeFactura: "2025-11-11T00:00:00.000Z",
+      monto: 6000,
+      personaFacturada: "Lucas Ferraro",
+      medioDePago: "Transferencia",
+      cbu: "0000003100001122334455"
+    }
+  },
+
+  // --- TOMAS VARELA (663459903) ---
+  {
+    numeroAfiliado: 663459903,
+    numeroOrden: "66345990320251103",
+    estado: "Pago",
+    fechaDeCarga: "2025-11-14T11:10:00.000Z",
+    fechaDePrestacion: "2025-11-12T00:00:00.000Z",
+    integrante: "Tomas Varela",
+    medico: "Dr. Zere",
+    especialidad: "Científico virólogo",
+    lugarDeAtencion: "Laboratorio móvil",
+    observaciones: "Control mensual.",
+    datosFactura: {
+      cuit: 234455667711,
+      fechaDeFactura: "2025-11-13T00:00:00.000Z",
+      monto: 4700,
+      personaFacturada: "Brecken Harris",
+      medioDePago: "Transferencia",
+      cbu: "0000003100001234567891"
+    }
+  },
+  {
+    numeroAfiliado: 663459903,
+    numeroOrden: "66345990320251104",
+    estado: "Pendiente",
+    fechaDeCarga: "2025-11-13T10:00:00.000Z",
+    fechaDePrestacion: "2025-11-11T00:00:00.000Z",
+    integrante: "Tomas Varela",
+    medico: "Dra. Morales",
+    especialidad: "Nutricionista",
+    lugarDeAtencion: "Consultorio Central",
+    observaciones: "Evaluación nutricional.",
+    datosFactura: {
+      cuit: 349988776654,
+      fechaDeFactura: "2025-11-12T00:00:00.000Z",
+      monto: 3000,
+      personaFacturada: "Jade Aldemir",
+      medioDePago: "Transferencia",
+      cbu: "0000003100004444444444"
+    }
+  },
+  {
+    numeroAfiliado: 663459903,
+    numeroOrden: "66345990320251105",
+    estado: "Rechazado",
+    fechaDeCarga: "2025-11-12T16:30:00.000Z",
+    fechaDePrestacion: "2025-11-10T00:00:00.000Z",
+    integrante: "Tomas Varela",
+    medico: "Dr. Campos",
+    especialidad: "Clínica médica",
+    lugarDeAtencion: "Centro Médico Sector A",
+    observaciones: "Prestación sin orden.",
+    datosFactura: {
+      cuit: 30111222339,
+      fechaDeFactura: "2025-11-11T00:00:00.000Z",
+      monto: 6500,
+      personaFacturada: "Lucas Ferraro",
+      medioDePago: "Transferencia",
+      cbu: "0000003100001122334455"
+    }
+  },
+  {
+    numeroAfiliado: 663459901,
+    numeroOrden: "66345990120251107",
+    estado: "Pago",
+    fechaDeCarga: "2025-11-26T09:20:00.000Z",
+    fechaDePrestacion: "2025-11-24T00:00:00.000Z",
+    integrante: "Valentin Varela",
+    medico: "Dr. Campos",
+    especialidad: "Clínica médica",
+    lugarDeAtencion: "Centro Médico Norte",
+    observaciones: "Control general.",
+    datosFactura: {
+      cuit: 30111222339,
+      fechaDeFactura: "2025-11-25T00:00:00.000Z",
+      monto: 5400,
+      personaFacturada: "Lucas Ferraro",
+      medioDePago: "Transferencia",
+      cbu: "0000003100001122334455"
+    }
+  },
+  {
+    numeroAfiliado: 663459901,
+    numeroOrden: "66345990120251108",
+    estado: "Pendiente",
+    fechaDeCarga: "2025-11-25T15:30:00.000Z",
+    fechaDePrestacion: "2025-11-23T00:00:00.000Z",
+    integrante: "Valentin Varela",
+    medico: "Dra. Nunes",
+    especialidad: "Clínica médica",
+    lugarDeAtencion: "Consultorio Central",
+    observaciones: "Cansancio persistente.",
+    datosFactura: {
+      cuit: 271234567814,
+      fechaDeFactura: "2025-11-24T00:00:00.000Z",
+      monto: 4800,
+      personaFacturada: "Tariq Khan",
+      medioDePago: "Transferencia",
+      cbu: "0000003100009876543210"
+    }
+  },
+  {
+    numeroAfiliado: 663459901,
+    numeroOrden: "66345990120251109",
+    estado: "Rechazado",
+    fechaDeCarga: "2025-11-24T11:10:00.000Z",
+    fechaDePrestacion: "2025-11-22T00:00:00.000Z",
+    integrante: "Valentin Varela",
+    medico: "Dra. Molina",
+    especialidad: "Nutricionista",
+    lugarDeAtencion: "Centro Saludable",
+    observaciones: "Factura sin firma.",
+    datosFactura: {
+      cuit: 349988776654,
+      fechaDeFactura: "2025-11-23T00:00:00.000Z",
+      monto: 3100,
+      personaFacturada: "Jade Aldemir",
+      medioDePago: "Transferencia",
+      cbu: "0000003100004444444444"
+    }
+  },
+
+  // --- SANTIAGO VARELA (663459905) ---
+  {
+    numeroAfiliado: 663459905,
+    numeroOrden: "66345990520251107",
+    estado: "Pago",
+    fechaDeCarga: "2025-11-26T12:40:00.000Z",
+    fechaDePrestacion: "2025-11-24T00:00:00.000Z",
+    integrante: "Santiago Varela",
+    medico: "Dra. Lena",
+    especialidad: "Pediatría",
+    lugarDeAtencion: "Consultorio Pediátrico",
+    observaciones: "Control predeportivo.",
+    datosFactura: {
+      cuit: 349988776654,
+      fechaDeFactura: "2025-11-25T00:00:00.000Z",
+      monto: 2900,
+      personaFacturada: "Jade Aldemir",
+      medioDePago: "Transferencia",
+      cbu: "0000003100004444444444"
+    }
+  },
+  {
+    numeroAfiliado: 663459905,
+    numeroOrden: "66345990520251108",
+    estado: "Pendiente",
+    fechaDeCarga: "2025-11-25T10:10:00.000Z",
+    fechaDePrestacion: "2025-11-23T00:00:00.000Z",
+    integrante: "Santiago Varela",
+    medico: "Dr. Camden",
+    especialidad: "Traumatología",
+    lugarDeAtencion: "Hospital Central",
+    observaciones: "Dolor en rodilla.",
+    datosFactura: {
+      cuit: 305566778895,
+      fechaDeFactura: "2025-11-24T00:00:00.000Z",
+      monto: 7600,
+      personaFacturada: "Rahim Aldemir",
+      medioDePago: "Efectivo",
+      cbu: null
+    }
+  },
+  {
+    numeroAfiliado: 663459905,
+    numeroOrden: "66345990520251109",
+    estado: "Rechazado",
+    fechaDeCarga: "2025-11-24T13:50:00.000Z",
+    fechaDePrestacion: "2025-11-22T00:00:00.000Z",
+    integrante: "Santiago Varela",
+    medico: "Dra. Morales",
+    especialidad: "Dermatología",
+    lugarDeAtencion: "Clínica de Piel Centro",
+    observaciones: "Factura vencida.",
+    datosFactura: {
+      cuit: 27988777661,
+      fechaDeFactura: "2025-11-23T00:00:00.000Z",
+      monto: 3300,
+      personaFacturada: "Martina Ruiz",
+      medioDePago: "Transferencia",
+      cbu: "0000003100005566778899"
+    }
+  },
+
+  // --- JULIETA VARELA (663459904) ---
+  {
+    numeroAfiliado: 663459904,
+    numeroOrden: "66345990420251106",
+    estado: "Pago",
+    fechaDeCarga: "2025-11-26T14:30:00.000Z",
+    fechaDePrestacion: "2025-11-24T00:00:00.000Z",
+    integrante: "Julieta Varela",
+    medico: "Dra. Morgan",
+    especialidad: "Clínica médica",
+    lugarDeAtencion: "Hospital Central",
+    observaciones: "Dolor cervical.",
+    datosFactura: {
+      cuit: 271234567814,
+      fechaDeFactura: "2025-11-25T00:00:00.000Z",
+      monto: 5200,
+      personaFacturada: "Tariq Khan",
+      medioDePago: "Transferencia",
+      cbu: "0000003100009876543210"
+    }
+  },
+  {
+    numeroAfiliado: 663459904,
+    numeroOrden: "66345990420251107",
+    estado: "Pendiente",
+    fechaDeCarga: "2025-11-25T08:50:00.000Z",
+    fechaDePrestacion: "2025-11-23T00:00:00.000Z",
+    integrante: "Julieta Varela",
+    medico: "Dra. Molina",
+    especialidad: "Pediatría",
+    lugarDeAtencion: "Consultorio Pediátrico",
+    observaciones: "Control de fiebre.",
+    datosFactura: {
+      cuit: 349988776654,
+      fechaDeFactura: "2025-11-24T00:00:00.000Z",
+      monto: 2700,
+      personaFacturada: "Jade Aldemir",
+      medioDePago: "Transferencia",
+      cbu: "0000003100004444444444"
+    }
+  },
+  {
+    numeroAfiliado: 663459904,
+    numeroOrden: "66345990420251108",
+    estado: "Rechazado",
+    fechaDeCarga: "2025-11-24T16:00:00.000Z",
+    fechaDePrestacion: "2025-11-22T00:00:00.000Z",
+    integrante: "Julieta Varela",
+    medico: "Dr. Campos",
+    especialidad: "Clínica médica",
+    lugarDeAtencion: "Centro Médico Sector A",
+    observaciones: "Error en importe.",
+    datosFactura: {
+      cuit: 30111222339,
+      fechaDeFactura: "2025-11-23T00:00:00.000Z",
+      monto: 5900,
+      personaFacturada: "Lucas Ferraro",
+      medioDePago: "Transferencia",
+      cbu: "0000003100001122334455"
+    }
+  },
+
+  // --- TOMAS VARELA (663459903) ---
+  {
+    numeroAfiliado: 663459903,
+    numeroOrden: "66345990320251106",
+    estado: "Pago",
+    fechaDeCarga: "2025-11-26T11:25:00.000Z",
+    fechaDePrestacion: "2025-11-24T00:00:00.000Z",
+    integrante: "Tomas Varela",
+    medico: "Dr. Zere",
+    especialidad: "Científico virólogo",
+    lugarDeAtencion: "Laboratorio móvil",
+    observaciones: "Control general.",
+    datosFactura: {
+      cuit: 234455667711,
+      fechaDeFactura: "2025-11-25T00:00:00.000Z",
+      monto: 4900,
+      personaFacturada: "Brecken Harris",
+      medioDePago: "Transferencia",
+      cbu: "0000003100001234567891"
+    }
+  },
+  {
+    numeroAfiliado: 663459903,
+    numeroOrden: "66345990320251107",
+    estado: "Pendiente",
+    fechaDeCarga: "2025-11-25T13:00:00.000Z",
+    fechaDePrestacion: "2025-11-23T00:00:00.000Z",
+    integrante: "Tomas Varela",
+    medico: "Dra. Morales",
+    especialidad: "Nutricionista",
+    lugarDeAtencion: "Consultorio Central",
+    observaciones: "Ajuste de dieta.",
+    datosFactura: {
+      cuit: 349988776654,
+      fechaDeFactura: "2025-11-24T00:00:00.000Z",
+      monto: 3100,
+      personaFacturada: "Jade Aldemir",
+      medioDePago: "Transferencia",
+      cbu: "0000003100004444444444"
+    }
+  },
+  {
+    numeroAfiliado: 663459903,
+    numeroOrden: "66345990320251108",
+    estado: "Rechazado",
+    fechaDeCarga: "2025-11-24T15:15:00.000Z",
+    fechaDePrestacion: "2025-11-22T00:00:00.000Z",
+    integrante: "Tomas Varela",
+    medico: "Dr. Campos",
+    especialidad: "Clínica médica",
+    lugarDeAtencion: "Centro Médico Sector A",
+    observaciones: "Factura ilegible.",
+    datosFactura: {
+      cuit: 30111222339,
+      fechaDeFactura: "2025-11-23T00:00:00.000Z",
+      monto: 6200,
+      personaFacturada: "Lucas Ferraro",
+      medioDePago: "Transferencia",
+      cbu: "0000003100001122334455"
+    }
   }
 ]
 
