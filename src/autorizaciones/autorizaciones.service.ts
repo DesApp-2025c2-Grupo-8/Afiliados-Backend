@@ -30,7 +30,7 @@ export class AutorizacionesService {
         }
     }
 
-    async create(autorizacionACrear: CreateAutorizacionDto) {
+    async create(autorizacionACrear: CreateAutorizacionDto): Promise<Autorizacion> {
         const afiliado = autorizacionACrear.numeroAfiliado; //1234567-01
         const prefijoAutorizacion = 60
         const ultimaAutorizacion = await this.AutorizacionModel
