@@ -129,7 +129,7 @@ const turnos = [
     {
         numeroAfiliado: 776592801,
         integrante: "Ignacio Palmier",
-        fecha: "2025-10-20",
+        fecha: "2025-11-27",
         hora: "14:00",
         especialidad: "Oftalmólogo",
         medico: "Dr. Fernando Valles",
@@ -157,7 +157,7 @@ const turnos = [
     {
         numeroAfiliado: 776592801,
         integrante: "Ignacio Palmier",
-        fecha: "2025-12-12",
+        fecha: "2025-12-01",
         hora: "16:30",
         especialidad: "Traumatólogo",
         medico: "Dr. Zene",
@@ -199,7 +199,7 @@ const turnos = [
     {
         numeroAfiliado: 938557201,
         integrante: "Santiago Solari",
-        fecha: "2025-09-25",
+        fecha: "2025-11-25",
         hora: "09:00",
         especialidad: "Odontólogo",
         medico: "Dra. Sofía Rivas",
@@ -227,7 +227,7 @@ const turnos = [
     {
         numeroAfiliado: 938557201,
         integrante: "Santiago Solari",
-        fecha: "2025-12-05",
+        fecha: "2025-12-02",
         hora: "18:00",
         especialidad: "Clínica General",
         medico: "Dr. Roberto García",
@@ -297,7 +297,7 @@ const turnos = [
     {
         numeroAfiliado: 663459904,
         integrante: "Julieta Varela",
-        fecha: "2025-12-22",
+        fecha: "2025-11-29",
         hora: "11:30",
         especialidad: "Otorrinolaringólogo",
         medico: "Dr. Juan Flores",
@@ -409,6 +409,20 @@ const turnos = [
         ]
     },
     {
+        numeroAfiliado: 663459905,
+        integrante: "Santiago Varela",
+        fecha: "2025-11-29",
+        hora: "17:00",
+        especialidad: "Traumatólogo",
+        medico: "Dr. Paredes",
+        lugarDeAtencion: [
+            {
+                partido: "Banfield",
+                direccion: "Alsina 332"
+            }
+        ]
+    },
+    {
         numeroAfiliado: 663459903,
         integrante: "Tomás Varela",
         fecha: "2025-11-12",
@@ -439,7 +453,7 @@ const turnos = [
     {
         numeroAfiliado: 776592801,
         integrante: "Ignacio Palmier",
-        fecha: "2025-10-22",
+        fecha: "2025-11-22",
         hora: "10:10",
         especialidad: "Cirujano",
         medico: "Dr. Franchino",
@@ -1014,7 +1028,91 @@ const turnos = [
         especialidad: "Clínico",
         medico: "Dr. Varela",
         lugarDeAtencion: [{ partido: "Haedo", direccion: "Güemes 600" }]
-    }
+    },
+    {
+        numeroAfiliado: 663459901,
+        integrante: "Valentín Varela",
+        fecha: "2025-11-28",
+        hora: "15:30",
+        especialidad: "Endocrinología",
+        medico: "Dra. Ríos",
+        lugarDeAtencion: [
+            {
+                partido: "Morón",
+                direccion: "Calle Urquiza 950"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459901,
+        integrante: "Valentín Varela",
+        fecha: "2025-11-27",
+        hora: "10:00",
+        especialidad: "Psicología",
+        medico: "Dra. Navarro",
+        lugarDeAtencion: [
+            {
+                partido: "Merlo",
+                direccion: "Calle Belgrano 500"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459904,
+        integrante: "Julieta Varela",
+        fecha: "2025-11-22",
+        hora: "10:30",
+        especialidad: "Neurología",
+        medico: "Dr. Pérez",
+        lugarDeAtencion: [
+            {
+                partido: "Ramos Mejía",
+                direccion: "Calle Mitre 640"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459903,
+        integrante: "Tomás Varela",
+        fecha: "2025-11-24",
+        hora: "12:40",
+        especialidad: "Nutrición",
+        medico: "Dra. Díaz",
+        lugarDeAtencion: [
+            {
+                partido: "Ituzaingó",
+                direccion: "Calle Italia 420"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459904,
+        integrante: "Julieta Varela",
+        fecha: "2025-11-24",
+        hora: "13:00",
+        especialidad: "Nutrición",
+        medico: "Dra. Díaz",
+        lugarDeAtencion: [
+            {
+                partido: "Ituzaingó",
+                direccion: "Calle Italia 420"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459905,
+        integrante: "Santiago Varela",
+        fecha: "2025-11-24",
+        hora: "13:20",
+        especialidad: "Nutrición",
+        medico: "Dra. Díaz",
+        lugarDeAtencion: [
+            {
+                partido: "Ituzaingó",
+                direccion: "Calle Italia 420"
+            }
+        ]
+    },
 
 ]
 
