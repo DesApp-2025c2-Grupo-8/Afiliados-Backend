@@ -1,4 +1,4 @@
-import { Controller, Post, Get, Body, Param, Patch, Delete  } from "@nestjs/common";
+import { Controller, Post, Get, Body, Param, Patch, Delete, ParseIntPipe  } from "@nestjs/common";
 import { TurnosService } from "./turnos.service"
 import { CreateTurnoDto } from "./dto/create-turno.dto"
 import { Turno } from "../schemas/turno.schema"
@@ -24,7 +24,7 @@ export class TurnosController {
     }
 
     @Get('consulta/:numeroAfiliado')
-    async findByAfiliadoId(@Param('numeroAfiliado') numeroAfiliado: number){
+    async findByAfiliadoId(@Param('numeroAfiliado', ParseIntPipe) numeroAfiliado: number){
         return this.turnosService.consultarTurnosPorAfiliado(numeroAfiliado)
     }
 
