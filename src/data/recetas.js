@@ -319,6 +319,17 @@ const recetas = [
     observaciones: 'Tomar con comida'
   },
   {
+    estado: 'Aceptada',
+    numeroOrden: 663459902200001,
+    numeroAfiliado: 663459902,
+    fechaDeCarga: '2025-01-10T00:00:00.000Z',
+    integrante: 'Millie Bobby Brown',
+    medicamento: 'Ibuprofeno',
+    cantidad: 10,
+    presentacion: 'Comprimido',
+    observaciones: 'Tomar cada 8 horas.'
+  },
+  {
     estado: 'Rechazada',
     numeroOrden: 663459903200005,
     numeroAfiliado: 663459903,
@@ -383,6 +394,17 @@ const recetas = [
     cantidad: 8,
     presentacion: 'Cápsulas',
     observaciones: ''
+  },
+  {
+    estado: 'Rechazada',
+    numeroOrden: 663459902200002,
+    numeroAfiliado: 663459902,
+    fechaDeCarga: '2025-01-10T00:00:00.000Z',
+    integrante: 'Millie Bobby Brown',
+    medicamento: 'Omeprazol',
+    cantidad: 12,
+    presentacion: 'Comprimido',
+    observaciones: 'Tomar antes del almuerzo.'
   },
   {
     estado: 'Rechazada',
@@ -492,6 +514,17 @@ const recetas = [
     medicamento: 'Loratadina',
     cantidad: 5,
     presentacion: 'Comprimido',
+    observaciones: ''
+  },
+  {
+    estado: 'Pendiente',
+    numeroOrden: 663459902200003,
+    numeroAfiliado: 663459902,
+    fechaDeCarga: '2025-07-22T00:00:00.000Z',
+    integrante: 'Millie Bobby Brown',
+    medicamento: 'Amoxicilina',
+    cantidad: 3,
+    presentacion: 'Jarabe',
     observaciones: ''
   },
   {
@@ -606,6 +639,17 @@ const recetas = [
   },
   {
     estado: 'Pendiente',
+    numeroOrden: 663459902200004,
+    numeroAfiliado: 663459902,
+    fechaDeCarga: '2025-09-28T00:00:00.000Z',
+    integrante: 'Millie Bobby Brown',
+    medicamento: 'B12',
+    cantidad: 10,
+    presentacion: 'Comprimido',
+    observaciones: ''
+  },
+  {
+    estado: 'Pendiente',
     numeroOrden: 663459901200009,
     numeroAfiliado: 663459901,
     fechaDeCarga: '2025-09-28T00:00:00.000Z',
@@ -635,6 +679,17 @@ const recetas = [
     medicamento: 'Amoxicilina',
     cantidad: 10,
     presentacion: 'Jarabe',
+    observaciones: ''
+  },
+  {
+    estado: 'Observación',
+    numeroOrden: 663459902200005,
+    numeroAfiliado: 663459902,
+    fechaDeCarga: '2025-10-10T00:00:00.000Z',
+    integrante: 'Millie Bobby Brown',
+    medicamento: 'Paracetamol',
+    cantidad: 7,
+    presentacion: 'Comprimido',
     observaciones: ''
   },
   
@@ -828,6 +883,17 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Observación',
+    numeroOrden: 663459902200006,
+    numeroAfiliado: 663459902,
+    fechaDeCarga: '2025-11-22T00:00:00.000Z',
+    integrante: 'Millie Bobby Brown',
+    medicamento: 'Ibuprofeno',
+    cantidad: 5,
+    presentacion: 'Cápsulas',
+    observaciones: ''
+  },
+  {
     estado: 'Aceptada',
     numeroOrden: 663459901200012,
     numeroAfiliado: 663459901,
@@ -917,6 +983,17 @@ const recetas = [
   },
   {
     estado: 'Aceptada',
+    numeroOrden: 663459902200007,
+    numeroAfiliado: 663459902,
+    fechaDeCarga: '2025-11-25T00:00:00.000Z',
+    integrante: 'Millie Bobby Brown',
+    medicamento: 'Buscapina',
+    cantidad: 10,
+    presentacion: 'Comprimido',
+    observaciones: ''
+  },
+  {
+    estado: 'Aceptada',
     numeroOrden: 663459905200010,
     numeroAfiliado: 663459905,
     fechaDeCarga: '2025-11-25T00:00:00.000Z',
@@ -993,6 +1070,17 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Rechazada',
+    numeroOrden: 663459902200008,
+    numeroAfiliado: 663459902,
+    fechaDeCarga: '2025-11-28T00:00:00.000Z',
+    integrante: 'Millie Bobby Brown',
+    medicamento: 'Amoxicilina',
+    cantidad: 2,
+    presentacion: 'Jarabe',
+    observaciones: ''
+  },
+  {
     estado: 'Aceptada',
     numeroOrden: 663459903200016,
     numeroAfiliado: 663459903,
@@ -1023,6 +1111,17 @@ const recetas = [
     medicamento: 'Buscapina',
     cantidad: 5,
     presentacion: 'Cápsulas',
+    observaciones: ''
+  },
+  {
+    estado: 'Observación',
+    numeroOrden: 663459902200009,
+    numeroAfiliado: 663459902,
+    fechaDeCarga: '2025-11-29T00:00:00.000Z',
+    integrante: 'Millie Bobby Brown',
+    medicamento: 'Sertal',
+    cantidad: 1,
+    presentacion: 'Gotas',
     observaciones: ''
   },
   {

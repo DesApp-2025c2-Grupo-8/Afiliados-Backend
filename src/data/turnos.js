@@ -14,6 +14,34 @@ const turnos = [
         ]
     },
     {
+        numeroAfiliado: 663459902,
+        integrante: "Millie Bobby Brown",
+        fecha: "2025-12-01",
+        hora: "10:30",
+        especialidad: "Clínico",
+        medico: "Dr. Aguirre",
+        lugarDeAtencion: [
+            {
+                partido: "Ramos Mejía",
+                direccion: "Av. de Mayo 578"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459902,
+        integrante: "Millie Bobby Brown",
+        fecha: "2025-11-29",
+        hora: "10:30",
+        especialidad: "Nutrición",
+        medico: "Dra. Juarez",
+        lugarDeAtencion: [
+            {
+                partido: "Ramos Mejía",
+                direccion: "Av. de Mayo 578"
+            }
+        ]
+    },
+    {
         numeroAfiliado: 663459904,
         integrante: "Julieta Varela",
         fecha: "2025-11-22",
@@ -39,6 +67,76 @@ const turnos = [
             {
                 partido: "Lomas de Zamora",
                 direccion: "Av. Hipólito Yrigoyen 1234"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459902,
+        integrante: "Millie Bobby Brown",
+        fecha: "2025-11-23",
+        hora: "10:00",
+        especialidad: "Endocrinología",
+        medico: "Dra. Santillán",
+        lugarDeAtencion: [
+            {
+                partido: "Morón",
+                direccion: "Oruro 650"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459902,
+        integrante: "Millie Bobby Brown",
+        fecha: "2025-09-20",
+        hora: "10:20",
+        especialidad: "Psicología",
+        medico: "Lic. Gutierrez",
+        lugarDeAtencion: [
+            {
+                partido: "Castelar",
+                direccion: "Castelar 6500"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459902,
+        integrante: "Millie Bobby Brown",
+        fecha: "2025-08-15",
+        hora: "11:30",
+        especialidad: "Kinesiología",
+        medico: "Dra. Balestrini",
+        lugarDeAtencion: [
+            {
+                partido: "Morón",
+                direccion: "Av. Rivadavia 120"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459902,
+        integrante: "Millie Bobby Brown",
+        fecha: "2025-08-15",
+        hora: "11:30",
+        especialidad: "Kinesiología",
+        medico: "Dra. Balestrini",
+        lugarDeAtencion: [
+            {
+                partido: "Morón",
+                direccion: "Av. Rivadavia 120"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459902,
+        integrante: "Millie Bobby Brown",
+        fecha: "2025-01-10",
+        hora: "14:00",
+        especialidad: "Traumatología",
+        medico: "Dra. Calvo",
+        lugarDeAtencion: [
+            {
+                partido: "Morón",
+                direccion: "Av. Eva Perón 1200"
             }
         ]
     },
@@ -71,7 +169,7 @@ const turnos = [
         ]
     },
     {
-        numeroAfiliado: 663459904,
+        numeroAfiliado: 228510301,
         integrante: "Julieta Molina",
         fecha: "2025-11-12",
         hora: "14:30",
@@ -85,7 +183,7 @@ const turnos = [
         ]
     },
     {
-        numeroAfiliado: 663459904,
+        numeroAfiliado: 228510301,
         integrante: "Julieta Molina",
         fecha: "2025-12-03",
         hora: "17:30",
@@ -99,7 +197,7 @@ const turnos = [
         ]
     },
     {
-        numeroAfiliado: 663459904,
+        numeroAfiliado: 228510301,
         integrante: "Julieta Molina",
         fecha: "2025-12-29",
         hora: "11:00",
@@ -113,7 +211,7 @@ const turnos = [
         ]
     },
     {
-        numeroAfiliado: 663459904,
+        numeroAfiliado: 228510301,
         integrante: "Julieta Molina",
         fecha: "2026-01-18",
         hora: "15:00",
