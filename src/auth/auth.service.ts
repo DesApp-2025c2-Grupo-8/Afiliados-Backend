@@ -33,13 +33,13 @@ export class AuthService {
   }
 
   async registro(email:string ,tipoDocumento: string, numeroDocumento: number, password: string, fechaNacimiento: Date, telefono?: number, direccion?: string) {
-    const existingUser = await this.usersService.findByTipoYNumeroDocumentoYpassword(
+    const existingUser = await this.usersService.findByTipoYNumeroDocumento(
       tipoDocumento,
       numeroDocumento,
-      password,
     );
     if (existingUser) throw new UnauthorizedException('El usuario ya existe');
 
+    console.log('Creando usuario con:', {email, tipoDocumento, numeroDocumento, password, fechaNacimiento, telefono, direccion});
     const newUser = await this.usersService.create({
       email,
       tipoDocumento,
@@ -49,6 +49,8 @@ export class AuthService {
       telefono,
       direccion,
     });
+
+    if( !newUser) throw new UnauthorizedException('No se pudo crear el usuario');
 
     return {
       access_token: this.jwtService.sign({ sub: newUser.numeroAfiliado }),

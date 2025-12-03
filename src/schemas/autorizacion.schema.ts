@@ -8,7 +8,7 @@ export class Autorizacion {
         required: true,
         unique: true
     })
-    numeroAutorizacion: string;
+    numeroAutorizacion: number;
 
     @Prop({
         required: true,
@@ -31,7 +31,7 @@ export class Autorizacion {
     especialidad: string;
 
     @Prop({ required: false })
-    fechaPrevista: Date;
+    fechaDeCarga: Date;
 
     @Prop({ required: true })
     partido?: string;
@@ -43,7 +43,17 @@ export class Autorizacion {
         trim: true,
         default: ''
     })
-    observacion: string
+    observaciones: string
+
+    @Prop({
+        trim: true,
+        default: 'pendiente'
+    })
+    estado: string
+
+    @Prop({ required: false})
+    cantDias: number
+
 }
 
 export const AutorizacionSchema = SchemaFactory.createForClass(Autorizacion)

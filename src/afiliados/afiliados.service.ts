@@ -35,6 +35,7 @@ export class AfiliadosService {
   }
 
   async insertMany(afiliadosACrear: CreateAfiliadoDto[]): Promise<Afiliado[]> {
+    console.log('Insertando afiliados en la base de datos...');
     return this.afiliadoModel.insertMany(afiliadosACrear).then((docs) => docs.map((d) => d.toObject()));
   }
 

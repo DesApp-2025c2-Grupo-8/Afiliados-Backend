@@ -22,12 +22,12 @@ export class CreateAutorizacionDto {
 
     @IsOptional()
     @IsString()
-    observacion?: string;
+    observaciones?: string;
 
     @IsDate()
     @IsOptional()
     @Type(() => Date)
-    fechaPrevista?: Date;
+    fechaDeCarga?: Date;
 
     @IsNumber()
     @IsNotEmpty()
@@ -36,5 +36,13 @@ export class CreateAutorizacionDto {
     @IsNotEmpty()
     @IsString()
     medico: string;
+
+    @IsString()
+    @IsOptional()
+    estado?: string
+
+    @IsNumber()
+    @IsOptional()
+    cantDias: number
 
 }
