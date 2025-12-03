@@ -377,7 +377,7 @@ const autorizaciones = [
     "cantDias": 15
   },
   {
-    "numeroAutorizacion": 663459903600007,
+    "numeroAutorizacion": 663459903600005,
     "numeroAfiliado": 663459903,
     "fechaDeCarga": "2025-07-21T00:00:00Z",
     "integrante": "Tomas Varela",
@@ -386,7 +386,7 @@ const autorizaciones = [
     "partido": "Morón",
     "direccion": "Calle Urquiza 950",
     "observaciones": "Control anual.",
-    "estado": "Aprobado",
+    "estado": "Aceptada",
     "cantDias": 1
   },
   {
@@ -438,7 +438,7 @@ const autorizaciones = [
     "partido": "Ituzaingó",
     "direccion": "Calle Sarmiento 220",
     "observaciones": "",
-    "estado": "Pagado",
+    "estado": "Aceptada",
     "cantDias": 1
   },
   {
@@ -494,7 +494,7 @@ const autorizaciones = [
     "cantDias": 3
   },
   {
-    "numeroAutorizacion": 938557201600007,
+    "numeroAutorizacion": 938557201600005,
     "numeroAfiliado": 938557201,
     "fechaDeCarga": "2025-09-07T00:00:00Z",
     "integrante": "Santiago Solari",
@@ -503,11 +503,11 @@ const autorizaciones = [
     "partido": "Merlo",
     "direccion": "Calle Belgrano 854",
     "observaciones": "",
-    "estado": "Aprobado",
+    "estado": "Aceptada",
     "cantDias": 1
   },
   {
-    "numeroAutorizacion": 663459903600005,
+    "numeroAutorizacion": 663459903600006,
     "numeroAfiliado": 663459903,
     "fechaDeCarga": "2025-09-10T00:00:00Z",
     "integrante": "Tomas Varela",
@@ -524,7 +524,7 @@ const autorizaciones = [
     "numeroAfiliado": 228510301,
     "fechaDeCarga": "2025-09-12T00:00:00Z",
     "integrante": "Julieta Molina",
-    "medico": "Clínica del Parque",
+    "medico": "Dra. Gabriela Pérez",
     "especialidad": "Oftalmología",
     "partido": "Tres de Febrero",
     "direccion": "Av. Roca 1215",
@@ -555,11 +555,11 @@ const autorizaciones = [
     "partido": "Ramos Mejía",
     "direccion": "Calle Mitre 640",
     "observaciones": "",
-    "estado": "Aprobado",
+    "estado": "Aceptada",
     "cantDias": 1
   },
   {
-    "numeroAutorizacion": 663459903600006,
+    "numeroAutorizacion": 663459903600007,
     "numeroAfiliado": 663459903,
     "fechaDeCarga": "2025-09-17T00:00:00Z",
     "integrante": "Tomas Varela",
@@ -598,7 +598,7 @@ const autorizaciones = [
     "cantDias": 1
   },
   {
-    "numeroAutorizacion": 938557201600005,
+    "numeroAutorizacion": 938557201600006,
     "numeroAfiliado": 938557201,
     "fechaDeCarga": "2025-09-24T00:00:00Z",
     "integrante": "Santiago Solari",
@@ -611,7 +611,7 @@ const autorizaciones = [
     "cantDias": 3
   },
   {
-    "numeroAutorizacion": 938557201600006,
+    "numeroAutorizacion": 938557201600007,
     "numeroAfiliado": 938557201,
     "fechaDeCarga": "2025-10-01T00:00:00Z",
     "integrante": "Santiago Solari",
@@ -633,7 +633,7 @@ const autorizaciones = [
     "partido": "Hurlingham",
     "direccion": "Av. Vergara 436",
     "observaciones": "Atención en guardia.",
-    "estado": "Pagado",
+    "estado": "Pendiente",
     "cantDias": 1
   },
   {
@@ -673,6 +673,19 @@ const autorizaciones = [
     "direccion": "Av. San Martín 980",
     "observaciones": "Ecocardiograma de control.",
     "estado": "Pendiente",
+    "cantDias": 1
+  },
+  {
+    "numeroAutorizacion": 663459901600008,
+    "numeroAfiliado": 663459901,
+    "fechaDeCarga": "2025-10-29T00:00:00Z",
+    "integrante": "Valentin Varela",
+    "medico": "Dr. Cristian Blanco",
+    "especialidad": "Clínico",
+    "partido": "San Justo",
+    "direccion": "San Justo 1000",
+    "observaciones": "Chequeo por dolor de abdomen.",
+    "estado": "Observación",
     "cantDias": 1
   },
   {
@@ -741,7 +754,7 @@ const autorizaciones = [
     "cantDias": 1
   },
   {
-    "numeroAutorizacion": 663459901600008,
+    "numeroAutorizacion": 663459901600009,
     "numeroAfiliado": 663459901,
     "fechaDeCarga": "2025-11-09T00:00:00Z",
     "integrante": "Valentin Varela",
@@ -819,16 +832,16 @@ const autorizaciones = [
     "cantDias": 1
   },
   {
-    "numeroAutorizacion": 663459901600009,
+    "numeroAutorizacion": 663459901600010,
     "numeroAfiliado": 663459901,
     "fechaDeCarga": "2025-11-23T00:00:00Z",
     "integrante": "Valentin Varela",
-    "medico": "Consultorios del Oeste",
+    "medico": "Dra. Ana Gutierrez",
     "especialidad": "Traumatología",
     "partido": "Morón",
     "direccion": "Av. Rivadavia 14500, Haedo",
     "observaciones": "",
-    "estado": "Rechazado",
+    "estado": "Rechazada",
     "cantDias": 2
   },
   {
@@ -836,7 +849,7 @@ const autorizaciones = [
     "numeroAfiliado": 663459904,
     "fechaDeCarga": "2025-11-23T00:00:00Z",
     "integrante": "Julieta Varela",
-    "medico": "Centro Médico Hurlingham",
+    "medico": "Dra. Laura Martinez",
     "especialidad": "Clínica General",
     "partido": "Hurlingham",
     "direccion": "Av. Jauretche 1800",
@@ -849,7 +862,7 @@ const autorizaciones = [
     "numeroAfiliado": 938557201,
     "fechaDeCarga": "2025-11-24T00:00:00Z",
     "integrante": "Santiago Solari",
-    "medico": "Policlínico Central San Justo",
+    "medico": "Dr. Facundo Aguilar",
     "especialidad": "Clínica General",
     "partido": "La Matanza",
     "direccion": "Av. Illia 3050, San Justo",
@@ -858,11 +871,24 @@ const autorizaciones = [
     "cantDias": 3
   },
   {
+    "numeroAutorizacion": 663459905600012,
+    "numeroAfiliado": 663459905,
+    "fechaDeCarga": "2025-11-24T00:00:00Z",
+    "integrante": "Santiago Varela",
+    "medico": "Lic. María Castro",
+    "especialidad": "Psicología",
+    "partido": "La Matanza",
+    "direccion": "Av. Illia 300",
+    "observaciones": "",
+    "estado": "Observación",
+    "cantDias": 1
+  },
+  {
     "numeroAutorizacion": 663459905600009,
     "numeroAfiliado": 663459905,
     "fechaDeCarga": "2025-11-25T00:00:00Z",
     "integrante": "Santiago Varela",
-    "medico": "Clínica San José",
+    "medico": "Dr. José Espíndola",
     "especialidad": "Clínica General",
     "partido": "Hurlingham",
     "direccion": "Av. Vergara 436",
@@ -880,7 +906,7 @@ const autorizaciones = [
     "partido": "Moreno",
     "direccion": "Av. del Libertador 2100",
     "observaciones": "",
-    "estado": "Pagado",
+    "estado": "Rechazada",
     "cantDias": 1
   },
   {
@@ -888,12 +914,12 @@ const autorizaciones = [
     "numeroAfiliado": 663459904,
     "fechaDeCarga": "2025-11-28T00:00:00Z",
     "integrante": "Julieta Varela",
-    "medico": "Policlínico Central San Justo",
+    "medico": "Dr. Agustín Acosta",
     "especialidad": "Clínica General",
     "partido": "La Matanza",
     "direccion": "Av. Illia 3050, San Justo",
     "observaciones": "",
-    "estado": "Pagado",
+    "estado": "Pendiente",
     "cantDias": 1
   },
   {
@@ -901,12 +927,12 @@ const autorizaciones = [
     "numeroAfiliado": 663459903,
     "fechaDeCarga": "2025-11-29T00:00:00Z",
     "integrante": "Tomas Varela",
-    "medico": "Clínica del Parque",
+    "medico": "Dra. Maira Rios",
     "especialidad": "Oftalmología",
     "partido": "Tres de Febrero",
     "direccion": "Av. Roca 1215",
     "observaciones": "Fondo de ojos",
-    "estado": "Aprobado",
+    "estado": "Aceptada",
     "cantDias": 1
   },
   {
@@ -914,13 +940,65 @@ const autorizaciones = [
     "numeroAfiliado": 228510301,
     "fechaDeCarga": "2025-11-29T00:00:00Z",
     "integrante": "Julieta Molina",
-    "medico": "Sanatorio Nuestra Señora del Pilar",
+    "medico": "Dra. Pilar Masse",
     "especialidad": "Clínica General",
     "partido": "San Martín",
     "direccion": "Av. Márquez 2800",
     "observaciones": "Internación programada..",
     "estado": "Pendiente",
     "cantDias": 5
+  },
+  {
+    "numeroAutorizacion": 776592801600010,
+    "numeroAfiliado": 776592801,
+    "fechaDeCarga": "2025-12-01T00:00:00Z",
+    "integrante": "Ignacio Palmier",
+    "medico": "Dra. Marcela Gómez",
+    "especialidad": "Dermatólogo",
+    "partido": "Morón",
+    "direccion": "Av. Constituyentes 100",
+    "observaciones": "",
+    "estado": "Observación",
+    "cantDias": 1
+  },
+  {
+    "numeroAutorizacion": 776592801600011,
+    "numeroAfiliado": 776592801,
+    "fechaDeCarga": "2025-12-01T00:00:00Z",
+    "integrante": "Ignacio Palmier",
+    "medico": "Lic. Cristina Sánchez",
+    "especialidad": "Psicología",
+    "partido": "Morón",
+    "direccion": "Av. Constituyentes 100",
+    "observaciones": "",
+    "estado": "Observación",
+    "cantDias": 1
+  },
+  {
+    "numeroAutorizacion": 776592801600012,
+    "numeroAfiliado": 776592801,
+    "fechaDeCarga": "2025-12-01T00:00:00Z",
+    "integrante": "Ignacio Palmier",
+    "medico": "Dr. Franco Rodriguez",
+    "especialidad": "Neurología",
+    "partido": "Morón",
+    "direccion": "Av. 9 de Julio 100",
+    "observaciones": "Chequeos anuales.",
+    "estado": "Rechazada",
+    "cantDias": 1
+  },
+  {
+    "numeroAutorizacion": 776592801600013,
+    "numeroAfiliado": 776592801,
+    "fechaDeCarga": "2025-12-01T00:00:00Z",
+    "integrante": "Ignacio Palmier",
+    "medico": "Dr. Lucas Quintana",
+    "especialidad": "Cardiología",
+    "partido": "Morón",
+    "direccion": "Av. 9 de Julio 100",
+    "observaciones": "Chequeos anuales.",
+    "estado": "Rechazada",
+    "cantDias": 1
   },
   {
     "numeroAutorizacion": 938557201600010,
@@ -932,7 +1010,33 @@ const autorizaciones = [
     "partido": "Merlo",
     "direccion": "Av. Real 2050",
     "observaciones": "",
-    "estado": "Aprobado",
+    "estado": "Aceptada",
+    "cantDias": 1
+  },
+  {
+    "numeroAutorizacion": 663459905600013,
+    "numeroAfiliado": 663459905,
+    "fechaDeCarga": "2025-11-30T00:00:00Z",
+    "integrante": "Santiago Varela",
+    "medico": "Dr. Enzo Martínez",
+    "especialidad": "Pediatría",
+    "partido": "Morón",
+    "direccion": "Av. Rivadavia 140",
+    "observaciones": "",
+    "estado": "Observación",
+    "cantDias": 1
+  },
+  {
+    "numeroAutorizacion": 663459903600011,
+    "numeroAfiliado": 663459903,
+    "fechaDeCarga": "2025-11-30T00:00:00Z",
+    "integrante": "Tomas Varela",
+    "medico": "Dr. Enzo Martínez",
+    "especialidad": "Pediatría",
+    "partido": "Morón",
+    "direccion": "Av. Rivadavia 140",
+    "observaciones": "",
+    "estado": "Observación",
     "cantDias": 1
   },
   {
@@ -940,14 +1044,14 @@ const autorizaciones = [
     "numeroAfiliado": 663459904,
     "fechaDeCarga": "2025-11-30T00:00:00Z",
     "integrante": "Julieta Varela",
-    "medico": "Dr. Pablo Herrera",
-    "especialidad": "Reumatología",
-    "partido": "Haedo",
-    "direccion": "Av. Rivadavia 13900",
-    "observaciones": "Solicitud de radiografía.",
-    "estado": "Pendiente",
+    "medico": "Dr. Enzo Martínez",
+    "especialidad": "Pediatría",
+    "partido": "Morón",
+    "direccion": "Av. Rivadavia 140",
+    "observaciones": "",
+    "estado": "Observación",
     "cantDias": 1
-  }
+  },
   {
     "numeroAutorizacion": 938557201600011,
     "numeroAfiliado": 938557201,
@@ -962,11 +1066,11 @@ const autorizaciones = [
     "cantDias": 1
   },
   {
-    "numeroAutorizacion": 776592801600010,
+    "numeroAutorizacion": 776592801600014,
     "numeroAfiliado": 776592801,
     "fechaDeCarga": "2025-12-01T00:00:00Z",
     "integrante": "Ignacio Palmier",
-    "medico": "Centro Médico Hurlingham",
+    "medico": "Dr. Bruno Morales",
     "especialidad": "Clínica General",
     "partido": "Hurlingham",
     "direccion": "Av. Jauretche 1800",
@@ -975,11 +1079,37 @@ const autorizaciones = [
     "cantDias": 3
   },
   {
+    "numeroAutorizacion": 776592801600015,
+    "numeroAfiliado": 776592801,
+    "fechaDeCarga": "2025-12-03T00:00:00Z",
+    "integrante": "Ignacio Palmier",
+    "medico": "Dr. Bruno Morales",
+    "especialidad": "Endocrinología",
+    "partido": "Hurlingham",
+    "direccion": "Av. Jauretche 1800",
+    "observaciones": "Chequeo anual",
+    "estado": "Aceptada",
+    "cantDias": 1
+  },
+  {
+    "numeroAutorizacion": 663459903600012,
+    "numeroAfiliado": 663459903,
+    "fechaDeCarga": "2025-12-01T00:00:00Z",
+    "integrante": "Tomas Varela",
+    "medico": "Dra. Eva Rodriguez",
+    "especialidad": "Hematología",
+    "partido": "Morón",
+    "direccion": "Av. Rivadavia 4000",
+    "observaciones": "",
+    "estado": "Observación",
+    "cantDias": 1
+  },
+  {
     "numeroAutorizacion": 663459905600011,
     "numeroAfiliado": 663459905,
     "fechaDeCarga": "2025-12-01T00:00:00Z",
     "integrante": "Santiago Varela",
-    "medico": "Consultorios del Oeste",
+    "medico": "Dra. Soledad Aguero",
     "especialidad": "Traumatología",
     "partido": "Morón",
     "direccion": "Av. Rivadavia 14500, Haedo",
@@ -988,16 +1118,16 @@ const autorizaciones = [
     "cantDias": 10
   },
   {
-    "numeroAutorizacion": 663459901600010,
+    "numeroAutorizacion": 663459901600011,
     "numeroAfiliado": 663459901,
     "fechaDeCarga": "2025-12-02T00:00:00Z",
     "integrante": "Valentin Varela",
-    "medico": "Instituto del Corazón Oeste",
+    "medico": "Dra. Cristina Sánchez",
     "especialidad": "Cardiología",
     "partido": "Morón",
     "direccion": "Av. Gaona 9900",
     "observaciones": "",
-    "estado": "Aprobado",
+    "estado": "Aceptada",
     "cantDias": 1
   },
   {
@@ -1012,7 +1142,10 @@ const autorizaciones = [
     "observaciones": "",
     "estado": "Aceptada",
     "cantDias": 1
-  }
+  },
+
+
+  
 ];
 
 export default autorizaciones;
