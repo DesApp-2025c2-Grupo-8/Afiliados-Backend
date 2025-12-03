@@ -16,7 +16,7 @@ const turnos = [
     {
         numeroAfiliado: 663459904,
         integrante: "Julieta Varela",
-        fecha: "2025-12-10",
+        fecha: "2025-11-22",
         hora: "08:30",
         especialidad: "Cardiología",
         medico: "Dra. Leon",
@@ -519,6 +519,21 @@ const turnos = [
                 direccion: "Av. Yrigoyen 501"
             }
         ]
+    },
+    {
+        numeroAfiliado: 663459904,
+        integrante: "Julieta Varela",
+        fecha: "2025-11-23",
+        hora: "08:30",
+        especialidad: "Psicología",
+        medico: "Lic. Leon",
+        lugarDeAtencion: [
+            {
+                partido: "Lomas de Zamora",
+                direccion: "Av. Hipólito Yrigoyen 8500"
+            }
+        ]
+
     },
     {
         numeroAfiliado: 663459901,
@@ -1030,88 +1045,40 @@ const turnos = [
         lugarDeAtencion: [{ partido: "Haedo", direccion: "Güemes 600" }]
     },
     {
-        numeroAfiliado: 663459901,
-        integrante: "Valentín Varela",
-        fecha: "2025-11-28",
-        hora: "15:30",
-        especialidad: "Endocrinología",
-        medico: "Dra. Ríos",
-        lugarDeAtencion: [
-            {
-                partido: "Morón",
-                direccion: "Calle Urquiza 950"
-            }
-        ]
+        numeroAfiliado: 776592801,
+        integrante: "Ignacio Palmier",
+        fecha: "2025-12-03",
+        hora: "16:00",
+        especialidad: "Cirujano",
+        medico: "Lic. Aquino",
+        lugarDeAtencion: [{ partido: "Ramos Mejía", direccion: "Av. 9 de Julio 500" }]
     },
     {
-        numeroAfiliado: 663459901,
-        integrante: "Valentín Varela",
-        fecha: "2025-11-27",
+        numeroAfiliado: 776592801,
+        integrante: "Ignacio Palmier",
+        fecha: "2025-12-01",
         hora: "10:00",
-        especialidad: "Psicología",
-        medico: "Dra. Navarro",
-        lugarDeAtencion: [
-            {
-                partido: "Merlo",
-                direccion: "Calle Belgrano 500"
-            }
-        ]
+        especialidad: "Clínico",
+        medico: "Dra. Rodriguez",
+        lugarDeAtencion: [{ partido: "Morón", direccion: "Morón 590" }]
     },
     {
-        numeroAfiliado: 663459904,
-        integrante: "Julieta Varela",
-        fecha: "2025-11-22",
+        numeroAfiliado: 776592801,
+        integrante: "Ignacio Palmier",
+        fecha: "2025-11-21",
+        hora: "13:30",
+        especialidad: "Nutrición",
+        medico: "Dr. Castillo",
+        lugarDeAtencion: [{ partido: "Morón", direccion: "Morón 590" }]
+    },
+    {
+        numeroAfiliado: 776592801,
+        integrante: "Ignacio Palmier",
+        fecha: "2025-11-10",
         hora: "10:30",
-        especialidad: "Neurología",
-        medico: "Dr. Pérez",
-        lugarDeAtencion: [
-            {
-                partido: "Ramos Mejía",
-                direccion: "Calle Mitre 640"
-            }
-        ]
-    },
-    {
-        numeroAfiliado: 663459903,
-        integrante: "Tomás Varela",
-        fecha: "2025-11-24",
-        hora: "12:40",
-        especialidad: "Nutrición",
-        medico: "Dra. Díaz",
-        lugarDeAtencion: [
-            {
-                partido: "Ituzaingó",
-                direccion: "Calle Italia 420"
-            }
-        ]
-    },
-    {
-        numeroAfiliado: 663459904,
-        integrante: "Julieta Varela",
-        fecha: "2025-11-24",
-        hora: "13:00",
-        especialidad: "Nutrición",
-        medico: "Dra. Díaz",
-        lugarDeAtencion: [
-            {
-                partido: "Ituzaingó",
-                direccion: "Calle Italia 420"
-            }
-        ]
-    },
-    {
-        numeroAfiliado: 663459905,
-        integrante: "Santiago Varela",
-        fecha: "2025-11-24",
-        hora: "13:20",
-        especialidad: "Nutrición",
-        medico: "Dra. Díaz",
-        lugarDeAtencion: [
-            {
-                partido: "Ituzaingó",
-                direccion: "Calle Italia 420"
-            }
-        ]
+        especialidad: "Dermatología",
+        medico: "Dra. Santillán",
+        lugarDeAtencion: [{ partido: "Morón", direccion: "Rivadavia 3000" }]
     },
 
 ]

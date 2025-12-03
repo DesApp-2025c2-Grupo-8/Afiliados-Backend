@@ -441,7 +441,7 @@ const recetas = [
   },
   {
     estado: 'Aceptada',
-    numeroOrden: 938557201200008,
+    numeroOrden: 938557201200007,
     numeroAfiliado: 938557201,
     fechaDeCarga: '2025-06-25T00:00:00.000Z',
     integrante: 'Santiago Solari',
@@ -463,7 +463,7 @@ const recetas = [
   },
   {
     estado: 'Rechazada',
-    numeroOrden: 938557201200009,
+    numeroOrden: 9385572012000088,
     numeroAfiliado: 938557201,
     fechaDeCarga: '2025-07-07T00:00:00.000Z',
     integrante: 'Santiago Solari',
@@ -507,7 +507,7 @@ const recetas = [
   },
   {
     estado: 'Rechazada',
-    numeroOrden: 938557201200007,
+    numeroOrden: 938557201200009,
     numeroAfiliado: 938557201,
     fechaDeCarga: '2025-08-18T00:00:00.000Z',
     integrante: 'Santiago Solari',
@@ -529,7 +529,7 @@ const recetas = [
   },
   {
     estado: 'Pendiente',
-    numeroOrden: 663459903200009,
+    numeroOrden: 663459903200008,
     numeroAfiliado: 663459903,
     fechaDeCarga: '2025-09-12T00:00:00.000Z',
     integrante: 'Tomas Varela',
@@ -651,8 +651,8 @@ const recetas = [
   },
 
   {
-    estado: 'Aprobada',
-    numeroOrden: 663459903200008,
+    estado: 'Aceptada',
+    numeroOrden: 663459903200009,
     numeroAfiliado: 663459903,
     fechaDeCarga: '2025-10-19T00:00:00.000Z',
     integrante: 'Tomas Varela',
@@ -674,7 +674,7 @@ const recetas = [
   },
   {
     estado: 'Rechazada',
-    numeroOrden: 663459903200011,
+    numeroOrden: 663459903200010,
     numeroAfiliado: 663459903,
     fechaDeCarga: '2025-11-05T00:00:00.000Z',
     integrante: 'Tomas Varela',
@@ -784,7 +784,7 @@ const recetas = [
   },
   {
     estado: 'Aceptada',
-    numeroOrden: 663459903200010,
+    numeroOrden: 663459903200011,
     numeroAfiliado: 663459903,
     fechaDeCarga: '2025-11-20T00:00:00.000Z',
     integrante: 'Tomas Varela',
@@ -850,6 +850,17 @@ const recetas = [
     observaciones: ''
   },
   {
+    estado: 'Rechazada',
+    numeroOrden: 663459903200014,
+    numeroAfiliado: 663459903,
+    fechaDeCarga: '2025-11-23T00:00:00.000Z',
+    integrante: 'Tomas Varela',
+    medicamento: 'Loratadina',
+    cantidad: 15,
+    presentacion: 'Comprimido',
+    observaciones: ''
+  },
+  {
     estado: 'Pendiente',
     numeroOrden: 228510301200011,
     numeroAfiliado: 228510301,
@@ -861,8 +872,19 @@ const recetas = [
     observaciones: 'Insulina rápida'
   },
   {
+    estado: 'Observación',
+    numeroOrden: 776592801200020,
+    numeroAfiliado: 776592801,
+    fechaDeCarga: '2025-11-22T00:00:00.000Z',
+    integrante: 'Ignacio Palmier',
+    medicamento: 'Paracetamol',
+    cantidad: 12,
+    presentacion: 'Comprimido',
+    observaciones: ''
+  },
+  {
     estado: 'Pendiente',
-    numeroOrden: 663459903200014,
+    numeroOrden: 663459903200015,
     numeroAfiliado: 663459903,
     fechaDeCarga: '2025-11-24T00:00:00.000Z',
     integrante: 'Tomas Varela',
@@ -972,7 +994,7 @@ const recetas = [
   },
   {
     estado: 'Aceptada',
-    numeroOrden: 663459903200015,
+    numeroOrden: 663459903200016,
     numeroAfiliado: 663459903,
     fechaDeCarga: '2025-11-29T00:00:00.000Z',
     integrante: 'Tomas Varela',
@@ -983,7 +1005,7 @@ const recetas = [
   },
   {
     estado: 'Aceptada',
-    numeroOrden: 663459903200016,
+    numeroOrden: 663459903200017,
     numeroAfiliado: 663459903,
     fechaDeCarga: '2025-11-29T00:00:00.000Z',
     integrante: 'Tomas Varela',
@@ -1027,7 +1049,7 @@ const recetas = [
   },
   {
     estado: 'Rechazada',
-    numeroOrden: 663459905200013,
+    numeroOrden: 663459904200013,
     numeroAfiliado: 663459904,
     fechaDeCarga: '2025-11-30T00:00:00.000Z',
     integrante: 'Julieta Varela',
@@ -1035,6 +1057,17 @@ const recetas = [
     cantidad: 3,
     presentacion: 'Cápsulas',
     observaciones: ''
+  },
+  {
+    estado: 'Rechazada',
+    numeroOrden: 776592801200012,
+    numeroAfiliado: 776592801,
+    fechaDeCarga: '2025-12-30T00:00:00.000Z',
+    integrante: 'Ignacio Palmier',
+    medicamento: 'Ibuprofeno',
+    cantidad: 10,
+    presentacion: 'Comprimido',
+    observaciones: 'Ibuprofeno 400.'
   },
   {
     estado: 'Pendiente',
@@ -1060,7 +1093,7 @@ const recetas = [
   },
   {
     estado: 'Pendiente',
-    numeroOrden: 663459905200014,
+    numeroOrden: 663459904200014,
     numeroAfiliado: 663459904,
     fechaDeCarga: '2025-12-02T00:00:00.000Z',
     integrante: 'Julieta Varela',
@@ -1071,12 +1104,45 @@ const recetas = [
   },  
   {
     estado: 'Aceptada',
-    numeroOrden: 776592801200012,
+    numeroOrden: 776592801200013,
     numeroAfiliado: 776592801,
     fechaDeCarga: '2025-12-02T00:00:00.000Z',
     integrante: 'Ignacio Palmier',
     medicamento: 'Buscapina',
     cantidad: 10,
+    presentacion: 'Comprimido',
+    observaciones: ''
+  },
+  {
+    estado: 'Pendiente',
+    numeroOrden: 776592801200014,
+    numeroAfiliado: 776592801,
+    fechaDeCarga: '2025-12-02T00:00:00.000Z',
+    integrante: 'Ignacio Palmier',
+    medicamento: 'Sertal',
+    cantidad: 5,
+    presentacion: 'Comprimido',
+    observaciones: ''
+  },
+  {
+    estado: 'Observación',
+    numeroOrden: 776592801200015,
+    numeroAfiliado: 776592801,
+    fechaDeCarga: '2025-12-02T00:00:00.000Z',
+    integrante: 'Ignacio Palmier',
+    medicamento: 'Melatonina',
+    cantidad: 1,
+    presentacion: 'Comprimido',
+    observaciones: ''
+  },
+  {
+    estado: 'Rechazada',
+    numeroOrden: 776592801200016,
+    numeroAfiliado: 776592801,
+    fechaDeCarga: '2025-12-02T00:00:00.000Z',
+    integrante: 'Ignacio Palmier',
+    medicamento: 'Loratadina',
+    cantidad: 14,
     presentacion: 'Comprimido',
     observaciones: ''
   },
@@ -1090,7 +1156,51 @@ const recetas = [
     cantidad: 12,
     presentacion: 'Cápsulas',
     observaciones: ''
-  }
+  },
+  {
+    estado: 'Observación',
+    numeroOrden: 663459903200018,
+    numeroAfiliado: 663459903,
+    fechaDeCarga: '2025-12-03T00:00:00.000Z',
+    integrante: 'Tomas Varela',
+    medicamento: 'Melatonina',
+    cantidad: 1,
+    presentacion: 'Cápsulas',
+    observaciones: 'Tomar uno por noche.'
+  },
+  {
+    estado: 'Observación',
+    numeroOrden: 776592801200017,
+    numeroAfiliado: 776592801,
+    fechaDeCarga: '2025-12-03T00:00:00.000Z',
+    integrante: 'Ignacio Palmier',
+    medicamento: 'Pantoprazol',
+    cantidad: 14,
+    presentacion: 'Comprimido',
+    observaciones: ''
+  },
+  {
+    estado: 'Observación',
+    numeroOrden: 776592801200018,
+    numeroAfiliado: 776592801,
+    fechaDeCarga: '2025-12-03T00:00:00.000Z',
+    integrante: 'Ignacio Palmier',
+    medicamento: 'Paracetamol',
+    cantidad: 8,
+    presentacion: 'Cápsulas',
+    observaciones: ''
+  },
+  {
+    estado: 'Rechazada',
+    numeroOrden: 776592801200019,
+    numeroAfiliado: 776592801,
+    fechaDeCarga: '2025-12-03T00:00:00.000Z',
+    integrante: 'Ignacio Palmier',
+    medicamento: 'Aspirina',
+    cantidad: 10,
+    presentacion: 'Comprimido',
+    observaciones: ''
+  },
 ];
 
 export default recetas;

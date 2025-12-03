@@ -485,7 +485,7 @@ const reintegros = [
   {
     "numeroAfiliado": 663459901,
     "numeroOrden": "663459901200008",
-    "estado": "Aceptada",
+    "estado": "Pago",
     "fechaDeCarga": "2025-11-20T15:00:00.000Z",
     "fechaDePrestacion": "2025-11-25T00:00:00.000Z",
     "integrante": "Valentin Varela",
@@ -524,14 +524,34 @@ const reintegros = [
   },
   {
     "numeroAfiliado": 663459901,
-    "numeroOrden": "663459901200009",
-    "estado": "Pendiente",
+    "numeroOrden": "663459901200010",
+    "estado": "Observación",
     "fechaDeCarga": "2025-12-01T15:00:00.000Z",
     "fechaDePrestacion": "2025-12-10T00:00:00.000Z",
     "integrante": "Valentin Varela",
     "medico": "Dra. Aguilar",
     "especialidad": "Clínica",
     "lugarDeAtencion": "Sanatorio Central",
+    "observaciones": "",
+    "datosFactura": {
+      "cuit": 349988776654,
+      "fechaDeFactura": "2025-12-03T00:00:00.000Z",
+      "monto": 10500,
+      "personaFacturada": "Jade Aldemir",
+      "medioDePago": "Transferencia",
+      "cbu": "0000003100004444444444"
+    }
+  },
+  {
+    "numeroAfiliado": 663459901,
+    "numeroOrden": "663459901200011",
+    "estado": "Observación",
+    "fechaDeCarga": "2025-12-01T15:00:00.000Z",
+    "fechaDePrestacion": "2025-12-10T00:00:00.000Z",
+    "integrante": "Valentin Varela",
+    "medico": "Dr. Jara",
+    "especialidad": "Nefrología",
+    "lugarDeAtencion": "Sanatorio Juncal",
     "observaciones": "",
     "datosFactura": {
       "cuit": 349988776654,
@@ -629,7 +649,7 @@ const reintegros = [
 
   {
     "numeroAfiliado": 663459903,
-    "numeroOrden": "663459903200010",
+    "numeroOrden": "663459903200008",
     "estado": "Pendiente",
     "fechaDeCarga": "2025-11-15T14:00:00.000Z",
     "fechaDePrestacion": "2025-11-18T00:00:00.000Z",
@@ -650,7 +670,7 @@ const reintegros = [
 
   {
     "numeroAfiliado": 663459903,
-    "numeroOrden": "663459903200008",
+    "numeroOrden": "663459903200009",
     "estado": "Pendiente",
     "fechaDeCarga": "2025-11-25T14:00:00.000Z",
     "fechaDePrestacion": "2025-11-28T00:00:00.000Z",
@@ -671,13 +691,33 @@ const reintegros = [
 
   {
     "numeroAfiliado": 663459903,
-    "numeroOrden": "663459903200009",
+    "numeroOrden": "663459903200010",
     "estado": "Pago",
     "fechaDeCarga": "2025-11-30T14:00:00.000Z",
     "fechaDePrestacion": "2025-11-30T00:00:00.000Z",
     "integrante": "Tomas Varela",
     "medico": "Dra. Maldonado",
     "especialidad": "Pediatría",
+    "lugarDeAtencion": "Clínica Central",
+    "observaciones": "",
+    "datosFactura": {
+      "cuit": 234455667711,
+      "fechaDeFactura": "2025-11-30T00:00:00.000Z",
+      "monto": 7000,
+      "personaFacturada": "Brecken Harris",
+      "medioDePago": "Transferencia",
+      "cbu": "0000003100001234567891"
+    }
+  },
+  {
+    "numeroAfiliado": 663459903,
+    "numeroOrden": "663459903200011",
+    "estado": "Observación",
+    "fechaDeCarga": "2025-11-30T14:00:00.000Z",
+    "fechaDePrestacion": "2025-11-30T00:00:00.000Z",
+    "integrante": "Tomas Varela",
+    "medico": "Dra. Gutierrez",
+    "especialidad": "Nutrición",
     "lugarDeAtencion": "Clínica Central",
     "observaciones": "",
     "datosFactura": {
@@ -735,7 +775,7 @@ const reintegros = [
   {
     "numeroAfiliado": 663459905,
     "numeroOrden": "663459905200006",
-    "estado": "Rechazada",
+    "estado": "Rechazado",
     "fechaDeCarga": "2025-07-17T00:00:00.000Z",
     "fechaDePrestacion": "2025-07-19T00:00:00.000Z",
     "integrante": "Santiago Varela",
@@ -799,7 +839,7 @@ const reintegros = [
     "numeroAfiliado": 663459905,
     "numeroOrden": "663459905200009",
     "estado": "Pendiente",
-    "fechaDeCarga": "2025-11-26T00:00:00.000Z",
+    "fechaDeCarga": "2025-11-29T00:00:00.000Z",
     "fechaDePrestacion": "2025-11-28T00:00:00.000Z",
     "integrante": "Santiago Varela",
     "medico": "Dr. Gutierrez",
@@ -819,9 +859,9 @@ const reintegros = [
   {
     "numeroAfiliado": 663459905,
     "numeroOrden": "663459905200010",
-    "estado": "Pendiente",
+    "estado": "Pago",
     "fechaDeCarga": "2025-12-02T00:00:00.000Z",
-    "fechaDePrestacion": "2025-12-05T00:00:00.000Z",
+    "fechaDePrestacion": "2025-12-03T00:00:00.000Z",
     "integrante": "Santiago Varela",
     "medico": "Dr. Gutierrez",
     "especialidad": "Clínico",
@@ -841,8 +881,8 @@ const reintegros = [
     "numeroAfiliado": 663459904,
     "numeroOrden": "663459904200003",
     "estado": "Rechazado",
-    "fechaDeCarga": "2025-01-15T10:00:00.000Z",
-    "fechaDePrestacion": "2025-01-15T00:00:00.000Z",
+    "fechaDeCarga": "2025-12-01T10:00:00.000Z",
+    "fechaDePrestacion": "2025-12-02T00:00:00.000Z",
     "integrante": "Julieta Varela",
     "medico": "Dra. Mendez",
     "especialidad": "Pediatría",
@@ -850,7 +890,7 @@ const reintegros = [
     "observaciones": "Consulta.",
     "datosFactura": {
       "cuit": 349988776654,
-      "fechaDeFactura": "2025-01-15T00:00:00.000Z",
+      "fechaDeFactura": "2025-12-02T00:00:00.000Z",
       "monto": 5000,
       "personaFacturada": "Jade Aldemir",
       "medioDePago": "Transferencia",
@@ -926,7 +966,7 @@ const reintegros = [
     "numeroOrden": "663459904200007",
     "estado": "Rechazado",
     "fechaDeCarga": "2025-11-23T10:00:00.000Z",
-    "fechaDePrestacion": "2025-11-23T00:00:00.000Z",
+    "fechaDePrestacion": "2025-11-29T00:00:00.000Z",
     "integrante": "Julieta Varela",
     "medico": "Dra. Menendez",
     "especialidad": "Psicología",
@@ -988,7 +1028,7 @@ const reintegros = [
   {
     "numeroAfiliado": 938557201,
     "numeroOrden": "938557201200005",
-    "estado": "Pagado",
+    "estado": "Pago",
     "fechaDeCarga": "2025-04-15T11:00:00.000Z",
     "fechaDePrestacion": "2025-04-10T00:00:00.000Z",
     "integrante": "Santiago Solari",
@@ -1028,7 +1068,7 @@ const reintegros = [
   {
     "numeroAfiliado": 938557201,
     "numeroOrden": "938557201200007",
-    "estado": "Aprobado",
+    "estado": "Pago",
     "fechaDeCarga": "2025-11-13T11:00:00.000Z",
     "fechaDePrestacion": "2025-11-12T00:00:00.000Z",
     "integrante": "Santiago Solari",
@@ -1048,7 +1088,7 @@ const reintegros = [
   {
     "numeroAfiliado": 938557201,
     "numeroOrden": "938557201200008",
-    "estado": "Pagado",
+    "estado": "Pago",
     "fechaDeCarga": "2025-11-28T11:00:00.000Z",
     "fechaDePrestacion": "2025-11-25T00:00:00.000Z",
     "integrante": "Santiago Solari",
@@ -1069,7 +1109,7 @@ const reintegros = [
   {
     "numeroAfiliado": 228510301,
     "numeroOrden": "228510301200003",
-    "estado": "Aprobado",
+    "estado": "Pago",
     "fechaDeCarga": "2025-01-21T13:40:00.000Z",
     "fechaDePrestacion": "2025-01-18T00:00:00.000Z",
     "integrante": "Julieta Molina",
@@ -1129,7 +1169,7 @@ const reintegros = [
   {
     "numeroAfiliado": 228510301,
     "numeroOrden": "228510301200006",
-    "estado": "Pagado",
+    "estado": "Pago",
     "fechaDeCarga": "2025-09-20T13:40:00.000Z",
     "fechaDePrestacion": "2025-09-17T00:00:00.000Z",
     "integrante": "Julieta Molina",
@@ -1149,7 +1189,7 @@ const reintegros = [
   {
     "numeroAfiliado": 228510301,
     "numeroOrden": "228510301200007",
-    "estado": "Aprobado",
+    "estado": "Pago",
     "fechaDeCarga": "2025-11-14T13:40:00.000Z",
     "fechaDePrestacion": "2025-11-21T00:00:00.000Z",
     "integrante": "Julieta Molina",
@@ -1170,7 +1210,7 @@ const reintegros = [
   {
     "numeroAfiliado": 776592801,
     "numeroOrden": "776592801200004",
-    "estado": "Aprobado",
+    "estado": "Pago",
     "fechaDeCarga": "2025-01-20T09:30:00.000Z",
     "fechaDePrestacion": "2025-01-18T00:00:00.000Z",
     "integrante": "Ignacio Palmier",
@@ -1190,7 +1230,7 @@ const reintegros = [
   {
     "numeroAfiliado": 776592801,
     "numeroOrden": "776592801200005",
-    "estado": "Pagado",
+    "estado": "Pago",
     "fechaDeCarga": "2025-07-30T09:30:00.000Z",
     "fechaDePrestacion": "2025-07-28T00:00:00.000Z",
     "integrante": "Ignacio Palmier",
@@ -1250,7 +1290,7 @@ const reintegros = [
   {
     "numeroAfiliado": 776592801,
     "numeroOrden": "776592801200008",
-    "estado": "Pagado",
+    "estado": "Pago",
     "fechaDeCarga": "2025-11-29T09:30:00.000Z",
     "fechaDePrestacion": "2025-11-27T00:00:00.000Z",
     "integrante": "Ignacio Palmier",
@@ -1266,7 +1306,89 @@ const reintegros = [
       "medioDePago": "Transferencia",
       "cbu": "0000000500006789012345"
     }
-  }
+  },
+  {
+    "numeroAfiliado": 776592801,
+    "numeroOrden": "776592801200009",
+    "estado": "Observación",
+    "fechaDeCarga": "2025-11-30T09:30:00.000Z",
+    "fechaDePrestacion": "2025-12-20T00:00:00.000Z",
+    "integrante": "Ignacio Palmier",
+    "medico": "Dr. Bosco",
+    "especialidad": "Clínico",
+    "lugarDeAtencion": "Sanatorio Central",
+    "observaciones": "",
+    "datosFactura": {
+      "cuit": 27001122394,
+      "fechaDeFactura": "2025-12-29T00:00:00.000Z",
+      "monto": 5000,
+      "personaFacturada": "Sanatorio Central S.R.L.",
+      "medioDePago": "Transferencia",
+      "cbu": "0000000500006789010345"
+    }
+  },
+  {
+    "numeroAfiliado": 776592801,
+    "numeroOrden": "776592801200010",
+    "estado": "Pago",
+    "fechaDeCarga": "2025-11-22T09:30:00.000Z",
+    "fechaDePrestacion": "2025-11-25T00:00:00.000Z",
+    "integrante": "Ignacio Palmier",
+    "medico": "Lic. Calvo",
+    "especialidad": "Psicología",
+    "lugarDeAtencion": "Sanatorio Central",
+    "observaciones": "",
+    "datosFactura": {
+      "cuit": 27001122394,
+      "fechaDeFactura": "2025-11-29T00:00:00.000Z",
+      "monto": 12000,
+      "personaFacturada": "Sanatorio Central S.R.L.",
+      "medioDePago": "Transferencia",
+      "cbu": "0000000500006789010345"
+    }
+  },
+
+  {
+    "numeroAfiliado": 776592801,
+    "numeroOrden": "776592801200011",
+    "estado": "Rechazado",
+    "fechaDeCarga": "2025-11-28T09:30:00.000Z",
+    "fechaDePrestacion": "2025-12-02T00:00:00.000Z",
+    "integrante": "Ignacio Palmier",
+    "medico": "Dra. Aguirre",
+    "especialidad": "Dermatología",
+    "lugarDeAtencion": "Clínica San Marcos",
+    "observaciones": "Control.",
+    "datosFactura": {
+      "cuit": 30556677889,
+      "fechaDeFactura": "2025-12-09T00:00:00.000Z",
+      "monto": 8900,
+      "personaFacturada": "Clínica San Marcos S.A.",
+      "medioDePago": "Transferencia",
+      "cbu": "0000004100001010101010"
+    }
+  },
+
+  {
+    "numeroAfiliado": 776592801,
+    "numeroOrden": "776592801200012",
+    "estado": "Pendiente",
+    "fechaDeCarga": "2025-11-28T09:30:00.000Z",
+    "fechaDePrestacion": "2025-12-02T00:00:00.000Z",
+    "integrante": "Ignacio Palmier",
+    "medico": "Dr. Mendez",
+    "especialidad": "Neurología",
+    "lugarDeAtencion": "Clínica San Marcos",
+    "observaciones": "Control.",
+    "datosFactura": {
+      "cuit": 30556677889,
+      "fechaDeFactura": "2025-12-09T00:00:00.000Z",
+      "monto": 8900,
+      "personaFacturada": "Clínica San Marcos S.A.",
+      "medioDePago": "Transferencia",
+      "cbu": "0000004100001010101010"
+    }
+  },
 
   
 ]
