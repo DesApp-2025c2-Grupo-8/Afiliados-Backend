@@ -70,6 +70,273 @@ const turnos = [
             }
         ]
     },
+    {
+        numeroAfiliado: 663459904,
+        integrante: "Julieta Molina",
+        fecha: "2025-11-12",
+        hora: "14:30",
+        especialidad: "Nutricionista",
+        medico: "Dra. Carla Ruiz",
+        lugarDeAtencion: [
+            {
+                partido: "Ramos Mejía",
+                direccion: "Alvear 255"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459904,
+        integrante: "Julieta Molina",
+        fecha: "2025-12-03",
+        hora: "17:30",
+        especialidad: "Oftalmólogo",
+        medico: "Dr. Marcelo Pérez",
+        lugarDeAtencion: [
+            {
+                partido: "San Justo",
+                direccion: "Arieta 12123"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459904,
+        integrante: "Julieta Molina",
+        fecha: "2025-12-29",
+        hora: "11:00",
+        especialidad: "Psicología",
+        medico: "Lic. Paula Díaz",
+        lugarDeAtencion: [
+            {
+                partido: "Ramos Mejía",
+                direccion: "Rivadavia 4500"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459904,
+        integrante: "Julieta Molina",
+        fecha: "2026-01-18",
+        hora: "15:00",
+        especialidad: "Dermatólogo",
+        medico: "Dra. Lena",
+        lugarDeAtencion: [
+            {
+                partido: "Morón",
+                direccion: "Morón 123"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 776592801,
+        integrante: "Ignacio Palmier",
+        fecha: "2025-11-27",
+        hora: "14:00",
+        especialidad: "Oftalmólogo",
+        medico: "Dr. Fernando Valles",
+        lugarDeAtencion: [
+            {
+                partido: "Quilmes",
+                direccion: "Quilmes 123"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 776592801,
+        integrante: "Ignacio Palmier",
+        fecha: "2025-11-15",
+        hora: "11:00",
+        especialidad: "Clínica General",
+        medico: "Dr. Marcelo Pérez",
+        lugarDeAtencion: [
+            {
+                partido: "Bernal",
+                direccion: "Belgrano 500"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 776592801,
+        integrante: "Ignacio Palmier",
+        fecha: "2025-12-01",
+        hora: "16:30",
+        especialidad: "Traumatólogo",
+        medico: "Dr. Zene",
+        lugarDeAtencion: [
+            {
+                partido: "Quilmes",
+                direccion: "Mitre 123"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 776592801,
+        integrante: "Ignacio Palmier",
+        fecha: "2026-01-07",
+        hora: "09:30",
+        especialidad: "Cardiólogo",
+        medico: "Dra. Sofía Torres",
+        lugarDeAtencion: [
+            {
+                partido: "Avellaneda",
+                direccion: "Av. Mitre 6050"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 776592801,
+        integrante: "Ignacio Palmier",
+        fecha: "2025-10-20",
+        hora: "14:00",
+        especialidad: "Odontólogo",
+        medico: "Dr. Martín Perez",
+        lugarDeAtencion: [
+            {
+                partido: "Bernal",
+                direccion: "Belgrano 5403"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 938557201,
+        integrante: "Santiago Solari",
+        fecha: "2025-11-25",
+        hora: "09:00",
+        especialidad: "Odontólogo",
+        medico: "Dra. Sofía Rivas",
+        lugarDeAtencion: [
+            {
+                partido: "Hurlingham",
+                direccion: "hurlingham 123"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 938557201,
+        integrante: "Santiago Solari",
+        fecha: "2025-10-05",
+        hora: "12:00",
+        especialidad: "Psicología",
+        medico: "Lic. Paula Díaz",
+        lugarDeAtencion: [
+            {
+                partido: "Morón",
+                direccion: "Av. 9 de Julio 123"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 938557201,
+        integrante: "Santiago Solari",
+        fecha: "2025-12-02",
+        hora: "18:00",
+        especialidad: "Clínica General",
+        medico: "Dr. Roberto García",
+        lugarDeAtencion: [
+            {
+                partido: "Ituzaingó",
+                direccion: "Montevideo 1123"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 938557201,
+        integrante: "Santiago Solari",
+        fecha: "2026-01-18",
+        hora: "10:30",
+        especialidad: "Nutricionista",
+        medico: "Lic. Ana Torres",
+        lugarDeAtencion: [
+            {
+                partido: "Hurlingham",
+                direccion: "hurlingham 123"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 938557201,
+        integrante: "Santiago Solari",
+        fecha: "2025-09-25",
+        hora: "09:00",
+        especialidad: "Kinesiología",
+        medico: "Dr. Martín Zene",
+        lugarDeAtencion: [
+            {
+                partido: "Hurlingham",
+                direccion: "Origone 125"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459904,
+        integrante: "Julieta Varela",
+        fecha: "2025-08-01",
+        hora: "17:00",
+        especialidad: "Pediatra",
+        medico: "Dra. Laura Díaz",
+        lugarDeAtencion: [
+            {
+                partido: "Avellaneda",
+                direccion: "Mitre 5678"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459904,
+        integrante: "Julieta Varela",
+        fecha: "2025-11-20",
+        hora: "15:00",
+        especialidad: "Nutricionista",
+        medico: "Lic. Ana Torres",
+        lugarDeAtencion: [
+            {
+                partido: "Lanús",
+                direccion: "Pavón 3000"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459904,
+        integrante: "Julieta Varela",
+        fecha: "2025-11-29",
+        hora: "11:30",
+        especialidad: "Otorrinolaringólogo",
+        medico: "Dr. Juan Flores",
+        lugarDeAtencion: [
+            {
+                partido: "Quilmes",
+                direccion: "Quilmes 123"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459904,
+        integrante: "Julieta Varela",
+        fecha: "2026-01-10",
+        hora: "16:00",
+        especialidad: "Oftalmólogo",
+        medico: "Dr. Federico zene",
+        lugarDeAtencion: [
+            {
+                partido: "Avellaneda",
+                direccion: "Mitre 550"
+            }
+        ]
+    },
+    {
+        numeroAfiliado: 663459904,
+        integrante: "Julieta Varela",
+        fecha: "2026-01-21",
+        hora: "10:30",
+        especialidad: "Pediatra",
+        medico: "Dr. Laura Gómez",
+        lugarDeAtencion: [
+            {
+                partido: "Lanús",
+                direccion: "9 de Julio 7550"
+            }
+        ]
+    },
+    
 
     {
         numeroAfiliado: 776592801,
@@ -142,6 +409,20 @@ const turnos = [
         ]
     },
     {
+        numeroAfiliado: 663459905,
+        integrante: "Santiago Varela",
+        fecha: "2025-11-29",
+        hora: "17:00",
+        especialidad: "Traumatólogo",
+        medico: "Dr. Paredes",
+        lugarDeAtencion: [
+            {
+                partido: "Banfield",
+                direccion: "Alsina 332"
+            }
+        ]
+    },
+    {
         numeroAfiliado: 663459903,
         integrante: "Tomás Varela",
         fecha: "2025-11-12",
@@ -172,7 +453,7 @@ const turnos = [
     {
         numeroAfiliado: 776592801,
         integrante: "Ignacio Palmier",
-        fecha: "2025-10-22",
+        fecha: "2025-11-22",
         hora: "10:10",
         especialidad: "Cirujano",
         medico: "Dr. Franchino",

@@ -94,6 +94,19 @@ export class UsersService {
     return this.userModel.findByIdAndUpdate(id, userAActualizar, { new: true }).exec();
   }
 
+  async actualizarTelefonoCorreoYDireccionPorNumeroAfiliado(
+    numeroAfiliado: number,
+    telefono: string,
+    email: string,
+    direccion: string,
+  ): Promise<User | null> {
+    return this.userModel.findOneAndUpdate(
+      { numeroAfiliado },
+      { telefono, email, direccion },
+      { new: true },
+    ).exec();
+  }
+
   async remove(id: string): Promise<User | null> {
     return this.userModel.findByIdAndDelete(id).exec();
   }
