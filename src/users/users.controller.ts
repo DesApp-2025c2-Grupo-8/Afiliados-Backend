@@ -49,6 +49,16 @@ export class UsersController {
     return this.usersService.update(id, updateUserDto);
   }
 
+  @Patch('/actualizarInfo/numeroAfiliado/:numeroAfiliado')
+  async actualizarTelefonoCorreoYDireccionPorNumeroAfiliado(
+    @Param('numeroAfiliado') numeroAfiliado: number,
+    @Body('telefono') telefono: string,
+    @Body('email') email: string,
+    @Body('direccion') direccion: string,
+  ): Promise<User | null> {
+    return this.usersService.actualizarTelefonoCorreoYDireccionPorNumeroAfiliado(numeroAfiliado, telefono, email, direccion);
+  }
+
   @Delete(':id')
   async remove(@Param('id') id: string): Promise<User | null> {
     return this.usersService.remove(id);

@@ -947,7 +947,7 @@ const autorizaciones = [
     "observaciones": "Solicitud de radiografía.",
     "estado": "Pendiente",
     "cantDias": 1
-  }
+  },
   {
     "numeroAutorizacion": 938557201600011,
     "numeroAfiliado": 938557201,

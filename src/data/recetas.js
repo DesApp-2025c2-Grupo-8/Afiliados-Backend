@@ -573,7 +573,7 @@ const recetas = [
   },
   {
     estado: 'Aceptada',
-    numeroOrden: 663459905200007,
+    numeroOrden: 663459904200007,
     numeroAfiliado: 663459904,
     fechaDeCarga: '2025-09-25T00:00:00.000Z',
     integrante: 'Julieta Varela',
@@ -663,7 +663,7 @@ const recetas = [
   },
   {
     estado: 'Pendiente',
-    numeroOrden: 663459905200008,
+    numeroOrden: 663459904200008,
     numeroAfiliado: 663459904,
     fechaDeCarga: '2025-10-20T00:00:00.000Z',
     integrante: 'Julieta Varela',
@@ -696,7 +696,7 @@ const recetas = [
   },
   {
     estado: 'Pendiente',
-    numeroOrden: 663459905200009,
+    numeroOrden: 663459904200009,
     numeroAfiliado: 663459904,
     fechaDeCarga: '2025-11-08T00:00:00.000Z',
     integrante: 'Julieta Varela',
@@ -740,7 +740,7 @@ const recetas = [
   },
   {
     estado: 'Pendiente',
-    numeroOrden: 663459905200010,
+    numeroOrden: 663459904200010,
     numeroAfiliado: 663459904,
     fechaDeCarga: '2025-11-10T00:00:00.000Z',
     integrante: 'Julieta Varela',
@@ -818,7 +818,7 @@ const recetas = [
   },
   {
     estado: 'Pendiente',
-    numeroOrden: 663459905200011,
+    numeroOrden: 663459904200011,
     numeroAfiliado: 663459904,
     fechaDeCarga: '2025-11-22T00:00:00.000Z',
     integrante: 'Julieta Varela',
@@ -884,7 +884,7 @@ const recetas = [
   },
   {
     estado: 'Aceptada',
-    numeroOrden: 663459905200012,
+    numeroOrden: 663459904200012,
     numeroAfiliado: 663459904,
     fechaDeCarga: '2025-11-25T00:00:00.000Z',
     integrante: 'Julieta Varela',
@@ -950,7 +950,7 @@ const recetas = [
   },
   {
     estado: 'Rechazada',
-    numeroOrden: 938557201200014,
+    numeroOrden: 938557201200015,
     numeroAfiliado: 938557201,
     fechaDeCarga: '2025-11-27T00:00:00.000Z',
     integrante: 'Santiago Solari',
@@ -983,7 +983,7 @@ const recetas = [
   },
   {
     estado: 'Aceptada',
-    numeroOrden: 663459903200015,
+    numeroOrden: 663459903200016,
     numeroAfiliado: 663459903,
     fechaDeCarga: '2025-11-29T00:00:00.000Z',
     integrante: 'Tomas Varela',
@@ -1016,7 +1016,7 @@ const recetas = [
   },
   {
     estado: 'Aceptada',
-    numeroOrden: 228510301200013,
+    numeroOrden: 228510301200014,
     numeroAfiliado: 228510301,
     fechaDeCarga: '2025-11-29T00:00:00.000Z',
     integrante: 'Julieta Molina',
@@ -1049,7 +1049,7 @@ const recetas = [
   },
   {
     estado: 'Rechazado',
-    numeroOrden: 938557201200015,
+    numeroOrden: 938557201200016,
     numeroAfiliado: 938557201,
     fechaDeCarga: '2025-12-01T00:00:00.000Z',
     integrante: 'Santiago Solari',
@@ -1082,7 +1082,7 @@ const recetas = [
   },
   {
     estado: 'Pendiente',
-    numeroOrden: 938557201200015,
+    numeroOrden: 938557201200017,
     numeroAfiliado: 938557201,
     fechaDeCarga: '2025-12-03T00:00:00.000Z',
     integrante: 'Santiago Solari',

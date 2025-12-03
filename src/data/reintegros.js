@@ -504,7 +504,7 @@ const reintegros = [
   },
   {
     "numeroAfiliado": 663459901,
-    "numeroOrden": "663459901200009",
+    "numeroOrden": "663459901200010",
     "estado": "Rechazado",
     "fechaDeCarga": "2025-11-24T15:00:00.000Z",
     "fechaDePrestacion": "2025-11-25T00:00:00.000Z",
@@ -629,7 +629,7 @@ const reintegros = [
 
   {
     "numeroAfiliado": 663459903,
-    "numeroOrden": "663459903200007",
+    "numeroOrden": "663459903200010",
     "estado": "Pendiente",
     "fechaDeCarga": "2025-11-15T14:00:00.000Z",
     "fechaDePrestacion": "2025-11-18T00:00:00.000Z",
