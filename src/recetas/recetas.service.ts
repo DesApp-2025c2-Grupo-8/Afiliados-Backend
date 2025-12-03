@@ -3,10 +3,15 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Receta } from '../schemas/receta.schema';
 import { CreateRecetaDto } from './dto/create-receta.dto';
+import { UsersService } from '../users/users.service';
 
 @Injectable()
 export class RecetasService {
-    constructor(@InjectModel(Receta.name) private recetaModel: Model<Receta>) {
+    constructor(
+        @InjectModel(Receta.name) 
+            private recetaModel: Model<Receta>,
+            private usersService: UsersService
+    ) {
 
     }
 
@@ -19,13 +24,17 @@ export class RecetasService {
     //EJ 663459901, 663459902, 663459903
     //Es afiliado titular si los dos ultimos digitos son '01' slice(7,9) === 01
     async findByNumeroAfiliado(nroABuscar: string): Promise<Receta[]> {
-        const afiliadoComun = nroABuscar.slice(0,7);
-        const esTitular = nroABuscar.slice(7,9) === '01';
+        const usuario = await this.usersService.findByNumeroAfiliado(Number(nroABuscar));
+        if (!usuario) return []
+        
+        const numeroAfiliadoComun = Math.floor(usuario.numeroAfiliado / 100); // Para quedarnos con los primeros 7 digitos
+        const rangoSuperior = numeroAfiliadoComun * 100 + 99;   // numeroAfiliado + 99
+        if (usuario.rol === 'TITULAR') {
+            const rangoInferior = numeroAfiliadoComun * 100;        // numeroAfiliado + 00 Para que pueda ver las recetas propias y de TODOS los miembros
 
-        if (esTitular) {
-            const numeroAfiliadoComun = parseInt(afiliadoComun);
-            const rangoInferior = numeroAfiliadoComun * 100;        // numeroAfiliado + 00
-            const rangoSuperior = numeroAfiliadoComun * 100 + 99;   // numeroAfiliado + 99
+            return this.recetaModel.find({numeroAfiliado: { $gte: rangoInferior, $lte: rangoSuperior } }).exec();
+        } else if (usuario.rol === 'CONYUGE') {
+            const rangoInferior = numeroAfiliadoComun * 100 +  2;   // numeroAfiliado + 02 Para que solamente pueda ver las recetas propias y la de los hijos
 
             return this.recetaModel.find({numeroAfiliado: { $gte: rangoInferior, $lte: rangoSuperior } }).exec();
         } else {
