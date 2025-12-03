@@ -1083,4 +1083,4 @@ const turnos = [
 
 ]
 
-module.exports = turnos;
+export default turnos;
