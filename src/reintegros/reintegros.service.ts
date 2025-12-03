@@ -3,23 +3,32 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Reintegro } from 'src/schemas/reintegro.schema';
 import { CreateReintegroDto } from './dto/create-reintegro.dto';
+import { UsersService } from '../users/users.service';
 
 @Injectable()
 export class ReintegrosService {
-    constructor(@InjectModel(Reintegro.name) private reintegroModel: Model<Reintegro>) {}
+    constructor(
+        @InjectModel(Reintegro.name) 
+            private reintegroModel: Model<Reintegro>,
+            private usersService: UsersService
+    ) {}
 
     async findAll(): Promise<Reintegro[]> {
         return this.reintegroModel.find().exec();
     }
 
     async findByNumeroAfiliado(nroABuscar: string): Promise<Reintegro[]> {
-        const afiliadoComun = nroABuscar.slice(0,7);
-        const esTitular = nroABuscar.slice(7,9) === '01';
+        const usuario = await this.usersService.findByNumeroAfiliado(Number(nroABuscar));
+        if (!usuario) return []
 
-        if (esTitular) {
-            const numeroAfiliadoComun = parseInt(afiliadoComun);
+        const numeroAfiliadoComun = Math.floor(usuario.numeroAfiliado / 100); // Para quedarnos con los primeros 7 digitos
+        const rangoSuperior = numeroAfiliadoComun * 100 + 99;   // numeroAfiliado + 99
+        if (usuario.rol === 'TITULAR') {
             const rangoInferior = numeroAfiliadoComun * 100;        // numeroAfiliado + 00
-            const rangoSuperior = numeroAfiliadoComun * 100 + 99;   // numeroAfiliado + 99
+
+            return this.reintegroModel.find({numeroAfiliado: { $gte: rangoInferior, $lte: rangoSuperior } }).exec();
+        } else if (usuario.rol === 'CONYUGE') {
+            const rangoInferior = numeroAfiliadoComun * 100 +  2;   // numeroAfiliado + 02 Para que solamente pueda ver los reintegros propios y la de los hijos
 
             return this.reintegroModel.find({numeroAfiliado: { $gte: rangoInferior, $lte: rangoSuperior } }).exec();
         } else {
