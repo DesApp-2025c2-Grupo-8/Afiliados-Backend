@@ -7,15 +7,10 @@ import {Afiliado} from 'src/schemas/afiliado.schema';
 export class AfiliadosController {
   constructor(private readonly afiliadosService: AfiliadosService) {}
 
-  @Get()
-  async findAll(): Promise<Afiliado[]> {
-    return this.afiliadosService.findAll();
-  }
-
-  @Get(':id')
-  async findById(@Param('id') id: string): Promise<Afiliado | null> {
-    return this.afiliadosService.findById(id);
-  }
+  // @Get()
+  // async findAll(): Promise<Afiliado[]> {
+  //   return this.afiliadosService.findAll();
+  // }
 
   @Get('numeroAfiliado/:numeroAfiliado')
   async findByNumeroAfiliado(@Param('numeroAfiliado') numeroAfiliado: number): Promise<Afiliado | null> {
@@ -27,14 +22,14 @@ export class AfiliadosController {
     return this.afiliadosService.findByTipoYNumeroDocumento(tipoDocumento, numeroDocumento);
   }
 
-  @Post()
-  async create(@Body() createAfiliadoDto: CreateAfiliadoDto): Promise<Afiliado> {
-    return this.afiliadosService.create(createAfiliadoDto);
-  }
+  // @Post()
+  // async create(@Body() createAfiliadoDto: CreateAfiliadoDto): Promise<Afiliado> {
+  //   return this.afiliadosService.create(createAfiliadoDto);
+  // }
 
-  @Delete(':id')
-  async remove(@Param('id') id: string): Promise<Afiliado | null> {
-    return this.afiliadosService.remove(id);
-  }
+  // @Delete(':id')
+  // async remove(@Param('id') id: string): Promise<Afiliado | null> {
+  //   return this.afiliadosService.remove(id);
+  // }
 
 }

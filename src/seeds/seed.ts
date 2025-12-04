@@ -12,6 +12,10 @@ import { TurnosService } from "src/turnos/turnos.service";
 import { seedTurnos } from "./turnos.seed";
 import { seedPrestadores } from "./prestadores.seed";
 import { seedAfiliados } from "./afiliados.seed";
+import { MedicamentosService } from "src/medicamentos/medicamentos.service";
+import { seedMedicamentos } from "./medicamentos.seed";
+import { seedUsers } from "./users.seed";
+import { UsersService } from "src/users/users.service";
 
 
 async function bootstrap(){
@@ -27,6 +31,9 @@ async function bootstrap(){
 
     const afiliadosService = appContext.get(AfiliadosService);
 
+    const medicamentosService = appContext.get(MedicamentosService);
+
+    const usersService = appContext.get(UsersService);
   
     console.log('Obtenido reintegrosService');
   
@@ -44,6 +51,9 @@ async function bootstrap(){
 
     await seedAfiliados(afiliadosService)
 
+    await seedMedicamentos(medicamentosService);
+
+    await seedUsers(usersService);
 
     await appContext.close();
 
