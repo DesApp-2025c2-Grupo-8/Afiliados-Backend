@@ -1,9 +1,10 @@
-import { 
+import {
     Body,
-    Controller, 
-    Get, 
-    Post, 
+    Controller,
+    Get,
+    Post,
     Param,
+    Patch,
     BadRequestException,
     NotFoundException,
     InternalServerErrorException
@@ -15,7 +16,7 @@ import { CreateReintegroDto } from './dto/create-reintegro.dto';
 
 @Controller('reintegros')
 export class ReintegrosController {
-    constructor(private reintegroService: ReintegrosService) {}
+    constructor(private reintegroService: ReintegrosService) { }
 
     @Get()
     async findAll(): Promise<Reintegro[]> {
@@ -37,5 +38,19 @@ export class ReintegrosController {
         } catch (error) {
             throw new InternalServerErrorException('No ha sido posible crear el reintegro');
         }
+    }
+
+
+    @Patch('/:numeroOrden')
+    async editarObservaciones(
+        @Param('numeroOrden') numeroOrden: number,
+        @Body('observaciones') observaciones: string,
+        @Body('estado') estado: string
+    ) {
+        return this.reintegroService.editarObservaciones(
+            numeroOrden,
+            observaciones,
+            estado
+        )
     }
 }
