@@ -14,7 +14,7 @@ const afiliados = [
       663459904,
       663459905
     ],
-
+    direccion: "Calle Falsa 123",
   },
   {
     numeroAfiliado: 663459902,
@@ -60,6 +60,7 @@ const afiliados = [
     tipoDocumento: "DNI",
     numeroDocumento: 43663350,
     rol: "TITULAR",
+    direccion: "Avenida Siempre Viva 742",
   },
 
   {
@@ -104,7 +105,7 @@ const afiliados = [
     tipoDocumento: "DNI",
     numeroDocumento: 43510637,
     rol: "TITULAR",
-
+    direccion: "Av. Nueva 987"
   },
   {
     numeroAfiliado: 228510301,
@@ -115,7 +116,7 @@ const afiliados = [
     tipoDocumento: "DNI",
     numeroDocumento: 45102301,
     rol: "TITULAR",
-
+    direccion: "Diagonal Vieja 678"
   }
 
 ];

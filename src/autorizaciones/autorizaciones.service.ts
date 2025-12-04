@@ -3,10 +3,15 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Autorizacion } from '../schemas/autorizacion.schema';
 import { Model } from 'mongoose';
 import { CreateAutorizacionDto } from './dto/create-autorizacion.dto';
+import { UsersService } from '../users/users.service';
 
 @Injectable()
 export class AutorizacionesService {
-    constructor(@InjectModel(Autorizacion.name) private AutorizacionModel: Model<Autorizacion>) { }
+    constructor(
+        @InjectModel(Autorizacion.name) 
+            private AutorizacionModel: Model<Autorizacion>,
+            private usersService: UsersService
+        ) {}
 
     async findAll(): Promise<Autorizacion[]> {
         return this.AutorizacionModel.find().exec();
@@ -17,13 +22,16 @@ export class AutorizacionesService {
     }
 
     async findByNumeroAfiliado(nroABuscar: string): Promise<Autorizacion[]> {
-        const afiliadoComun = nroABuscar.slice(0,7);
-        const esTitular = nroABuscar.slice(7,9) === '01';
-
-        if (esTitular) {
-            const numeroAfiliadoComun = parseInt(afiliadoComun);
+        const usuario = await this.usersService.findByNumeroAfiliado(Number(nroABuscar));
+        if (!usuario) return []
+        
+        const numeroAfiliadoComun = Math.floor(usuario.numeroAfiliado / 100); // Para quedarnos con los primeros 7 digitos
+        const rangoSuperior = numeroAfiliadoComun * 100 + 99;   // numeroAfiliado + 99
+        if (usuario.rol === 'TITULAR') {
             const rangoInferior = numeroAfiliadoComun * 100;
-            const rangoSuperior = numeroAfiliadoComun * 100 + 99
+            return this.AutorizacionModel.find({numeroAfiliado: { $gte: rangoInferior, $lte: rangoSuperior } }).exec();
+        } else if (usuario.rol === 'CONYUGE') {
+            const rangoInferior = numeroAfiliadoComun * 100 +  2;   // numeroAfiliado + 02 Para que solamente pueda ver las autorizaciones propias y la de los hijos
             return this.AutorizacionModel.find({numeroAfiliado: { $gte: rangoInferior, $lte: rangoSuperior } }).exec();
         } else {
             return this.AutorizacionModel.find({numeroAfiliado: parseInt(nroABuscar)}).exec();
