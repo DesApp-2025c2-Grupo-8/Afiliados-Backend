@@ -503,6 +503,166 @@ const reintegros = [
     }
   },
   {
+    "numeroAfiliado": 663459902,
+    "numeroOrden": "663459902200001",
+    "estado": "Pago",
+    "fechaDeCarga": "2025-01-15T15:00:00.000Z",
+    "fechaDePrestacion": "2025-01-25T00:00:00.000Z",
+    "integrante": "Millie Bobby Brown",
+    "medico": "Dr. Menendez",
+    "especialidad": "Kinesiología",
+    "lugarDeAtencion": "Clínica Constituyentes",
+    "observaciones": "",
+    "datosFactura": {
+      "cuit": 305566778895,
+      "fechaDeFactura": "2025-01-25T00:00:00.000Z",
+      "monto": 8100,
+      "personaFacturada": "Rahim Aldemir",
+      "medioDePago": "Efectivo",
+      "cbu": null
+    }
+  },
+  {
+    "numeroAfiliado": 663459902,
+    "numeroOrden": "663459902200002",
+    "estado": "Pendiente",
+    "fechaDeCarga": "2025-03-01T15:00:00.000Z",
+    "fechaDePrestacion": "2025-03-01T00:00:00.000Z",
+    "integrante": "Millie Bobby Brown",
+    "medico": "Lic. Gutierrez",
+    "especialidad": "Psicología",
+    "lugarDeAtencion": "Clínica Cruz Celeste",
+    "observaciones": "",
+    "datosFactura": {
+      "cuit": 305566778895,
+      "fechaDeFactura": "2025-03-05T00:00:00.000Z",
+      "monto": 4500,
+      "personaFacturada": "Rahim Aldemir",
+      "medioDePago": "Efectivo",
+      "cbu": null
+    }
+  },
+  {
+    "numeroAfiliado": 663459902,
+    "numeroOrden": "663459902200003",
+    "estado": "Rechazado",
+    "fechaDeCarga": "2025-08-06T15:00:00.000Z",
+    "fechaDePrestacion": "2025-08-09T00:00:00.000Z",
+    "integrante": "Millie Bobby Brown",
+    "medico": "Dra. Miño",
+    "especialidad": "Clínica",
+    "lugarDeAtencion": "Sanatorio Central",
+    "observaciones": "",
+    "datosFactura": {
+      "cuit": 349988776654,
+      "fechaDeFactura": "2025-08-09T00:00:00.000Z",
+      "monto": 5000,
+      "personaFacturada": "Jade Aldemir",
+      "medioDePago": "Transferencia",
+      "cbu": "0000003100004444444444"
+    }
+  },
+  {
+    "numeroAfiliado": 663459902,
+    "numeroOrden": "663459902200004",
+    "estado": "Pago",
+    "fechaDeCarga": "2025-09-10T15:00:00.000Z",
+    "fechaDePrestacion": "2025-09-10T00:00:00.000Z",
+    "integrante": "Millie Bobby Brown",
+    "medico": "Dra. Aguirre",
+    "especialidad": "Nutrición",
+    "lugarDeAtencion": "Sanatorio Central",
+    "observaciones": "",
+    "datosFactura": {
+      "cuit": 349988776654,
+      "fechaDeFactura": "2025-09-10T00:00:00.000Z",
+      "monto": 5000,
+      "personaFacturada": "Jade Aldemir",
+      "medioDePago": "Transferencia",
+      "cbu": "0000003100004444444444"
+    }
+  },
+  {
+    "numeroAfiliado": 663459902,
+    "numeroOrden": "663459902200005",
+    "estado": "Observación",
+    "fechaDeCarga": "2025-11-10T15:00:00.000Z",
+    "fechaDePrestacion": "2025-11-10T00:00:00.000Z",
+    "integrante": "Millie Bobby Brown",
+    "medico": "Dra. Aguirre",
+    "especialidad": "Nutrición",
+    "lugarDeAtencion": "Clínica Central",
+    "observaciones": "",
+    "datosFactura": {
+      "cuit": 234455667711,
+      "fechaDeFactura": "2025-11-11T00:00:00.000Z",
+      "monto": 10000,
+      "personaFacturada": "Brecken Harris",
+      "medioDePago": "Transferencia",
+      "cbu": "0000003100001234567891"
+    }
+  },
+  {
+    "numeroAfiliado": 663459902,
+    "numeroOrden": "663459902200006",
+    "estado": "Rechazado",
+    "fechaDeCarga": "2025-11-21T15:00:00.000Z",
+    "fechaDePrestacion": "2025-11-21T00:00:00.000Z",
+    "integrante": "Millie Bobby Brown",
+    "medico": "Dr. Castillán",
+    "especialidad": "Clínica",
+    "lugarDeAtencion": "Clínica Central",
+    "observaciones": "Chequeo por dolor abdominal.",
+    "datosFactura": {
+      "cuit": 234455667711,
+      "fechaDeFactura": "2025-11-22T00:00:00.000Z",
+      "monto": 10000,
+      "personaFacturada": "Brecken Harris",
+      "medioDePago": "Transferencia",
+      "cbu": "0000003100001234567891"
+    }
+  },
+  {
+    "numeroAfiliado": 663459902,
+    "numeroOrden": "663459902200007",
+    "estado": "Pendiente",
+    "fechaDeCarga": "2025-11-24T15:00:00.000Z",
+    "fechaDePrestacion": "2025-11-24T00:00:00.000Z",
+    "integrante": "Millie Bobby Brown",
+    "medico": "Dr. Castillán",
+    "especialidad": "Clínica",
+    "lugarDeAtencion": "Sanatorio Juncal",
+    "observaciones": "Chequeo por dolor abdominal.",
+    "datosFactura": {
+      "cuit": 349988776654,
+      "fechaDeFactura": "2025-12-03T00:00:00.000Z",
+      "monto": 10500,
+      "personaFacturada": "Jade Aldemir",
+      "medioDePago": "Transferencia",
+      "cbu": "0000003100004444444444"
+    }
+  },
+  {
+    "numeroAfiliado": 663459902,
+    "numeroOrden": "663459902200008",
+    "estado": "Pago",
+    "fechaDeCarga": "2025-12-03T15:00:00.000Z",
+    "fechaDePrestacion": "2025-12-03T00:00:00.000Z",
+    "integrante": "Millie Bobby Brown",
+    "medico": "Dr. Molinari",
+    "especialidad": "Nutrición",
+    "lugarDeAtencion": "Sanatorio Central",
+    "observaciones": "",
+    "datosFactura": {
+      "cuit": 349988776654,
+      "fechaDeFactura": "2025-12-03T00:00:00.000Z",
+      "monto": 10500,
+      "personaFacturada": "Jade Aldemir",
+      "medioDePago": "Transferencia",
+      "cbu": "0000003100004444444444"
+    }
+  },
+  {
     "numeroAfiliado": 663459901,
     "numeroOrden": "663459901200010",
     "estado": "Rechazado",

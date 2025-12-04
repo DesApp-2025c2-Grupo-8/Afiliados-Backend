@@ -13,6 +13,19 @@ const autorizaciones = [
     "cantDias": 3
   },
   {
+    "numeroAutorizacion": 663459902600001,
+    "numeroAfiliado": 663459902,
+    "fechaDeCarga": "2025-01-10T00:00:00Z",
+    "integrante": "Millie Bobby Brown",
+    "medico": "Dra. Ana Torres",
+    "especialidad": "Dermatología",
+    "partido": "Morón",
+    "direccion": "Morón 234",
+    "observaciones": "",
+    "estado": "Aceptada",
+    "cantDias": 1
+  },
+  {
     "numeroAutorizacion": 663459903600001,
     "numeroAfiliado": 663459903,
     "fechaDeCarga": "2025-01-08T00:00:00Z",
@@ -234,6 +247,19 @@ const autorizaciones = [
     "cantDias": 3
   },
   {
+    "numeroAutorizacion": 663459902600002,
+    "numeroAfiliado": 663459902,
+    "fechaDeCarga": "2025-05-10T00:00:00Z",
+    "integrante": "Millie Bobby Brown",
+    "medico": "Dr. Ana Castro",
+    "especialidad": "Endocrinología",
+    "partido": "Castelar",
+    "direccion": "Castelar 550",
+    "observaciones": "",
+    "estado": "Pendiente",
+    "cantDias": 1
+  },
+  {
     "numeroAutorizacion": 663459905600003,
     "numeroAfiliado": 663459905,
     "fechaDeCarga": "2025-05-14T00:00:00Z",
@@ -361,6 +387,19 @@ const autorizaciones = [
     "direccion": "Av. Mitre 1100",
     "observaciones": "",
     "estado": "Aceptada",
+    "cantDias": 1
+  },
+  {
+    "numeroAutorizacion": 663459902600003,
+    "numeroAfiliado": 663459902,
+    "fechaDeCarga": "2025-07-12T00:00:00Z",
+    "integrante": "Millie Bobby Brown",
+    "medico": "Dr. Lucas Gutierrez",
+    "especialidad": "Clínico",
+    "partido": "Ituzaingó",
+    "direccion": "Urquiza 550",
+    "observaciones": "",
+    "estado": "Rechazada",
     "cantDias": 1
   },
   {
@@ -505,6 +544,19 @@ const autorizaciones = [
     "observaciones": "",
     "estado": "Aceptada",
     "cantDias": 1
+  },
+  {
+    "numeroAutorizacion": 663459902600004,
+    "numeroAfiliado": 663459902,
+    "fechaDeCarga": "2025-09-12T00:00:00Z",
+    "integrante": "Millie Bobby Brown",
+    "medico": "Dra. Elisa Martinez",
+    "especialidad": "Clínico",
+    "partido": "Morón",
+    "direccion": "9 de Julio 100",
+    "observaciones": "Chequeos anuales",
+    "estado": "Observación",
+    "cantDias": 2
   },
   {
     "numeroAutorizacion": 663459903600006,
@@ -819,6 +871,19 @@ const autorizaciones = [
     "cantDias": 1
   },
   {
+    "numeroAutorizacion": 663459902600005,
+    "numeroAfiliado": 663459902,
+    "fechaDeCarga": "2025-09-12T00:00:00Z",
+    "integrante": "Millie Bobby Brown",
+    "medico": "Dra. Elisa Martinez",
+    "especialidad": "Nutrición",
+    "partido": "Ituzaingó",
+    "direccion": "Av. Maipú 130",
+    "observaciones": "",
+    "estado": "Observación",
+    "cantDias": 1
+  },
+  {
     "numeroAutorizacion": 663459903600009,
     "numeroAfiliado": 663459903,
     "fechaDeCarga": "2025-11-22T00:00:00Z",
@@ -936,6 +1001,19 @@ const autorizaciones = [
     "cantDias": 1
   },
   {
+    "numeroAutorizacion": 663459902600006,
+    "numeroAfiliado": 663459902,
+    "fechaDeCarga": "2025-09-12T00:00:00Z",
+    "integrante": "Millie Bobby Brown",
+    "medico": "Dra. Elisa Martinez",
+    "especialidad": "Oftalmología",
+    "partido": "Ituzaingó",
+    "direccion": "Av. Maipú 130",
+    "observaciones": "",
+    "estado": "Aceptada",
+    "cantDias": 1
+  },
+  {
     "numeroAutorizacion": 228510301600009,
     "numeroAfiliado": 228510301,
     "fechaDeCarga": "2025-11-29T00:00:00Z",
@@ -959,6 +1037,19 @@ const autorizaciones = [
     "direccion": "Av. Constituyentes 100",
     "observaciones": "",
     "estado": "Observación",
+    "cantDias": 1
+  },
+  {
+    "numeroAutorizacion": 663459902600007,
+    "numeroAfiliado": 663459902,
+    "fechaDeCarga": "2025-12-01T00:00:00Z",
+    "integrante": "Millie Bobby Brown",
+    "medico": "Dr. Bruno Iglesias",
+    "especialidad": "Hematología",
+    "partido": "Morón",
+    "direccion": "Av. de Mayo 190",
+    "observaciones": "",
+    "estado": "Pendiente",
     "cantDias": 1
   },
   {
