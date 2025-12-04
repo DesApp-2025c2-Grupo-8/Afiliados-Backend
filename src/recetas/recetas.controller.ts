@@ -1,8 +1,9 @@
-import { 
+import {
     Body,
-    Controller, 
-    Get, 
-    Post, 
+    Controller,
+    Get,
+    Post,
+    Patch,
     Param,
     BadRequestException,
     NotFoundException,
@@ -14,7 +15,7 @@ import { Receta } from 'src/schemas/receta.schema';
 
 @Controller('recetas')
 export class RecetasController {
-    constructor(private recetaService: RecetasService) {}
+    constructor(private recetaService: RecetasService) { }
 
     @Get()
     async findAll(): Promise<Receta[]> {
@@ -36,5 +37,18 @@ export class RecetasController {
         } catch (error) {
             throw new InternalServerErrorException('No ha sido posible crear la receta');
         }
+    }
+
+    @Patch('/:numeroOrden')
+    async editarObservaciones(
+        @Param('numeroOrden') numeroOrden: number,
+        @Body('observaciones') observaciones: string,
+        @Body('estado') estado: string
+    ) {
+        return this.recetaService.editarObservaciones(
+            numeroOrden,
+            observaciones,
+            estado
+        )
     }
 }

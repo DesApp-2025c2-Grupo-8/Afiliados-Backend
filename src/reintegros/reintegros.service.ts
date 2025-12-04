@@ -6,24 +6,24 @@ import { CreateReintegroDto } from './dto/create-reintegro.dto';
 
 @Injectable()
 export class ReintegrosService {
-    constructor(@InjectModel(Reintegro.name) private reintegroModel: Model<Reintegro>) {}
+    constructor(@InjectModel(Reintegro.name) private reintegroModel: Model<Reintegro>) { }
 
     async findAll(): Promise<Reintegro[]> {
         return this.reintegroModel.find().exec();
     }
 
     async findByNumeroAfiliado(nroABuscar: string): Promise<Reintegro[]> {
-        const afiliadoComun = nroABuscar.slice(0,7);
-        const esTitular = nroABuscar.slice(7,9) === '01';
+        const afiliadoComun = nroABuscar.slice(0, 7);
+        const esTitular = nroABuscar.slice(7, 9) === '01';
 
         if (esTitular) {
             const numeroAfiliadoComun = parseInt(afiliadoComun);
             const rangoInferior = numeroAfiliadoComun * 100;        // numeroAfiliado + 00
             const rangoSuperior = numeroAfiliadoComun * 100 + 99;   // numeroAfiliado + 99
 
-            return this.reintegroModel.find({numeroAfiliado: { $gte: rangoInferior, $lte: rangoSuperior } }).exec();
+            return this.reintegroModel.find({ numeroAfiliado: { $gte: rangoInferior, $lte: rangoSuperior } }).exec();
         } else {
-            return this.reintegroModel.find({numeroAfiliado: parseInt(nroABuscar)}).exec();
+            return this.reintegroModel.find({ numeroAfiliado: parseInt(nroABuscar) }).exec();
         }
     }
 
@@ -31,14 +31,14 @@ export class ReintegrosService {
         const afiliado = reintegroACrear.numeroAfiliado;
         const prefijoReintegro = 40;
         const ultimoReintegro = await this.reintegroModel
-            .findOne({ numeroAfiliado: afiliado})
+            .findOne({ numeroAfiliado: afiliado })
             .sort({ numeroOrden: -1 })
             .exec();
 
-        const nuevoNumeroOrden = ultimoReintegro 
-            ? ultimoReintegro.numeroOrden + 1 
-            : reintegroACrear.numeroAfiliado * 1000000 + prefijoReintegro * 10000 + 1; 
-        
+        const nuevoNumeroOrden = ultimoReintegro
+            ? ultimoReintegro.numeroOrden + 1
+            : reintegroACrear.numeroAfiliado * 1000000 + prefijoReintegro * 10000 + 1;
+
         const reintegroCreado = new this.reintegroModel({
             ...reintegroACrear,
             numeroOrden: nuevoNumeroOrden,
@@ -52,6 +52,22 @@ export class ReintegrosService {
 
     async deleteAll(): Promise<void> {
         await this.reintegroModel.deleteMany({});
+    }
+
+
+    async editarObservaciones(numeroOrden: number, observaciones: string, estado: string) {
+        const reintegro = await this.reintegroModel.findOneAndUpdate(
+            { numeroOrden },
+            { observaciones, estado },
+            { new: true }
+        );
+
+        if (!reintegro) {
+            throw new Error('Reintegro no encontrada')
+        }
+
+        return reintegro
+
     }
 
 }

@@ -1,4 +1,4 @@
-import { Controller, Param ,Get, Post, Body, NotFoundException, InternalServerErrorException, BadRequestException } from '@nestjs/common';
+import { Controller, Param ,Get, Post, Body, NotFoundException, InternalServerErrorException, BadRequestException, Patch } from '@nestjs/common';
 import { AutorizacionesService } from './autorizaciones.service';
 import { CreateAutorizacionDto } from './dto/create-autorizacion.dto';
 import { Autorizacion } from 'src/schemas/autorizacion.schema';
@@ -24,5 +24,18 @@ export class AutorizacionesController {
     @Post()
     async create(@Body() autorizacionACrear: CreateAutorizacionDto): Promise<Autorizacion> {
         return this.AutorizacionesService.create(autorizacionACrear);
+    }
+
+    @Patch('/:numeroAutorizacion')
+    async editarObservaciones(
+        @Param('numeroAutorizacion') numeroAutorizacion: number,
+        @Body('observaciones') observaciones: string,
+        @Body('estado') estado: string
+    ) {
+        return this.AutorizacionesService.editarObservaciones(
+            numeroAutorizacion,
+            observaciones,
+            estado
+        )
     }
 }
