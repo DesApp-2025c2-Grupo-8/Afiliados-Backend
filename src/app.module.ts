@@ -8,10 +8,12 @@ import { PrestadoresModule } from './prestadores/prestadores.module';
 import { UsersModule } from './users/users.module';
 import { AfiliadosModule } from './afiliados/afiliados.module';
 import { AuthModule } from './auth/auth.module';
+import { MedicamentosController } from './medicamentos/medicamentos.controller';
+import { MedicamentosModule } from './medicamentos/medicamentos.module';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb://localhost:27017/nest'), RecetasModule, ReintegrosModule, PrestadoresModule, AutorizacionesModule, UsersModule, AfiliadosModule, AuthModule, TurnosModule],
-  controllers: [],
+  imports: [MongooseModule.forRoot('mongodb://localhost:27017/nest'), RecetasModule, ReintegrosModule, PrestadoresModule, AutorizacionesModule, UsersModule, AfiliadosModule, AuthModule, TurnosModule, MedicamentosModule],
+  controllers: [MedicamentosController],
   providers: [],
 })
 export class AppModule {}

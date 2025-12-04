@@ -17,20 +17,8 @@ export class UsersService {
     return this.userModel.find().exec();
   }
 
-  async findById(id: string): Promise<User | null> {
-    return this.userModel.findById(id).exec();
-  }
-
   async findByNumeroAfiliado(numeroAfiliado: number): Promise<User | null> {
     return this.userModel.findOne({ numeroAfiliado: numeroAfiliado }).exec();
-  }
-
-  async findByEmail(email: string): Promise<User | null> {
-    return this.userModel.findOne({ email: email }).exec();
-  }
-
-  async findByNumeroDocumento(numeroDocumento: number): Promise<User | null> {
-    return this.userModel.findOne({ numeroDocumento: numeroDocumento }).exec();
   }
 
   async findByTipoYNumeroDocumento(tipoDocumento: string, numeroDocumento: number): Promise<User | null> {
@@ -59,10 +47,6 @@ export class UsersService {
     return safeUser;
   }
 
-
-
-
-
   async create(userACrear: CreateUserDto): Promise<User> {
 
     const afiliadoExistente = await this.afiliadosService.findByTipoYNumeroDocumento(userACrear.tipoDocumento, userACrear.numeroDocumento);
@@ -86,6 +70,7 @@ export class UsersService {
       rol: afiliadoExistente.rol,
       planMedico: afiliadoExistente.planMedico,
       grupoFamiliar: afiliadoExistente.grupoFamiliar,
+      direccion: afiliadoExistente.direccion
     });
     return nuevoUser.save();
   }

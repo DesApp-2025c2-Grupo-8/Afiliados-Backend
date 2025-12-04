@@ -67,7 +67,13 @@ export class TurnosService {
             condicionBusqueda.medico = medico;
         }
         
-        const turnosOcupados = await this.turnoModel.find(condicionBusqueda, 'medico fecha hora').lean().exec();
+        const turnosOcupados = await this.turnoModel.find(
+            { 
+                ...condicionBusqueda,
+                estaCancelado: false
+            }, 
+            'medico fecha hora'
+        ).lean().exec();
         
         const obtenerDisponibilidadReal = (nombreMedico: string) => {
             const disponibilidadBase = generarDisponibilidadPrueba()
@@ -160,11 +166,19 @@ export class TurnosService {
     }
 
     async consultarTurnosPorAfiliado(numeroAfiliado: number){
-        return await this.turnoModel.find({ numeroAfiliado }).lean()
+        return await this.turnoModel.find({ 
+            numeroAfiliado, 
+            estaCancelado: { $in: [false, null, undefined] } 
+        }).lean();
     }
 
     async cancelarTurno(id: string){
-        return await this.turnoModel.findByIdAndDelete(id)
+        const resultado = await this.turnoModel.findByIdAndUpdate(
+            id,
+            { estaCancelado: true }, 
+            { new: true }
+        ).exec();
+        return resultado;
     }
 
     async insertMany(turnos: CreateTurnoDto[]): Promise<Turno[]>{
