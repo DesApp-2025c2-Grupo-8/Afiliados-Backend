@@ -41,16 +41,16 @@ export class ReintegrosController {
     }
 
 
-    @Patch('/:numeroOrden')
-    async editarObservaciones(
-        @Param('numeroOrden') numeroOrden: number,
-        @Body('observaciones') observaciones: string,
-        @Body('estado') estado: string
-    ) {
-        return this.reintegroService.editarObservaciones(
-            numeroOrden,
-            observaciones,
-            estado
-        )
-    }
+    // @Patch('/:numeroOrden')
+    // async editarObservaciones(
+    //     @Param('numeroOrden') numeroOrden: number,
+    //     @Body('observaciones') observaciones: string,
+    //     @Body('estado') estado: string
+    // ) {
+    //     return this.reintegroService.editarObservaciones(
+    //         numeroOrden,
+    //         observaciones,
+    //         estado
+    //     )
+    // }
 }
