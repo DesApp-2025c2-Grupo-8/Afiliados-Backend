@@ -37,6 +37,9 @@ export class Turno extends Document {
 
     @Prop({ required: true })
     hora: string;
+
+    @Prop({ required: true, default: false }) 
+    estaCancelado: boolean;
 }
 
 export const TurnoSchema = SchemaFactory.createForClass(Turno)
