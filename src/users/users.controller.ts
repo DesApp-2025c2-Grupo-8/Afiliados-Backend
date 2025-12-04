@@ -13,25 +13,16 @@ export class UsersController {
     return this.usersService.findAll();
   }
 
-  @Get(':id')
-  async findById(@Param('id') id: string): Promise<User | null> {
-    return this.usersService.findById(id);
-  }
+
 
   @Get('numeroAfiliado/:numeroAfiliado')
   async findByNumeroAfiliado(@Param('numeroAfiliado') numeroAfiliado: number): Promise<User | null> {
     return this.usersService.findByNumeroAfiliado(numeroAfiliado);
   }
 
-  @Get('email/:email')
-  async findByEmail(@Param('email') email: string): Promise<User | null> {
-    return this.usersService.findByEmail(email);
-  }
+ 
 
-  @Get('numeroDocumento/:numeroDocumento')
-  async findByNumeroDocumento(@Param('numeroDocumento') numeroDocumento: number): Promise<User | null> {
-    return this.usersService.findByNumeroDocumento(numeroDocumento);
-  }
+
 
   @Get('/tipoDocumento/:tipoDocumento/numeroDocumento/:numeroDocumento/password/:password')
   async findByTipoYNumeroDocumentoYpassword(@Param('tipoDocumento') tipoDocumento: string, @Param('numeroDocumento') numeroDocumento: number, @Param('password') password: string): Promise<User | null> {
