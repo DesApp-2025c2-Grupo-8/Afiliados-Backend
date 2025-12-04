@@ -1,7 +1,6 @@
 import { AfiliadosService } from 'src/afiliados/afiliados.service';
 import afiliados from '../data/afiliados'
 
-
 export async function seedAfiliados(afiliadoACrear: AfiliadosService) {
 
     await afiliadoACrear.deleteAll();
