@@ -59,4 +59,18 @@ export class AutorizacionesService {
     async insertMany(autorizaciones: CreateAutorizacionDto[]) {
         return this.AutorizacionModel.insertMany(autorizaciones).then((docs) => docs.map((d) => d.toObject()))
     }
+
+    async editarObservaciones(numeroAutorizacion: number, observaciones: string , estado: string) {
+        const autorizacion = await this.AutorizacionModel.findOneAndUpdate(
+            { numeroAutorizacion},
+            { observaciones, estado},
+            { new: true}
+        );
+
+        if (!autorizacion) {
+            throw new Error('Autorización no encontrada')
+        }
+
+        return autorizacion
+    }
 }

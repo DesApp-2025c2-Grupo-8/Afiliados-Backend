@@ -30,8 +30,7 @@ const afiliados = [
       663459903,
       663459904,
       663459905
-    ],
-    direccion: "Calle Falsa 123",
+    ]
   }
   ,
   {
@@ -48,8 +47,8 @@ const afiliados = [
       663459902,
       663459904,
       663459905
-    ],
-    direccion: "Calle Falsa 123",
+    ]
+
   },
   {
 
@@ -78,8 +77,7 @@ const afiliados = [
       663459902,
       663459903,
       663459905
-    ],
-    direccion: "Calle Falsa 123",
+    ]
   },
   {
     numeroAfiliado: 663459905,
@@ -95,8 +93,7 @@ const afiliados = [
       663459902,
       663459903,
       663459904
-    ],
-    direccion: "Calle Falsa 123",
+    ]
 
   },
   {

@@ -89,4 +89,18 @@ export class RecetasService {
     async insertMany(recetas: CreateRecetaDto[]): Promise<Receta[]> {
         return this.recetaModel.insertMany(recetas).then((docs) => docs.map((d) => d.toObject())); // esto convierte los docs en objetos simples (sin metodos de mongoose)
     }
+
+    async editarObservaciones(numeroOrden: number, observaciones: string , estado: string) {
+        const receta = await this.recetaModel.findOneAndUpdate(
+            { numeroOrden},
+            { observaciones, estado},
+            { new: true}
+        );
+
+        if (!receta) {
+            throw new Error('Receta no encontrada')
+        }
+
+        return receta
+    }
 }
